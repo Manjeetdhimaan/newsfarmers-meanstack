@@ -84,6 +84,12 @@ export class AppComponent implements OnInit {
               this.metaService.updateTag({ name: 'description', content: activatedUrl });
               return child.snapshot.data['title'];
             }
+            if (this.router.url.toLowerCase() === "/news") {
+              if (child?.snapshot.data['title']) {
+                child.snapshot.data['title'] = 'News Headline - Newsfarmers';
+                return child.snapshot.data['title'];
+              }
+            }
             if (this.isCelebrityUrl == true) {
               this.isCelebrityUrl = false;
               this.metaService.updateTag({ name: 'description', content: result.join(" ") + '\'s Height, Weight, Age, Family, Affairs, Biography & More' });

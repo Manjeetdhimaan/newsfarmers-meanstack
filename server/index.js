@@ -3,7 +3,7 @@
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5050;
 const app = express();
 var path = require('path');
 const cors = require('cors');
@@ -11,10 +11,10 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 // Routes
-const userRoutes = require('./api/celebrityRoutes');
+const newsRoutes = require('./api/celebrityRoutes');
 // const adminRoutes = require('./api/adminRoutes');
 
-app.use('/celebrities', userRoutes);
+app.use('/news', newsRoutes);
 // app.use('/admin', adminRoutes);
 
 // app.use(express.static(path.join(__dirname, 'www')));

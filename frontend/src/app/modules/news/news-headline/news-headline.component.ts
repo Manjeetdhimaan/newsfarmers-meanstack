@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsService } from 'src/app/services/news.service';
 import { Router } from '@angular/router';
-import { Meta } from '@angular/platform-browser';
+import { ToasTMessageService } from 'src/app/services/toastr.service';
 
 @Component({
   selector: 'app-news-headline',
   templateUrl: './news-headline.component.html',
-  styleUrls: ['./news-headline.component.css']
+  styleUrls: ['./news-headline.component.css', '../../pagenotfound/pagenotfound.component.css']
 })
 export class NewsHeadlineComponent implements OnInit {
 
-  constructor(private newsService: NewsService, private router: Router, private meta: Meta) { }
+  constructor(private newsService: NewsService, private router: Router, private toastService: ToasTMessageService) { }
 
   newsArray:any;
   isLoading = false;
+  isError = false;
   borderColor = "black";
   hoveredNews:any;
 //pagination properties
@@ -22,12 +23,26 @@ export class NewsHeadlineComponent implements OnInit {
   
 
   ngOnInit(): void {
-    this.isLoading= true;
-    this.newsArray = this.newsService.getNews().reverse();
-    this.meta.updateTag({ name: 'description', content: 'News Headlines'});
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 200);
+    this.isLoading=true;
+       this.newsService.getNews().then((news:any) => {
+        this.newsArray = news.reverse();
+        this.toastService.success('News Headline loaded successfully');
+        this.isLoading = false;
+        this.isError = false;
+      }).catch((err) => {
+        console.log(err);
+        this.isLoading = false;
+        this.isError = true;
+        this.toastService.error(err.message);
+      })
+
+    
+    // this.isLoading= true;
+    // this.newsArray = this.newsService.getNews().reverse();
+    // this.meta.updateTag({ name: 'description', content: 'News Headlines'});
+    // setTimeout(() => {
+    //   this.isLoading = false;
+    // }, 200);
   }
 
   onNavigate(news:any) {

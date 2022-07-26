@@ -563,14 +563,70 @@ const UserSchema = new mongoose.Schema({
     usePushEach: true
 })
 
-// UserSchema.statics.hashPassword = function hashPassword(password) {
-//     return bcrypt.hashSync(password, 10);
-// }
 
-// UserSchema.statics.isValid = function(hashedPassword) {
-//     return bcrypt.compareSync(hashedPassword, this.password);
-// }
+const NewsSchema = new mongoose.Schema({
+    id: {
+        type: String,
+        trim: true
+    },
+    category: [],
+    categoryId: {
+        type: String,
+        trim: true
+    },
+    title: {
+        type: String,
+        trim: true
+    },
+    imgSrc: {
+        type: String,
+        trim: true
+    },
+    instaSimpleLink: {
+        type: String,
+        trim: true
+    },
+    twitterSimpleLink: {
+        type: String,
+        trim: true
+    },
+    facebookSimpleLink: {
+        type: String,
+        trim: true
+    },
+    linkedinSimpleLink: {
+        type: String,
+        trim: true
+    },
+    otherFacts:[
+        {
+            type: Object,
+            fact: {
+                type: String,
+                trim: true
+            },
+            imgSrc: {
+                type: String,
+                trim: true
+            },
+            imgCaption: {
+                type: String,
+                trim: true
+            },
+            videoSrc: {
+                type: String,
+                trim: true
+            },
+            instaLink: {
+                type: String,
+                trim: true
+            },
+        }
+    ],
+ 
+}, {
+    usePushEach: true
+})
 
-
-
-module.exports = mongoose.model('User', UserSchema)
+module.exports = mongoose.model('News', NewsSchema);
+// module.exports = mongoose.model('User', NewsSchema);

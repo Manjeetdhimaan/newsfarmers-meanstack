@@ -22,7 +22,7 @@
                                 Biography, Net Worth &
                                 More</b></h1>
                         <div>
-                            <img *ngIf="celebrity.imgSrc" animation="fadeInUp" delay="100" duration="500" offset="110"
+                            <img *ngIf="celebrity?.imgSrc" animation="fadeInUp" delay="100" duration="500" offset="110"
                                 triggerOnce="true" class="celebrityImg "
                                 [src]="celebrity?.imgSrc!=''? celebrity?.imgSrc: imgUrl" alt="{{ celebrity?.name }}">
                         </div>

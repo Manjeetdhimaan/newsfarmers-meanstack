@@ -73,7 +73,21 @@ export class HomeComponent implements OnInit {
     this.selected = this.shuffled.slice(0, 1);
     this.randomCelebrity = this.celebritiesService.getCelebrities()[Math.floor((Math.random() * this.celebritiesService.getCelebrities().length))];
     this.onGetCategory();
-    this.latestNews = this.newsService.getNews().slice(-8).reverse();
+
+    this.isLoading=true;
+    this.newsService.getNews().then((news:any) => {
+     this.latestNews = news.slice(-8).reverse();
+     // this.toastService.success('Blogs loaded successfully');
+     this.isLoading = false;
+     // this.isError = false;
+   }).catch((err) => {
+     console.log(err);
+     this.isLoading = false;
+     // this.isError = true;
+     // this.toastService.error(err.message);
+   })
+
+    // this.latestNews = this.newsService.getNews().slice(-8).reverse();
     this.activatedRoute.fragment.subscribe((fragment: any) => {
       this.fragment = fragment;
     });

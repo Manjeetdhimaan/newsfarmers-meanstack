@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UIComponentsModule } from './UI-components/ui-components.module';
 import { CoresModule } from './modules/core/core.module';
 import { PagenotfoundComponent } from './modules/pagenotfound/pagenotfound.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { PagenotfoundComponent } from './modules/pagenotfound/pagenotfound.compo
     HttpClientModule,
     CoresModule,
     UIComponentsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

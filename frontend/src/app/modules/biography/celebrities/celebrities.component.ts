@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 
 import { CelebritiesService } from 'src/app/services/celebrities.service';
 import { Meta } from '@angular/platform-browser';
-
+import { ToasTMessageService } from 'src/app/services/toastr.service';
 
 @Component({
   selector: 'app-celebrities',
@@ -32,7 +32,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
   constructor(private celebritiesService: CelebritiesService,
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private meta: Meta) {
+    private meta: Meta, private toastService: ToasTMessageService) {
     // this.meta.addTag({ name: 'description', content: 'biography' });
     // this.meta.addTag({ name: 'description', content: 'biography' },true);
     // this.meta.addTag({ name: 'author', content: 'newsfarmers' });
@@ -98,6 +98,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
             this.relatedPostArray.push(celebrity);
           }
         });
+        this.toastService.success(`${a.name}`);
         this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${a.name.toLowerCase().split(' ').join('-')}` });
         setTimeout(() => {
           this.isLoading = false
@@ -155,6 +156,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
         this.relatedPostArray.push(celebrity);
       }
     });
+    this.toastService.success(`${selected.name}`);
     // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === selected.categoryId.toLowerCase());
     this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
     this.router.navigate(['/', selected.name.toLowerCase().split(' ').join('-')]);
