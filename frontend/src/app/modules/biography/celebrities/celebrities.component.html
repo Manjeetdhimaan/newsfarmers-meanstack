@@ -715,9 +715,9 @@
                         <h1>Recent Posts</h1>
                     </div>
                     <ul class="w3-ul w3-hoverable w3-white" *ngFor="let celebrity of recentPost">
-                        <a routerLink="/{{selectedCelebrity}}">
-                            <li class="w3-padding-16" (mouseenter)="onGetSelectedCelebrity(celebrity)"
-                                (click)="onNavigate(celebrity)" animation="fadeInUp" delay="100" duration="500"
+                        <a routerLink="/{{selectedCelebrity}}" (mouseenter)="onGetSelectedCelebrity(celebrity)"
+                        (click)="onNavigate(celebrity)">
+                            <li class="w3-padding-16"  animation="fadeInUp" delay="100" duration="500"
                                 offset="110" triggerOnce="false">
                                 <img *ngIf="celebrity.imgSrc" src="{{celebrity.imgSrc}}" alt="{{celebrity?.name}}"
                                     class="w3-left w3-margin-right" style="width:50px">

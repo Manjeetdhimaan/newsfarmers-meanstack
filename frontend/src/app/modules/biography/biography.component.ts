@@ -25,14 +25,31 @@ export class BiographyComponent implements OnInit {
 
   ngOnInit(): void {
     this.isLoading=true;
-    this.recentPost = this.celebritiesService.getCelebrities().slice(-6).reverse();
-    this.celebrities = this.celebritiesService.getCelebrities();
-    this.randomCelebrity = this.celebritiesService.getCelebrities()[Math.floor((Math.random() * this.celebritiesService.getCelebrities().length))];
-    this.shuffled = this.celebritiesService.getCelebrities().sort(() => 0.5 - Math.random());
-    this.selected = this.shuffled.slice(0, 4);
-    this.moreCelebrities = this.shuffled.slice(5, 17);
-      this.isLoading=false;
-      this.meta.updateTag({ name: 'description', content: 'Biography Categories'});
+    this.celebritiesService.getCelebrities().then((celebrities: any) => {
+      this.randomCelebrity = celebrities[Math.floor((Math.random() * celebrities.length))];
+      this.recentPost = celebrities.slice(-6).reverse();
+      this.celebrities = celebrities;
+      this.shuffled = celebrities.sort(() => 0.5 - Math.random());
+      this.selected = this.shuffled.slice(0, 4);
+      this.moreCelebrities = this.shuffled.slice(5, 17);
+        this.isLoading=false;
+        this.meta.updateTag({ name: 'description', content: 'Biography Categories'});
+    }).catch((err) => {
+      // this.toastService.error(err.message);
+      this.isLoading = false;
+      // this.isError= true;
+    })
+
+
+
+    // this.recentPost = this.celebritiesService.getCelebrities().slice(-6).reverse();
+    // this.celebrities = this.celebritiesService.getCelebrities();
+    // this.randomCelebrity = this.celebritiesService.getCelebrities()[Math.floor((Math.random() * this.celebritiesService.getCelebrities().length))];
+    // this.shuffled = this.celebritiesService.getCelebrities().sort(() => 0.5 - Math.random());
+    // this.selected = this.shuffled.slice(0, 4);
+    // this.moreCelebrities = this.shuffled.slice(5, 17);
+    //   this.isLoading=false;
+    //   this.meta.updateTag({ name: 'description', content: 'Biography Categories'});
   }
 
   onNavigate(selected: any) {

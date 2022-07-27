@@ -52,33 +52,60 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.isLoading = true;
     this.celebrities = [];
-    this.celebritiesService.celebrities.map((a: any) => {
-      a.category.map((n: any) => {
-        if (this.router.url == "/category/" + n.toLocaleLowerCase().split(' ').join('-')) {
+
+    this.celebritiesService.getCelebrities().then((celebrities: any) => {
+      celebrities.map((a: any) => {
+        this.celebrities = this.celebrities.reverse();
+        if (this.celebrities.length <= 0) {
           this.activatedRoute.params.subscribe((param: Params) => {
             this.category = param.view.split('-').join(' ').toUpperCase();
           })
-          this.celebrities.push(a);
-          setTimeout(() => {
-            this.isLoading = false
-          }, 100);
-
+        }
+        a.category.map((n: any) => {
+          if (this.router.url == "/category/" + n.toLocaleLowerCase().split(' ').join('-')) {
+            this.activatedRoute.params.subscribe((param: Params) => {
+              this.category = param.view.split('-').join(' ').toUpperCase();
+            })
+            this.celebrities.push(a);
+              this.isLoading = false
+          }
+        })
+        if (this.router.url == "/category/all") {
+          this.celebrities = this.celebritiesService.celebrities;
+          this.category = 'ALL'
         }
       })
-      if (this.router.url == "/category/all") {
-        this.celebrities = this.celebritiesService.celebrities;
-        this.category = 'ALL'
-      }
+    }).catch((err) => {
+      // this.toastService.error(err.message);
+      this.isLoading = false;
+      // this.isError= true;
     })
-    this.celebrities = this.celebrities.reverse();
-    if (this.celebrities.length <= 0) {
-      this.activatedRoute.params.subscribe((param: Params) => {
-        this.category = param.view.split('-').join(' ').toUpperCase();
-      })
-    }
-    setTimeout(() => {
-      this.isLoading = false
-    }, 300);
+
+
+    // this.celebritiesService.celebrities.map((a: any) => {
+    //   a.category.map((n: any) => {
+    //     if (this.router.url == "/category/" + n.toLocaleLowerCase().split(' ').join('-')) {
+    //       this.activatedRoute.params.subscribe((param: Params) => {
+    //         this.category = param.view.split('-').join(' ').toUpperCase();
+    //       })
+    //       this.celebrities.push(a);
+    //         this.isLoading = false
+    //     }
+    //   })
+    //   if (this.router.url == "/category/all") {
+    //     this.celebrities = this.celebritiesService.celebrities;
+    //     this.category = 'ALL'
+    //   }
+    // })
+    // this.celebrities = this.celebrities.reverse();
+    // if (this.celebrities.length <= 0) {
+    //   this.activatedRoute.params.subscribe((param: Params) => {
+    //     this.category = param.view.split('-').join(' ').toUpperCase();
+    //   })
+    // }
+    // setTimeout(() => {
+    //   this.isLoading = false
+    // }, 300);
 
     this.subscription =  this.celebritiesService.getSelectedCategories
       .subscribe(

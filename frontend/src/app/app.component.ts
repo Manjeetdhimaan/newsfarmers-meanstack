@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
       .events.pipe(
         filter(event => event instanceof NavigationEnd),
         map(() => {
-          this.celebrityService.celebrities.map((a: any) => {
+          this.celebrityService.celebrities?.map((a: any) => {
             a.category.map((n: any) => {
               if (this.router.url == "/category/" + n.toLowerCase().split(' ').join('-') || this.router.url == "/category/biographies") {
                 this.isCategoryComponent = true;
@@ -71,6 +71,9 @@ export class AppComponent implements OnInit {
             result.push(routerUrl_split[i].slice(0, 1).toUpperCase() + routerUrl_split[i].slice(1))
           }
           const child = this.activatedRoute.firstChild;
+          const celebrityChild = child?.snapshot.data['isCelebrity'];
+          const newsChild = child?.firstChild?.routeConfig?.data?.['isNews'];
+          console.log('Child', child)
           if (child?.snapshot.data['title']) {
             if (this.isCategoryComponent == true) {
               this.isCategoryComponent = false;
@@ -78,7 +81,7 @@ export class AppComponent implements OnInit {
               this.metaService.updateTag({ name: 'description', content: this.capitalizeFirstLetter(this.router.url.slice(10).split('-').join(' ')) });
               return child.snapshot.data['title'];
             }
-            if (this.isNewsUrl == true) {
+            if (newsChild) {
               this.isNewsUrl = false;
               child.snapshot.data['title'] = activatedUrl + ' - Newsfarmers';
               this.metaService.updateTag({ name: 'description', content: activatedUrl });
@@ -90,7 +93,7 @@ export class AppComponent implements OnInit {
                 return child.snapshot.data['title'];
               }
             }
-            if (this.isCelebrityUrl == true) {
+            if (celebrityChild) {
               this.isCelebrityUrl = false;
               this.metaService.updateTag({ name: 'description', content: result.join(" ") + '\'s Height, Weight, Age, Family, Affairs, Biography & More' });
               child.snapshot.data['title'] = result.join(" ") + ' Height, Weight, Age, Family, Affairs, Biography & More' + ' - Newsfarmers';

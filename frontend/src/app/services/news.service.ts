@@ -21,7 +21,7 @@ export class NewsService {
    }
   
    async getNews(){
-   return await this.http.get(`https://backend.newsfarmers.com/news`).toPromise();
+   return await this.http.get(`http://localhost:5050/getNews`).toPromise();
   //  return this.newsArray.slice();
  }
 
@@ -1733,6 +1733,45 @@ export class NewsService {
         },
         {
           "fact": "On October 16, 2012, Saif and Kareena exchanged vows. A straightforward court ceremony was followed by a small wedding with all of the couple's closest family members present. Their second son, Jehangir Ali Khan, was born in February 2021 after the birth of their first son, Taimur Ali Khan, in 2016.\n          Saif had a 13-year marriage to Amrita Singh before calling it quits in 2004. She is the mother of his son Ibrahim and daughter Sara Ali Khan.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        }
+      ],
+      "description": ""
+    },
+    {
+      "id": "news29",
+      "category": [
+        "Bollywood",
+        "Industry",
+        "Bollywood Industry"
+      ],
+      "categoryId": "Karan Kundrra With Girlfriend, Karan Kundrra Tejasswi Prakash",
+      "title": "Actor Karan Kundrra Shared Some Unseen Pics With Girlfriend-Actor Tejasswi Prakash",
+      "imgSrc": "assets/newsImages/july2022/karan-tejaswi-unseen.jpg",
+      "instaSimpleLink": "https://www.instagram.com/p/CggQDR7rLsP/",
+      "twitterSimpleLink": "",
+      "facebookSimpleLink": "",
+      "linkedinSimpleLink": "",
+      "otherFacts": [
+        {
+          "fact": "Love birds Karan Kundra and Tejasswi Prakash have been in the news quite for some time. The duo is loved for its adorable pictures and cute chemistry. They are often seen hanging out together. They also featured in a song named \"Baarish Aayi Hai\" which was loved by the people.",
+          "imgSrc": "assets/newsImages/july2022/karan-kundra.jpg",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "Recently, actor Karan Kundra shared some unseen pics with Tejasswi from the shoot of their song in Goa which is super cute. As soon as Karan posted the pics, fans showered their love in the comments section. Fans love their chemistry and call them \"Tejran\".",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/CggQDR7rLsP/embed/"
+        },
+        {
+          "fact": "Karan and Tejasswi met on a reality show \"Bigg Boss 15\" and then got romantically involved. Even after the show, they both are found hanging with each other and are still together. It is believed that they both are quite serious about their relationship and both the families have also met but still, they haven't yet commented on when will they marry.",
           "imgSrc": "",
           "imgCaption": "",
           "videoSrc": "",

@@ -11,17 +11,17 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 // Routes
-const newsRoutes = require('./api/celebrityRoutes');
-// const adminRoutes = require('./api/adminRoutes');
+const newsRoutes = require('./api/newsRoutes');
+const celebrityRoutes = require('./api/celebrityRoutes');
 
-app.use('/news', newsRoutes);
-// app.use('/admin', adminRoutes);
+app.use('/getNews', newsRoutes);
+app.use('/getCelebrity', celebrityRoutes);
 
-// app.use(express.static(path.join(__dirname, 'www')));
+app.use(express.static(path.join(__dirname, 'www')));
 
-// app.get('*', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'www/index.html'));
-// });
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'www/index.html'));
+});
 
 
 //  mongodb+srv://newUser:<password>@cluster0.qcyjq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

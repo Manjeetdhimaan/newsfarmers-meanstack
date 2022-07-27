@@ -19,7 +19,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
   currentYear: number = new Date().getFullYear();
   dobOfCelebrity: any;
   dodOfCelebrity: any;
-  exactDOB:any;
+  exactDOB: any;
   relatedPostArray: any[] = [];
   searchText: any;
   recentPost: any;
@@ -41,28 +41,44 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
       .subscribe((event: any) => {
         if (event.navigationTrigger === 'popstate') {
           this.isLoading = true;
-          this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
-          this.celebrities = this.celebritiesService.getCelebrities();
+          // this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
+          // this.celebrities = this.celebritiesService.getCelebrities();
           activatedRoute.params.subscribe((param: Params) => {
-            this.celebritiesService.getCelebrities().map((a: any) => {
-              if (param.celebrity.toLowerCase() == a.name.toLowerCase().split(' ').join('-')) {
-                this.celebrity = a;
-                this.dobOfCelebrity = this.celebrity.dob.year;
-                this.dodOfCelebrity = this.celebrity.dod?.year;
-                this.relatedPostArray = [];
-                const celebrities = this.celebritiesService.getCelebrities().slice();
-                const suffledArray = celebrities.sort(() => 0.5 - Math.random());
-                // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === this.celebrity.categoryId.toLowerCase());
-                const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
-                suffledArray.filter((celebrity: any) => {
-                  let randomCelebrity = celebrity.categoryId.map((a: any) => a.toLowerCase());
-                  if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
-                    this.relatedPostArray.push(celebrity);
-                  }
-                });
-                // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === this.celebrity.categoryId.toLowerCase());
+            this.celebritiesService.getCelebrities().then((celebrities: any) => {
+              celebrities.map((celebrity: any) => {
+                this.recentPost = celebrities.slice(-8).reverse();
+                this.celebrities = celebrities;
+                if (this.router.url.toLowerCase() == "/" + celebrity.name.toLowerCase().split(' ').join('-')) {
+                  this.router.url.toLowerCase();
+                  this.celebrity = celebrity;
+                  this.dobOfCelebrity = this.celebrity.dob.year;
+                  this.dodOfCelebrity = this.celebrity.dod?.year;
+                  this.exactDOB = this.celebrity.dob.year + '-' + this.celebrity.month + '-' + this.celebrity.date;
+                  this.relatedPostArray = [];
+                  const Celebrities = celebrities.slice();
+                  const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
+                  // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === this.celebrity.categoryId.toLowerCase());
+                  const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
+                  suffledArray.filter((shuffleCelebrity: any) => {
+                    let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a.toLowerCase());
+                    if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
+                      this.relatedPostArray.push(shuffleCelebrity);
+                    }
+                  });
+                  // this.toastService.success(`${a.name}`);
+                  this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name.toLowerCase().split(' ').join('-')}` });
+                  this.isLoading = false
+                }
+              })
+              if (this.router.url.toLowerCase() !== "/blogs/" + this.celebrity?.name.toLowerCase().split(' ').join('-')) {
+                this.router.navigate(['/404notfound']);
                 this.isLoading = false;
+        
               }
+            }).catch((err) => {
+              this.toastService.error(err.message);
+              this.isLoading = false;
+              // this.isError= true;
             })
           })
         }
@@ -73,42 +89,83 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
   // getArraysIntersection(a1: any, a2: any) {
   //   return a1.filter((n: any) => { return a2.indexOf(n) !== -1; });
   // }
-  
+
   ngOnInit(): void {
     // alert( "JanFebMarAprMayJunjulAugSepOctNovDec".indexOf("jul") / 3 + 1 );
     const domain = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
     this.isLoading = true;
-    this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
-    this.celebrities = this.celebritiesService.getCelebrities();
-    this.celebritiesService.getCelebrities().map((a: any) => {
-      if (this.router.url.toLowerCase() == "/" + a.name.toLowerCase().split(' ').join('-')) {
-        this.router.url.toLowerCase();
-        this.celebrity = a;
-        this.dobOfCelebrity = this.celebrity.dob.year;
-        this.dodOfCelebrity = this.celebrity.dod?.year;
-        this.exactDOB= this.celebrity.dob.year+'-'+this.celebrity.month+'-'+this.celebrity.date;
-        this.relatedPostArray = [];
-        const celebrities = this.celebritiesService.getCelebrities().slice();
-        const suffledArray = celebrities.sort(() => 0.5 - Math.random());
-        // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === this.celebrity.categoryId.toLowerCase());
-        const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
-        suffledArray.filter((celebrity: any) => {
-          let randomCelebrity = celebrity.categoryId.map((a: any) => a.toLowerCase());
-          if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
-            this.relatedPostArray.push(celebrity);
-          }
-        });
-        this.toastService.success(`${a.name}`);
-        this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${a.name.toLowerCase().split(' ').join('-')}` });
-        setTimeout(() => {
+    // this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
+    // this.celebrities = this.celebritiesService.getCelebrities();
+
+    this.celebritiesService.getCelebrities().then((celebrities: any) => {
+      celebrities.map((celebrity: any) => {
+        this.recentPost = celebrities.slice(-8).reverse();
+        this.celebrities = celebrities;
+        if (this.router.url.toLowerCase() == "/" + celebrity.name.toLowerCase().split(' ').join('-')) {
+          this.router.url.toLowerCase();
+          this.celebrity = celebrity;
+          this.dobOfCelebrity = this.celebrity.dob.year;
+          this.dodOfCelebrity = this.celebrity.dod?.year;
+          this.exactDOB = this.celebrity.dob.year + '-' + this.celebrity.month + '-' + this.celebrity.date;
+          this.relatedPostArray = [];
+          const Celebrities = celebrities.slice();
+          const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
+          // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === this.celebrity.categoryId.toLowerCase());
+          const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
+          suffledArray.filter((shuffleCelebrity: any) => {
+            let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a.toLowerCase());
+            if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
+              this.relatedPostArray.push(shuffleCelebrity);
+            }
+          });
+          // this.toastService.success(`${a.name}`);
+          this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name.toLowerCase().split(' ').join('-')}` });
           this.isLoading = false
-        }, 0);
+        }
+      })
+      if (this.router.url.toLowerCase() !== "/" + this.celebrity?.name.toLowerCase().split(' ').join('-')) {
+        this.router.navigate(['/404notfound']);
+        this.isLoading = false;
+
       }
-    })
-    if (this.router.url.toLowerCase() !== "/" + this.celebrity?.name.toLowerCase().split(' ').join('-')) {
-      this.router.navigate(['/404notfound']);
+    }).catch((err) => {
+      this.toastService.error(err.message);
       this.isLoading = false;
-    }
+      // this.isError= true;
+    })
+
+
+
+
+    // this.celebritiesService.getCelebrities().map((a: any) => {
+    //   if (this.router.url.toLowerCase() == "/" + a.name.toLowerCase().split(' ').join('-')) {
+    //     this.router.url.toLowerCase();
+    //     this.celebrity = a;
+    //     this.dobOfCelebrity = this.celebrity.dob.year;
+    //     this.dodOfCelebrity = this.celebrity.dod?.year;
+    //     this.exactDOB= this.celebrity.dob.year+'-'+this.celebrity.month+'-'+this.celebrity.date;
+    //     this.relatedPostArray = [];
+    //     const celebrities = this.celebritiesService.getCelebrities().slice();
+    //     const suffledArray = celebrities.sort(() => 0.5 - Math.random());
+    //     // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === this.celebrity.categoryId.toLowerCase());
+    //     const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
+    //     suffledArray.filter((celebrity: any) => {
+    //       let randomCelebrity = celebrity.categoryId.map((a: any) => a.toLowerCase());
+    //       if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
+    //         this.relatedPostArray.push(celebrity);
+    //       }
+    //     });
+    //     this.toastService.success(`${a.name}`);
+    //     this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${a.name.toLowerCase().split(' ').join('-')}` });
+    //     setTimeout(() => {
+    //       this.isLoading = false
+    //     }, 0);
+    //   }
+    // })
+    // if (this.router.url.toLowerCase() !== "/" + this.celebrity?.name.toLowerCase().split(' ').join('-')) {
+    //   this.router.navigate(['/404notfound']);
+    //   this.isLoading = false;
+    // }
 
     this.subscription = this.celebritiesService.getSearchedCelebrity
       .subscribe(
@@ -118,7 +175,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
           this.celebrity = selectedCelebrity;
           this.dobOfCelebrity = selectedCelebrity.dob.year;
 
-          this.dodOfCelebrity = this.celebrity.dod?.year;
+          this.dodOfCelebrity = this.celebrity?.dod?.year;
           let celebrities = this.celebritiesService.celebrities.slice();
           const suffledArray = celebrities.sort(() => 0.5 - Math.random());
           const targetedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
@@ -133,7 +190,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
         }
       );
 
-  
+
   }
 
   onNavigate(selected: any) {
@@ -146,32 +203,68 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
     this.celebrity = selected;
     this.dobOfCelebrity = selected.dob.year;
     this.dodOfCelebrity = selected.dod?.year;
-    this.celebrities = this.celebritiesService.getCelebrities();
-    const celebrities = this.celebritiesService.getCelebrities().slice();
-    const suffledArray = celebrities.sort(() => 0.5 - Math.random());
-    const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
-    suffledArray.filter((celebrity: any) => {
-      let randomCelebrity = celebrity.categoryId.map((a: any) => a.toLowerCase());
-      if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
-        this.relatedPostArray.push(celebrity);
-      }
-    });
-    this.toastService.success(`${selected.name}`);
-    // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === selected.categoryId.toLowerCase());
-    this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
+     this.celebritiesService.getCelebrities().then((celebrities:any) =>{
+      this.celebrities = celebrities
+      const Celebrities = celebrities.slice();
+      const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
+      const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
+      suffledArray.filter((celebrity: any) => {
+        let randomCelebrity = celebrity.categoryId.map((a: any) => a.toLowerCase());
+        if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
+          this.relatedPostArray.push(celebrity);
+        }
+      });
+
+    this.recentPost = celebrities.slice(-8).reverse();
     this.router.navigate(['/', selected.name.toLowerCase().split(' ').join('-')]);
     this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${selected.name.toLowerCase().split(' ').join('-')}` });
     this.isLoading = false;
-
+    this.toastService.success(`${selected.name}`);
+    }).catch((err) => {
+      console.log(err.message);
+      this.isLoading = false;
+    });
+    
+    // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === selected.categoryId.toLowerCase());
 
   }
 
+  // onNavigate(selected: any) {
+  //   this.isLoading = true;
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth'
+  //   });
+  //   this.relatedPostArray = [];
+  //   this.celebrity = selected;
+  //   this.dobOfCelebrity = selected.dob.year;
+  //   this.dodOfCelebrity = selected.dod?.year;
+  //   this.celebrities = this.celebritiesService.getCelebrities();
+  //   const celebrities = this.celebritiesService.getCelebrities().slice();
+  //   const suffledArray = celebrities.sort(() => 0.5 - Math.random());
+  //   const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
+  //   suffledArray.filter((celebrity: any) => {
+  //     let randomCelebrity = celebrity.categoryId.map((a: any) => a.toLowerCase());
+  //     if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
+  //       this.relatedPostArray.push(celebrity);
+  //     }
+  //   });
+  //   this.toastService.success(`${selected.name}`);
+  //   // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === selected.categoryId.toLowerCase());
+  //   this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
+  //   this.router.navigate(['/', selected.name.toLowerCase().split(' ').join('-')]);
+  //   this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${selected.name.toLowerCase().split(' ').join('-')}` });
+  //   this.isLoading = false;
+
+
+  // }
+
   getAge() {
-      return this.dobOfCelebrity ? this.currentYear - this.dobOfCelebrity : 'NA'
+    return this.dobOfCelebrity ? this.currentYear - this.dobOfCelebrity : 'NA'
   }
 
   getAgeAtTimeOfDeath() {
-      return this.dodOfCelebrity ? this.dodOfCelebrity - this.dobOfCelebrity : 'NA';
+    return this.dodOfCelebrity ? this.dodOfCelebrity - this.dobOfCelebrity : 'NA';
   }
 
   selectedCelebrity: string | any;
@@ -179,12 +272,12 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
     this.selectedCelebrity = this.celebritiesService.selectedCelebrity(selected);
   }
 
-   getExactAge(dateString: string) {
-     debugger;
+  getExactAge(dateString: string) {
+    debugger;
     const ageInMilliseconds = +new Date() - +new Date(dateString);
-    return Math.floor(ageInMilliseconds/1000/60/60/24/365); // convert to years
- }
-//  console.log(getAge('1997-04-23'));
+    return Math.floor(ageInMilliseconds / 1000 / 60 / 60 / 24 / 365); // convert to years
+  }
+  //  console.log(getAge('1997-04-23'));
 
   ngOnDestroy(): void {
     this.meta.removeTag("property='og:url'");

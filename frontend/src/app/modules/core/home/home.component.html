@@ -1,7 +1,7 @@
 
 <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
 <!-- ======= Hero Section ======= -->
-<section id="hero" style="background: url({{selected[0]?.imgSrc}}) top center;">
+<section id="hero" style="background: url({{selected?.[0]?.imgSrc}}) top center;">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
         <h1>Welcome to Newsfarmers</h1>
         <!-- <h2>We are team of talented designers making websites with Bootstrap</h2> -->

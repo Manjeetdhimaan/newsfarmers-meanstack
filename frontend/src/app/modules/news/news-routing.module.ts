@@ -5,7 +5,7 @@ import { NewsHeadlineComponent } from './news-headline/news-headline.component';
 
 const routes: Routes = [
     { path: '', component: NewsHeadlineComponent},
-    { path: ':newsTitle', component: NewsDecsriptionComponent},
+    { path: ':newsTitle', component: NewsDecsriptionComponent, data:{isNews:'yes'}},
 ];
 
 @NgModule({

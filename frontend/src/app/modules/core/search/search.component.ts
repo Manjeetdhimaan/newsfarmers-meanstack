@@ -9,29 +9,31 @@ import { NewsService } from 'src/app/services/news.service';
 })
 export class SearchComponent implements OnInit {
 
-  constructor(private router:Router, private newsService: NewsService) { }
-  newsArray:any
-  searchText:any;
-  searchNewsArray:any;
+  constructor(private router: Router, private newsService: NewsService) { }
+  newsArray: any
+  searchText: any;
+  searchNewsArray: any;
   p: number = 1;
   ngOnInit(): void {
-    this.newsArray = this.newsService.newsArray;
-   const newArray  = this.newsService.newsArray;
-   this.searchNewsArray= newArray.reverse();
+    this.newsService.getNews().then((news: any) => {
+      this.newsArray = news.reverse();
+      const newsArray = news;
+      this.searchNewsArray = newsArray.reverse();
+    }).catch((err) => {
+      console.log(err);
+    })
   }
- 
-  onNavigate(selected:any){
-    const celebrityName =   selected.title.toLowerCase().split(' ')
-    const celebrityNameJoin = celebrityName.join('-');
+
+  onNavigate(selected: any) {
     this.newsService.selectedNews = selected
     this.newsService.getSearchedNews.next(selected);
     window.scrollTo({
-      top:0,
-      behavior:'smooth'
+      top: 0,
+      behavior: 'smooth'
     });
-  //  this.selectedNews.emit(selected)
+    //  this.selectedNews.emit(selected)
     this.router.navigate(['news/', selected.title.toLowerCase().split(' ').join('-')]);
-    this.searchText= '';
+    this.searchText = '';
   }
 
 }

@@ -8,13 +8,13 @@
                     <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
                         placeholder="&#xF002; Search for news" style="font-family:Arial, FontAwesome" />
                 </div>
-                <div *ngIf="newsArray.length>5 && searchText && (newsArray | filter: searchText.trim()).length > 5"
+                <div *ngIf="newsArray?.length>5 && searchText && (newsArray | filter: searchText.trim())?.length > 5"
                     style="margin-top: 1rem;">
                     <pagination-controls (pageChange)="p = $event"></pagination-controls>
                 </div>
                 <div>
                     <ul class="w3-ul w3-hoverable w3-white">
-                        <h3 *ngIf="searchText?.trim() && (newsArray | filter: searchText?.trim()).length > 0">Results
+                        <h3 *ngIf="searchText?.trim() && (newsArray | filter: searchText?.trim())?.length > 0">Results
                             founded for <em>{{searchText}}</em></h3>
                         <div *ngIf="searchText?.trim()">
                             <a>
@@ -27,7 +27,7 @@
                             </a>
                         </div>
                         <hr style="visibility: hidden;">
-                        <mat-list-item *ngIf="(newsArray | filter: searchText?.trim()).length === 0">
+                        <mat-list-item *ngIf="(newsArray | filter: searchText?.trim())?.length === 0">
                             <mat-icon animation="fadeInUp" delay="0" duration="500" offset="90000" triggerOnce="false"
                                 mat-list-avatar>error</mat-icon>
                             <div animation="fadeInUp" delay="0" duration="500" offset="90000" triggerOnce="false"

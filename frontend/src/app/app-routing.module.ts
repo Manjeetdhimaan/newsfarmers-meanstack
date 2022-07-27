@@ -22,10 +22,10 @@ const routes: Routes = [
   },
   {
     path: ':celebrity', component: CelebritiesComponent, data: {
-      title: 'Celebrities - Newsfarmers', metatags: {
+      title: 'Celebrities - Newsfarmers', isCelebrity: 'yes', metatags: {
         'og:description': `biography`,
         'twitter:description': `biography`,
-        keywords: `your keywords here`
+        keywords: `your keywords here`        
       }
     }
   },

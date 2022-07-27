@@ -15,17 +15,16 @@ export class CelebritiesService {
   //   imgCaption: '',
   //   videoSrc: ''
   // },
-  celebrities1:any
+  celebrities:any
   constructor(private http: HttpClient) {
-    // this.http.get(`http://localhost:8080/users`).subscribe(res => {
-    //   this.celebrities= res
-    //   //  this.isLoading= false;
-    //    // this.originalServiceProvider = res;
-    //  },
-    //    error => {
-    //      console.log(error)
-    //     //  this.isLoading= false;
-    //    })
+    this.http.get(`http://localhost:5050/getCelebrity`).subscribe(res => {
+      this.celebrities= res;
+      console.log(res)
+     
+     },
+       error => {
+         console.log(error)
+       })
    }
    
   users: any;
@@ -40,13 +39,10 @@ export class CelebritiesService {
     return selectedCelebrity;
   }
 
-  getCelebrities() {
-    return this.celebrities.slice();
+  async getCelebrities() {
+    return await this.http.get(`http://localhost:5050/getCelebrity`).toPromise();
+    // return this.celebrities.slice();
   }
-
-  // tooltip(param: any) {
-  //   return `<strong> ${param} </strong>`;
-  // }
 
   // # HTTPS forced
 
@@ -62,862 +58,858 @@ export class CelebritiesService {
 
   // </IfModule>
 
-  celebrities: any[] = [
+  celebrities1: any[] = [
     {
-      id: 'ce1',
-      category: ['Pollywood', 'Singer', 'punjabi', 'Instagram', 'punjabi actor', 'actor', 'Punjabi singer'],
-      categoryId: ['Punjabi Artist', 'Punjabi Actor/Actress, Model'],
-      name: 'Diljit Dosanjh',
-      fullname: 'Diljit Singh Dosanjh',
-      height: "in feet inches - 5\'9\"",
-      age: '37',
-      weight: 'Not Known',
-      gender: 'Male',
-      girlfriend: 'Not Known',
-      profession: 'Actor, Singer',
-      eyeColor: 'Black',
-      hairColor: 'Black',
-      imgSrc: "assets/images/diljit-dosanjh1.jpg",
-
-      debut: {
-        punjabiFilm: 'The Lion Of Punjab(2011)',
-        punjabiFilmImgSrc: "assets/images/Diljit-Dosanjhs-Punjabi-Debut-The-Lion-of-Punjab.webp",
-        bollywoodFilm: 'Udta Punjab(2016)',
-        bollywoodFilmImgSrc: "assets/images/Diljit-Dosanjhs-Hindi.jpg",
-        punjabiAlbum: 'Ishq Da Uda Ada(2000)',
-        punjabiAlbumImgSrc: "assets/images/Diljit-Dosanjhs-Album.webp",
-        singles: "'Nachdi de' ft. Miss Pooja(2009)",
-        singlesImgSrc: "assets/images/Diljit-Dosanjhs-Debut-Singles.webp",
-        tv: 'Awaaz Punjab Di(2010, as a co-host)',
-        tvImgSrc: "",
-        webSeries: "",
-        webSeriesImgSrc: "",
-        production: "",
-        productionImgSrc: "",
+      "id": "ce1",
+      "category": [
+        "Pollywood",
+        "Singer",
+        "punjabi",
+        "Instagram",
+        "punjabi actor",
+        "actor",
+        "Punjabi singer"
+      ],
+      "categoryId": [
+        "Punjabi Artist",
+        "Punjabi Actor/Actress, Model"
+      ],
+      "name": "Diljit Dosanjh",
+      "fullname": "Diljit Singh Dosanjh",
+      "height": "in feet inches - 5'9\"",
+      "age": "37",
+      "weight": "Not Known",
+      "gender": "Male",
+      "girlfriend": "Not Known",
+      "profession": "Actor, Singer",
+      "eyeColor": "Black",
+      "hairColor": "Black",
+      "imgSrc": "assets/images/diljit-dosanjh1.jpg",
+      "debut": {
+        "punjabiFilm": "The Lion Of Punjab(2011)",
+        "punjabiFilmImgSrc": "assets/images/Diljit-Dosanjhs-Punjabi-Debut-The-Lion-of-Punjab.webp",
+        "bollywoodFilm": "Udta Punjab(2016)",
+        "bollywoodFilmImgSrc": "assets/images/Diljit-Dosanjhs-Hindi.jpg",
+        "punjabiAlbum": "Ishq Da Uda Ada(2000)",
+        "punjabiAlbumImgSrc": "assets/images/Diljit-Dosanjhs-Album.webp",
+        "singles": "'Nachdi de' ft. Miss Pooja(2009)",
+        "singlesImgSrc": "assets/images/Diljit-Dosanjhs-Debut-Singles.webp",
+        "tv": "Awaaz Punjab Di(2010, as a co-host)",
+        "tvImgSrc": "",
+        "webSeries": "",
+        "webSeriesImgSrc": "",
+        "production": "",
+        "productionImgSrc": ""
       },
-
-      awards: [
+      "awards": [
         {
-          year: '2010',
-          award: "PTC Punjabi Music Awards - Best Folk Pop Album for the album 'The Next Level,' PTC Punjabi Film Award - Most Popular Song of the Year for the song 'Lak 28 Kudi Da'"
+          "year": "2010",
+          "award": "PTC Punjabi Music Awards - Best Folk Pop Album for the album 'The Next Level,' PTC Punjabi Film Award - Most Popular Song of the Year for the song 'Lak 28 Kudi Da'"
         },
         {
-          year: '2012',
-          award: "Punjabi International Film Academy Award - Best Actor for the Jihne Mera Dil Luteya, PTC Punjabi Film Awards for Best Actor for Jihne Mera Dil Luteya"
+          "year": "2012",
+          "award": "Punjabi International Film Academy Award - Best Actor for the Jihne Mera Dil Luteya, PTC Punjabi Film Awards for Best Actor for Jihne Mera Dil Luteya"
         },
         {
-          year: '2013',
-          award: "PTC Punjabi Film Awards - Best Actor for the film 'Jatt & Juliet,' PTC Punjabi Music Award - Best Bhangra Song of the Year & Best Pop Vocalist Male for the song 'Kharku', Brit Asia TV Music Awards - Best Album of the Year for the album 'Back 2 Basics'"
+          "year": "2013",
+          "award": "PTC Punjabi Film Awards - Best Actor for the film 'Jatt & Juliet,' PTC Punjabi Music Award - Best Bhangra Song of the Year & Best Pop Vocalist Male for the song 'Kharku', Brit Asia TV Music Awards - Best Album of the Year for the album 'Back 2 Basics'"
         },
         {
-          year: '2014',
-          award: "PTC Punjabi Film Awards - Best Actor for 'Jatt & Juliet 2,' PTC Punjabi Music Award - Best Pop Vocalist Male & Most Popular Song of the Year for the song 'Proper Patola'"
+          "year": "2014",
+          "award": "PTC Punjabi Film Awards - Best Actor for 'Jatt & Juliet 2,' PTC Punjabi Music Award - Best Pop Vocalist Male & Most Popular Song of the Year for the song 'Proper Patola'"
         },
         {
-          year: '2015',
-          award: "PTC Punjabi Film Award - Most Popular Song of the Year for the song 'Happy Birthday,' Mirchi Music Award - Listeners' Choice Film Song of the Year for the song 'Swaah Banke,' Mirchi Music Award - Film Album of the Year & Listeners' Choice Film Album of the Year for the film 'Punjab 1984,' PTC Punjabi Music Award, Brit Asia TV World Music Award, Mirchi Music Award - Best Pop Vocalist Male for a Single, Best Bhangra Song of the Year, Best Single World, Best Male Act, Song of the Year – Non Film for the song 'Patiala Peg'"
+          "year": "2015",
+          "award": "PTC Punjabi Film Award - Most Popular Song of the Year for the song 'Happy Birthday,' Mirchi Music Award - Listeners' Choice Film Song of the Year for the song 'Swaah Banke,' Mirchi Music Award - Film Album of the Year & Listeners' Choice Film Album of the Year for the film 'Punjab 1984,' PTC Punjabi Music Award, Brit Asia TV World Music Award, Mirchi Music Award - Best Pop Vocalist Male for a Single, Best Bhangra Song of the Year, Best Single World, Best Male Act, Song of the Year – Non Film for the song 'Patiala Peg'"
         },
         {
-          year: '2016',
-          award: "PTC Punjabi Film Award,- Most Popular Song of the Year for the song 'Veervaar,' PTC Punjabi Music Award - Most Popular Song of the Year & Best Bhangra Song of the Year for the song '5 Taara'"
+          "year": "2016",
+          "award": "PTC Punjabi Film Award,- Most Popular Song of the Year for the song 'Veervaar,' PTC Punjabi Music Award - Most Popular Song of the Year & Best Bhangra Song of the Year for the song '5 Taara'"
         },
         {
-          year: '2017',
-          award: "Filmfare Award - Best Debut Actor Male for the film 'Udta Punjab,' Filmfare Punjabi Award - Best Actor Male for the film 'Ambarsariya' & Best Playback Singer (Male) for the song 'Mitran Da Junction' (Sardaarji 2)"
+          "year": "2017",
+          "award": "Filmfare Award - Best Debut Actor Male for the film 'Udta Punjab,' Filmfare Punjabi Award - Best Actor Male for the film 'Ambarsariya' & Best Playback Singer (Male) for the song 'Mitran Da Junction' (Sardaarji 2)"
         },
         {
-          year: '2018',
-          award: "Dadasaheb Phalke Award for the Most Trending Personality of the Year"
+          "year": "2018",
+          "award": "Dadasaheb Phalke Award for the Most Trending Personality of the Year"
         },
         {
-          imgSrc: 'assets/images/Diljit-Dosanjh-With-Dadasaheb.webp'
+          "imgSrc": "assets/images/Diljit-Dosanjh-With-Dadasaheb.webp"
         }
       ],
-      dob: {
-        date: '6',
-        month: 'January',
-        year: '1984'
+      "dob": {
+        "date": "6",
+        "month": "January",
+        "year": "1984"
       },
-      birthPlace: 'Dosanjh Kalan, Jalandhar, Punjab, India',
-      nationality: 'Indian',
-      hometown: 'Ludhiana, Punjab, India',
-      school: 'Shri Guru Harkrishan Public School, Ludhiana,, Al Manar Public School, Ludhiana',
-      collegeUniversity: '',
-      qualification: '10th standard',
-      religion: 'Sikhism',
-      zodiacSign: 'Capricon',
-      foodHabit: 'Non-Vegetarian',
-      address: 'A bungalow in Dugri Phase II, Ludhiana',
-      hobbies: 'Dancing',
-      controversies: [
+      "birthPlace": "Dosanjh Kalan, Jalandhar, Punjab, India",
+      "nationality": "Indian",
+      "hometown": "Ludhiana, Punjab, India",
+      "school": "Shri Guru Harkrishan Public School, Ludhiana,, Al Manar Public School, Ludhiana",
+      "collegeUniversity": "",
+      "qualification": "10th standard",
+      "religion": "Sikhism",
+      "zodiacSign": "Capricon",
+      "foodHabit": "Non-Vegetarian",
+      "address": "A bungalow in Dugri Phase II, Ludhiana",
+      "hobbies": "Dancing",
+      "controversies": [
         {
-          controversy: 'He attracted a controversy when some Punjabi women raised their voice against the songs of Diljit, Jazzy B, and Yo Yo Honey Singh; as they considered it vulgar and anti-cultural.'
+          "controversy": "He attracted a controversy when some Punjabi women raised their voice against the songs of Diljit, Jazzy B, and Yo Yo Honey Singh; as they considered it vulgar and anti-cultural."
         },
         {
-          controversy: 'In December 2012, a team of the Income Tax Department raided the residence of Diljit Dosanjh in Ludhiana.'
+          "controversy": "In December 2012, a team of the Income Tax Department raided the residence of Diljit Dosanjh in Ludhiana."
         },
         {
-          controversy: "In December 2020, he had a war of words with Kangana Ranaut after she misidentified an elderly woman as the 'Dadi' (Bilkis Bano of Shaheen Bagh fame) through one of her tweets in which she doubted the intention of her taking part in the ongoing farmers' protest against the central government's newly drafted farmer's bills. Later, the elderly woman was found to be a Sikh woman, Mahinder Kaur."
-        },
-      ],
-      maritalStatus: 'Not Known',
-      children: '',
-      affairs: 'Not Known',
-      wifeOrHusband: 'Not Known',
-      parents: {
-        father: 'Balbir Singh Dosanjh (Worked as a Bus Driver)',
-        mother: 'Sukhwinder Kaur'
-      },
-
-      siblings: {
-        brother: 'Manjeet Singh',
-        sister: '1'
-      },
-
-      favourites: {
-        food: 'Sarson Ka Saag Makki Ki Roti, Pinni',
-        actor: 'Salman khan',
-        destination: 'Not Known',
-        actress: 'Kareena Kapoor, Deepika Padukone, Alia Bhatt, Kylie Jenner',
-        singer: 'Gurdas Maan, Kuldeep Manak, Arijit Singh, Taylor Swift',
-        fashionBrand: 'Tom Ford',
-      },
-
-      styleQoutient: {
-        carsCollection: "Porsche Panamera, Mitsubishi Pajero, Audi Q7, BMW 5 Series, Mercedes Benz G63",
-        imgSrc: 'assets/images/Diljit-Dosanjhs-With-His-Porsche-Panamera.webp',
-      },
-      tattoos: [],
-      moneyFactor: {
-        earning: '₹4 crore/film',
-        netWorth: '₹170 crore',
-        imgSrc: 'assets/images/Diljit-Dosanjh-Photograph.webp'
-      },
-
-      facts: {
-        smoke: 'no',
-        alcoholic: 'no'
-      },
-
-      otherFacts: [
-        {
-          fact: "Instagram",
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: '',
-          instaLink: 'https://www.instagram.com/p/CXl7RIPJZvM/embed/'
-        },
-        {
-          fact: 'Diljit hails from a humble family with a modest income; as his father\'s salary was around ₹5,000.',
-          imgSrc: 'assets/images/Diljit-Dosanjh-Childhood-Picture.webp',
-          imgCaption: 'Diljit Dosanjh\'s Childhood Photo',
-          videoSrc: ''
-        },
-        {
-          fact: 'From a young age, he got an inclination towards music and started performing at local gurudwaras.',
-          imgSrc: 'assets/images/Diljit-Dosanjh-In-Younger-Days.jpg',
-          imgCaption: 'Diljit Dosanjh In Younger Days',
-          videoSrc: ''
-        },
-        {
-          fact: 'He gave his first stage performance at a village, for the purpose of engaging the audience; as Master Saleem was late for his performance.',
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: "In 2000, he made his singing debut with the album 'Ishq Da Uda Ada'",
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: 'https://www.youtube.com/embed/O7C-Yu-k6JE?feature=oembed'
-        },
-        {
-          fact: "He was originally named 'Daljit' that he later changed to 'Diljit' on the recommendation of his record producer, Rajinder Singh.",
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: "His performance in the film 'Jatt and Juliet' became a turning point in his acting career and the film\'s sequel was even a bigger hit.",
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: 'https://www.youtube.com/embed/KHrnYjuVW6Y?feature=oembed'
-        },
-        {
-          fact: "Apart from singing and acting, he is also a philanthropist; as he founded a foundation named Saanjh Foundation on his 30th birthday in 2013, which helps underprivileged children and senior citizens.",
-          imgSrc: 'assets/images/Diljit-Dosanjhs-Saanjh-Foundation.webp',
-          imgCaption: 'Diljit Dosanjh\'s Saanjh Foundation',
-          videoSrc: ''
-        },
-        {
-          fact: "He is one of the most in-demand stars in the ad world and has been a brand endorser for many brands as he has endorsed many brands like Coca-Cola and Flipkart Connect for Punjab.",
-          imgSrc: 'assets/images/Diljit-Dosanjh-Endorsing-Various-Brands.webp',
-          imgCaption: 'Diljit Dosanjh Endorsing Various Brands',
-          videoSrc: ''
-        },
-        {
-          fact: "In 2017, there was a rumour in the social media that he had purchased a Cessna 340A Jet Plane. Later on, however, he clarified that he doesn\'t own any jet; as it was just used to take him to a place in Rajasthan for a film shoot.",
-          imgSrc: 'assets/images/Diljit-Dosanjh-Coming-Out-Of-A-Jet.webp',
-          imgCaption: 'Diljit Dosanjh Coming Out Of A Jet',
-          videoSrc: ''
-        },
-        {
-          fact: "His Bollywood debut 'Udta Punjab' (2016) was a big hit and made him earn his first Filmfare award.",
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: "Diljit is not very much comfortable with English and mostly prefers Punjabi over it. He also shared that he needs someone by his side when he interacts with someone who speaks English.",
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: "He is a huge fan of American TV personality Kylie Jenner and is often seen commenting on her posts on various social media handles.",
-          imgSrc: 'assets/images/Diljit-Dosanjh-comments-on-Kylie-Jenners.webp',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: "In 2018, he portrayed the role of the famous International hockey player- Sandeep Singh in his biopic 'Soorma.'",
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: "He had rejected films of his most favourite directors from Bollywood; as he was asked to act without the turban.",
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: "Johnny Depp\'s role of 'Captain Jack Sparrow' in 'Pirates of the Caribbean\' has been his dream role.",
-          imgSrc: 'assets/images/diljit-giphy.webp',
-          imgCaption: '',
-          videoSrc: ''
-        },
-      ],
-      description: `Diljit Dosanjh (born 6 January 1984) is an Indian singer-songwriter, actor,
-       film producer and television presenter who works in Punjabi and Hindi cinema. 
-       He is recognised as one of the leading artists in the Indian music industry.`
-    },
-    {
-      id: 'ce2',
-      category: ['Pollywood', 'punjabi', 'Instagram', 'Acting', 'model', 'Social Media Influencer', 'Tik tok'],
-      categoryId: ['social media influencer'],
-      name: 'Ashleen Kaur',
-      fullname: 'Ashleendadz Kaur',
-      height: "in feet inches - 5\'7\"",
-      age: '21',
-      weight: '59 kg',
-      gender: 'Female',
-      girlfriend: 'Not Known',
-      boyfriend: 'BAAZ',
-      profession: 'Social Media Influencer',
-      eyeColor: 'Black',
-      hairColor: 'Black',
-      imgSrc: "assets/images/Ashleen-Kaur.jpg",
-      //debut 
-      debut: {
-        lyrical: "",
-        lyricalImgSrc: "",
-        punjabiFilm: "",
-        punjabiFilmImgSrc: "",
-        bollywoodFilm: "",
-        bollywoodFilmImgSrc: "",
-        punjabiAlbum: "",
-        punjabiAlbumImgSrc: "",
-        hindiAlbum: "",
-        hindiAlbumImgSrc: "",
-        singles: "",
-        singlesImgSrc: "",
-        musicDirection: "",
-        musicDirectionImgSrc: "",
-        tv: "",
-        tvImgSrc: "",
-        webSeries: "",
-        webSeriesImgSrc: "",
-        production: "",
-        productionImgSrc: "",
-      },
-
-      // debut ends
-      awards: [],
-      dob: {
-        date: '31',
-        month: 'August',
-        year: '2000'
-      },
-      birthPlace: 'Not Known',
-      nationality: 'Indian',
-      hometown: 'Amritsar, Punjab, India',
-      school: 'NA',
-      collegeUniversity: 'NA',
-      qualification: 'NA',
-      religion: 'Hindu',
-      zodiacSign: 'Not Known',
-      foodHabit: 'Not Known',
-      address: 'Amritsar',
-      hobbies: 'Reading Books.',
-      controversies: [
-        { controversy: 'She had controversy with her ex-boyfriend "PB 26 Wala Baaz".' }
-      ],
-      maritalStatus: 'Unmarried',
-      children: '',
-      affairs: 'Not Known',
-      wifeOrHusband: 'Not Known',
-      parents: {
-        father: 'Not Known',
-        mother: 'Not Known'
-      },
-
-      siblings: {
-        brother: 'Not Known',
-        sister: 'Not Known'
-      },
-
-      favourites: {
-        food: 'Not Known',
-        actor: 'Not Known',
-        destination: 'Dubai',
-        actress: 'Alia Bhatt',
-        singer: 'Guru Randhawa.',
-        fashionBrand: 'NA',
-        colour: 'Purple',
-        sports: 'Badminton'
-      },
-
-      styleQoutient: {
-        carsCollection: "",
-        imgSrc: ""
-      },
-      tattoos: [],
-      moneyFactor: {
-        earning: '70-80k INR Monthly',
-        netWorth: 'Not Known',
-        imgSrc: 'assets/images/Ashleen-Kaur-biography.jpg'
-      },
-
-      facts: {
-        smoke: 'no',
-        alcoholic: 'no'
-      },
-
-      otherFacts: [
-        {
-          fact: 'Ashleen Kaur\'s Instagram',
-          imgSrc: '',
-          imgCaption: 'Ashleen Kaur\'s instagram account',
-          videoSrc: '',
-          instaLink: "https://www.instagram.com/p/B-0hlGRll5w/embed/"
-        },
-        {
-          fact: 'Manpreet Kaur And Harmanjot Kaur are her good friends.',
-          imgSrc: 'assets/images/celebrities.jpg',
-          imgCaption: '',
-          videoSrc: ''
+          "controversy": "In December 2020, he had a war of words with Kangana Ranaut after she misidentified an elderly woman as the 'Dadi' (Bilkis Bano of Shaheen Bagh fame) through one of her tweets in which she doubted the intention of her taking part in the ongoing farmers' protest against the central government's newly drafted farmer's bills. Later, the elderly woman was found to be a Sikh woman, Mahinder Kaur."
         }
       ],
-      description: `Ashleen comes from Punjab and she is social media influencer. She was born on 31 August in Punjab, India. She belongs to a Hindu family.`
-    },
-    {
-      id: 'ce3',
-      category: ['Pollywood', 'punjabi', 'Instagram', 'Acting', 'model', 'Social Media Influencer', 'Tik tok'],
-      categoryId: ['social media influencer'],
-      name: 'Harmanjot Kaur',
-      fullname: 'Harmanjot Kaur Maan',
-      height: "in feet inches - 5\'5\"",
-      age: '23',
-      weight: '	57 Kg.',
-      gender: 'Female',
-      girlfriend: '',
-      boyfriend: '',
-      profession: 'Social Media Influencer',
-      eyeColor: 'Black',
-      hairColor: 'Light Brown',
-      imgSrc: "assets/images/harmanjot.kaur.jpg",
-      //debut 
-      debut: {
-        lyrical: "",
-        lyricalImgSrc: "",
-        punjabiFilm: "",
-        punjabiFilmImgSrc: "",
-        bollywoodFilm: "",
-        bollywoodFilmImgSrc: "",
-        punjabiAlbum: "",
-        punjabiAlbumImgSrc: "",
-        hindiAlbum: "",
-        hindiAlbumImgSrc: "",
-        singles: "",
-        singlesImgSrc: "",
-        musicDirection: "",
-        musicDirectionImgSrc: "",
-        tv: "",
-        tvImgSrc: "",
-        webSeries: "",
-        webSeriesImgSrc: "",
-        production: "",
-        productionImgSrc: "",
+      "maritalStatus": "Not Known",
+      "children": "",
+      "affairs": "Not Known",
+      "wifeOrHusband": "Not Known",
+      "parents": {
+        "father": "Balbir Singh Dosanjh (Worked as a Bus Driver)",
+        "mother": "Sukhwinder Kaur"
       },
-
-      // debut ends
-      awards: [],
-      dob: {
-        date: '16',
-        month: 'July',
-        year: '1998'
+      "siblings": {
+        "brother": "Manjeet Singh",
+        "sister": "1"
       },
-      birthPlace: 'Rampura, India',
-      nationality: 'Indian',
-      hometown: 'Rampura, Punjab, India',
-      school: 'Not Known',
-      collegeUniversity: 'Not Known',
-      qualification: 'Graduate',
-      religion: 'Sikhism',
-      zodiacSign: 'Cancer',
-      foodHabit: 'Vegetarian',
-      address: 'Amritsar',
-      hobbies: 'Reading, photography, learning, internet surfing.',
-      controversies: [
-      ],
-      maritalStatus: 'Unmarried',
-      children: '',
-      affairs: 'Not Known',
-      wifeOrHusband: 'Not Known',
-      parents: {
-        father: 'Not Known',
-        mother: 'Not Known'
+      "favourites": {
+        "food": "Sarson Ka Saag Makki Ki Roti, Pinni",
+        "actor": "Salman khan",
+        "destination": "Not Known",
+        "actress": "Kareena Kapoor, Deepika Padukone, Alia Bhatt, Kylie Jenner",
+        "singer": "Gurdas Maan, Kuldeep Manak, Arijit Singh, Taylor Swift",
+        "fashionBrand": "Tom Ford"
       },
-
-      siblings: {
-        brother: 'Not Known',
-        sister: 'Not Known'
+      "styleQoutient": {
+        "carsCollection": "Porsche Panamera, Mitsubishi Pajero, Audi Q7, BMW 5 Series, Mercedes Benz G63",
+        "imgSrc": "assets/images/Diljit-Dosanjhs-With-His-Porsche-Panamera.webp"
       },
-
-      favourites: {
-        food: 'White Sauce Pasta, Home Food, Ice Cream & Grilled Sandwich',
-        actor: 'Shah Rukh Khan, Diljit Dosanjh &  Shahid Kapoor',
-        destination: 'Goa, Manali, Ladakh & Switzerland',
-        actress: 'Sonam Bajwa, Alia Bhatt & Katrina Kaif',
-        singer: 'Guru Randhawa.',
-        fashionBrand: 'NA',
-        colour: 'Red, Navy Blue, White & Black',
-        sports: 'Cricket',
-        sportsman: 'Virat Kohli',
-        dress: 'Salwar Kurti, Western Dress, Jeans & Top',
+      "tattoos": [],
+      "moneyFactor": {
+        "earning": "₹4 crore/film",
+        "netWorth": "₹170 crore",
+        "imgSrc": "assets/images/Diljit-Dosanjh-Photograph.webp"
       },
-
-      styleQoutient: {
-        carsCollection: "",
-        imgSrc: ""
+      "facts": {
+        "smoke": "no",
+        "alcoholic": "no"
       },
-      tattoos: [],
-      moneyFactor: {
-        earning: '70-90K INR Monthly',
-        netWorth: 'Not Known',
-        imgSrc: 'assets/images/harmanjot.kaur_.jpg'
-      },
-
-      facts: {
-        smoke: 'Not known.',
-        alcoholic: 'Not known.'
-      },
-
-      otherFacts: [
+      "otherFacts": [
         {
-          fact: 'Harmanjot Kaur\'s Instagram',
-          imgCaption: 'Harmanjot Kaur\'s instagram account',
-          videoSrc: '',
-          instaLink: "https://www.instagram.com/p/CJSt1I7lzKU/embed/captioned/?cr=1&v=13&wp=540&rd=https%3A%2F%2Fwww.filmyques.in&rp=%2F2021%2F08%2Fharmanjot-kaur.html#%7B%22ci%22%3A0%2C%22os%22%3A2086.2999999523163%2C%22ls%22%3A1851.6999999284744%2C%22le%22%3A1878.1000000238419%7D"
+          "fact": "Instagram",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/CXl7RIPJZvM/embed/"
         },
         {
-          fact: 'Manpreet Kaur And Ashleen Kaur are her good friends.',
-          imgSrc: 'assets/images/celebrities.jpg',
-          imgCaption: '',
-          videoSrc: ''
+          "fact": "Diljit hails from a humble family with a modest income; as his father's salary was around ₹5,000.",
+          "imgSrc": "assets/images/Diljit-Dosanjh-Childhood-Picture.webp",
+          "imgCaption": "Diljit Dosanjh's Childhood Photo",
+          "videoSrc": ""
+        },
+        {
+          "fact": "From a young age, he got an inclination towards music and started performing at local gurudwaras.",
+          "imgSrc": "assets/images/Diljit-Dosanjh-In-Younger-Days.jpg",
+          "imgCaption": "Diljit Dosanjh In Younger Days",
+          "videoSrc": ""
+        },
+        {
+          "fact": "He gave his first stage performance at a village, for the purpose of engaging the audience; as Master Saleem was late for his performance.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "In 2000, he made his singing debut with the album 'Ishq Da Uda Ada'",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "https://www.youtube.com/embed/O7C-Yu-k6JE?feature=oembed"
+        },
+        {
+          "fact": "He was originally named 'Daljit' that he later changed to 'Diljit' on the recommendation of his record producer, Rajinder Singh.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "His performance in the film 'Jatt and Juliet' became a turning point in his acting career and the film's sequel was even a bigger hit.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "https://www.youtube.com/embed/KHrnYjuVW6Y?feature=oembed"
+        },
+        {
+          "fact": "Apart from singing and acting, he is also a philanthropist; as he founded a foundation named Saanjh Foundation on his 30th birthday in 2013, which helps underprivileged children and senior citizens.",
+          "imgSrc": "assets/images/Diljit-Dosanjhs-Saanjh-Foundation.webp",
+          "imgCaption": "Diljit Dosanjh's Saanjh Foundation",
+          "videoSrc": ""
+        },
+        {
+          "fact": "He is one of the most in-demand stars in the ad world and has been a brand endorser for many brands as he has endorsed many brands like Coca-Cola and Flipkart Connect for Punjab.",
+          "imgSrc": "assets/images/Diljit-Dosanjh-Endorsing-Various-Brands.webp",
+          "imgCaption": "Diljit Dosanjh Endorsing Various Brands",
+          "videoSrc": ""
+        },
+        {
+          "fact": "In 2017, there was a rumour in the social media that he had purchased a Cessna 340A Jet Plane. Later on, however, he clarified that he doesn't own any jet; as it was just used to take him to a place in Rajasthan for a film shoot.",
+          "imgSrc": "assets/images/Diljit-Dosanjh-Coming-Out-Of-A-Jet.webp",
+          "imgCaption": "Diljit Dosanjh Coming Out Of A Jet",
+          "videoSrc": ""
+        },
+        {
+          "fact": "His Bollywood debut 'Udta Punjab' (2016) was a big hit and made him earn his first Filmfare award.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Diljit is not very much comfortable with English and mostly prefers Punjabi over it. He also shared that he needs someone by his side when he interacts with someone who speaks English.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "He is a huge fan of American TV personality Kylie Jenner and is often seen commenting on her posts on various social media handles.",
+          "imgSrc": "assets/images/Diljit-Dosanjh-comments-on-Kylie-Jenners.webp",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "In 2018, he portrayed the role of the famous International hockey player- Sandeep Singh in his biopic 'Soorma.'",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "He had rejected films of his most favourite directors from Bollywood; as he was asked to act without the turban.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Johnny Depp's role of 'Captain Jack Sparrow' in 'Pirates of the Caribbean' has been his dream role.",
+          "imgSrc": "assets/images/diljit-giphy.webp",
+          "imgCaption": "",
+          "videoSrc": ""
         }
       ],
-      description: `Harmanjot Kaur is a very famous Female Star of Social Media especially Instagram, TikTok, and Snapchat. She is a Fashion Blogger, Indian Model, and Social Media Influencer by profession.
-       So let us tell you about Harmanjot Kaur Age, Height, Hobbies, Boyfriend, Family, Biography, and More.`
+      "description": "Diljit Dosanjh (born 6 January 1984) is an Indian singer-songwriter, actor,\n       film producer and television presenter who works in Punjabi and Hindi cinema. \n       He is recognised as one of the leading artists in the Indian music industry."
     },
     {
-      id: 'ce4',
-      category: ['Pollywood', 'Instagram', 'Acting', 'model', 'Social Media Influencer', 'Tik tok'],
-      name: 'Manpreet Kaur',
-      categoryId: ['social media influencer'],
-      fullname: 'Manpreetdadz Kaur',
-      height: "in feet inches - 5\'5\"",
-      age: '29',
-      weight: '	55 Kg.',
-      gender: 'Female',
-      boyfriend: '',
-      profession: 'Social Media Influencer',
-      eyeColor: 'Black',
-      hairColor: 'Black',
-      imgSrc: "assets/images/Manpreet-Kaur.jpg",
-      //debut 
-      debut: {
-        lyrical: "",
-        lyricalImgSrc: "",
-        punjabiFilm: "",
-        punjabiFilmImgSrc: "",
-        bollywoodFilm: "",
-        bollywoodFilmImgSrc: "",
-        punjabiAlbum: "",
-        punjabiAlbumImgSrc: "",
-        hindiAlbum: "",
-        hindiAlbumImgSrc: "",
-        singles: "",
-        singlesImgSrc: "",
-        musicDirection: "",
-        musicDirectionImgSrc: "",
-        tv: "",
-        tvImgSrc: "",
-        webSeries: "",
-        webSeriesImgSrc: "",
-        production: "",
-        productionImgSrc: "",
-      },
-
-      // debut ends
-      awards: [],
-      dob: {
-        date: '30',
-        month: 'June',
-        year: '1992'
-      },
-      birthPlace: 'Amritsar , India',
-      nationality: 'Indian',
-      hometown: 'Rampura, Punjab, India',
-      school: 'Not Known',
-      collegeUniversity: 'Not Known',
-      qualification: 'Graduate',
-      religion: 'Sikhism',
-      zodiacSign: 'Cancer',
-      foodHabit: 'Vegetarian',
-      address: 'Amritsar',
-      hobbies: 'Reading, photography, learning, internet surfing.',
-      controversies: [
+      "id": "ce2",
+      "category": [
+        "Pollywood",
+        "punjabi",
+        "Instagram",
+        "Acting",
+        "model",
+        "Social Media Influencer",
+        "Tik tok"
       ],
-      maritalStatus: 'Unmarried',
-      children: '',
-      affairs: 'Not Known',
-      wifeOrHusband: 'Not Known',
-      parents: {
-        father: 'Not Known',
-        mother: 'Not Known'
+      "categoryId": [
+        "social media influencer"
+      ],
+      "name": "Ashleen Kaur",
+      "fullname": "Ashleendadz Kaur",
+      "height": "in feet inches - 5'7\"",
+      "age": "21",
+      "weight": "59 kg",
+      "gender": "Female",
+      "girlfriend": "Not Known",
+      "boyfriend": "BAAZ",
+      "profession": "Social Media Influencer",
+      "eyeColor": "Black",
+      "hairColor": "Black",
+      "imgSrc": "assets/images/Ashleen-Kaur.jpg",
+      "debut": {
+        "lyrical": "",
+        "lyricalImgSrc": "",
+        "punjabiFilm": "",
+        "punjabiFilmImgSrc": "",
+        "bollywoodFilm": "",
+        "bollywoodFilmImgSrc": "",
+        "punjabiAlbum": "",
+        "punjabiAlbumImgSrc": "",
+        "hindiAlbum": "",
+        "hindiAlbumImgSrc": "",
+        "singles": "",
+        "singlesImgSrc": "",
+        "musicDirection": "",
+        "musicDirectionImgSrc": "",
+        "tv": "",
+        "tvImgSrc": "",
+        "webSeries": "",
+        "webSeriesImgSrc": "",
+        "production": "",
+        "productionImgSrc": ""
       },
-
-      siblings: {
-        brother: 'Not Known',
-        sister: 'Not Known'
+      "awards": [],
+      "dob": {
+        "date": "31",
+        "month": "August",
+        "year": "2000"
       },
-
-      favourites: {
-        food: 'Not Known',
-        actor: 'Ranveer Singh',
-        destination: 'Goa, Manali, Ladakh & Switzerland',
-        actress: 'Sonam Bajwa',
-        singer: 'Not Known',
-        fashionBrand: 'NA',
-        colour: 'Not Known',
-        sports: 'Not Known',
-        sportsman: 'Not Known',
-        dress: 'Not Known',
-      },
-
-      styleQoutient: {
-        carsCollection: "",
-        imgSrc: ""
-      },
-      tattoos: [],
-      moneyFactor: {
-        earning: 'Not Known',
-        netWorth: 'Not Known',
-        imgSrc: 'assets/images/Manpreet-Kaur-Insta.jpg'
-      },
-      facts: {
-        smoke: 'No',
-        alcoholic: 'No'
-      },
-
-      otherFacts: [
+      "birthPlace": "Not Known",
+      "nationality": "Indian",
+      "hometown": "Amritsar, Punjab, India",
+      "school": "NA",
+      "collegeUniversity": "NA",
+      "qualification": "NA",
+      "religion": "Hindu",
+      "zodiacSign": "Not Known",
+      "foodHabit": "Not Known",
+      "address": "Amritsar",
+      "hobbies": "Reading Books.",
+      "controversies": [
         {
-          fact: 'Manpreet Kaur\'s Instagram',
-          imgCaption: '',
-          videoSrc: '',
-          instaLink: "https://www.instagram.com/p/CNuVadwFIKE/embed/captioned/?cr=1&v=13&wp=675&rd=https%3A%2F%2Finstagrambiography.com&rp=%2Fadmin%2Fnews%2Fadd#%7B%22ci%22%3A0%2C%22os%22%3A1411878.750000149%2C%22ls%22%3A1411868.6300001573%2C%22le%22%3A1411869.6399999317%7D"
-        },
-        {
-          fact: 'Harmanjot Kaur And Ashleen Kaur are her good friends.',
-          imgSrc: 'assets/images/celebrities.jpg',
-          imgCaption: '',
-          videoSrc: ''
+          "controversy": "She had controversy with her ex-boyfriend \"PB 26 Wala Baaz\"."
         }
       ],
-      description: `Manpreet Kaur was born on June 30, 1992  in India.
-       She is a celebrity video star web. Manpreet Kaur\'s height is 5\'7\".
-        Manpreet Kaur\'s weight is 196 lbs."`
-    },
-    {
-      id: 'ce5',
-      category: ['Pollywood', 'Instagram', 'Acting', 'model', 'punjabi actress', 'actress'],
-      categoryId: ['Punjabi Actor/Actress, Model'],
-      name: 'Sruishty Mann',
-      fullname: 'Shruishty Mann',
-      height: "in feet inches - 5\'6\"",
-      age: '26',
-      weight: '	55 Kg.',
-      gender: 'Female',
-      boyfriend: '',
-      profession: 'Actress, Model',
-      eyeColor: 'Dark Brown',
-      hairColor: 'Black',
-      imgSrc: "assets/images/sruisht-maan.jpg",
-      //debut 
-      debut: {
-        lyrical: "",
-        lyricalImgSrc: "",
-        punjabiFilm: "",
-        punjabiFilmImgSrc: "",
-        bollywoodFilm: "",
-        bollywoodFilmImgSrc: "",
-        punjabiAlbum: "",
-        punjabiAlbumImgSrc: "",
-        hindiAlbum: "",
-        hindiAlbumImgSrc: "",
-        singles: "",
-        singlesImgSrc: "",
-        musicDirection: "",
-        musicDirectionImgSrc: "",
-        tv: "",
-        tvImgSrc: "",
-        webSeries: "",
-        webSeriesImgSrc: "",
-        production: "",
-        productionImgSrc: "",
+      "maritalStatus": "Unmarried",
+      "children": "",
+      "affairs": "Not Known",
+      "wifeOrHusband": "Not Known",
+      "parents": {
+        "father": "Not Known",
+        "mother": "Not Known"
       },
-
-      // debut ends
-      awards: [],
-      dob: {
-        date: '17',
-        month: 'June',
-        year: '1995'
+      "siblings": {
+        "brother": "Not Known",
+        "sister": "Not Known"
       },
-      birthPlace: 'Jalandhar, Punjab, India',
-      nationality: 'Indian',
-      hometown: 'Jalandhar, Punjab, India',
-      school: 'Not Known',
-      collegeUniversity: 'Not Known',
-      qualification: 'Bachelor of Commerce (B.Com)',
-      religion: 'Sikhism',
-      zodiacSign: 'Gemini',
-      foodHabit: 'Not Known',
-      address: 'Jalandhar, Punjab, India',
-      hobbies: 'Traveling',
-      controversies: [
-      ],
-      maritalStatus: 'Unmarried',
-      children: '',
-      affairs: 'Arsh Bal (BoyFriend)',
-      affairsImgSrc: 'assets/images/sruishty-maan-with-boyfriend.jpg',
-      wifeOrHusband: 'Not Known',
-      parents: {
-        father: 'Not Known',
-        mother: 'Not Known'
+      "favourites": {
+        "food": "Not Known",
+        "actor": "Not Known",
+        "destination": "Dubai",
+        "actress": "Alia Bhatt",
+        "singer": "Guru Randhawa.",
+        "fashionBrand": "NA",
+        "colour": "Purple",
+        "sports": "Badminton"
       },
-
-      siblings: {
-        brother: '1 Elder Brother',
-        sister: '1 Younger Sister'
+      "styleQoutient": {
+        "carsCollection": "",
+        "imgSrc": ""
       },
-
-      favourites: {
-        food: 'Kadai Paneer, Fish & Pasta',
-        actor: 'Hrithik Roshan',
-        destination: 'Dubai, Singapore',
-        actress: 'Kangna Ranaut',
-        singer: 'Guru Randhawa, Selena Gomez',
-        fashionBrand: 'NA',
-        colour: 'Black, Pink',
-        sports: 'Football',
-        sportsman: 'NA',
-        dress: 'NA',
+      "tattoos": [],
+      "moneyFactor": {
+        "earning": "70-80k INR Monthly",
+        "netWorth": "Not Known",
+        "imgSrc": "assets/images/Ashleen-Kaur-biography.jpg"
       },
-
-      styleQoutient: {
-        carsCollection: "",
-        imgSrc: ""
+      "facts": {
+        "smoke": "no",
+        "alcoholic": "no"
       },
-      moneyFactor: {
-        earning: 'Not known',
-        netWorth: '25 lakhs',
-        imgSrc: 'assets/images/sruishty-maan.jpg'
-      },
-
-      tattoos: [],
-      facts: {
-        smoke: 'No',
-        alcoholic: 'Not known.'
-      },
-
-      otherFacts: [
+      "otherFacts": [
         {
-          fact: 'Instagram',
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: '',
-          instaLink: 'https://www.instagram.com/p/CajuflTJyo8/embed/'
+          "fact": "Ashleen Kaur's Instagram",
+          "imgSrc": "",
+          "imgCaption": "Ashleen Kaur's instagram account",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/B-0hlGRll5w/embed/"
         },
         {
-          fact: 'At Present, Sruishty is committed with Arsh Bal.',
-          imgSrc: 'assets/images/Sruishty-Mann-Boyfriend-celebzbiography.com_.webp',
-          imgCaption: 'Sruishty Mann with her boyfriend',
-          videoSrc: '',
-          link: ''
-        },
-        {
-          fact: 'Sruishty is pet lover',
-          imgSrc: 'assets/images/Sruishty-Mann-Dog-celebzbiography.com_.webp',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: 'Sruishty Mann started her acting career from her school life.',
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: 'Sruishty makes her film debut with the “Just Jatti” song (2019).',
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: 'Her first best song is“Jhanjra”.',
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: 'She started her career as a model and today she is one of the successful models who has appeared in many music videos.',
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
+          "fact": "Manpreet Kaur And Harmanjot Kaur are her good friends.",
+          "imgSrc": "assets/images/celebrities.jpg",
+          "imgCaption": "",
+          "videoSrc": ""
         }
       ],
-      description: `Sruishty was born on 17 June 1995 in Jalandhar, Punjab, India.
-       Now her age is 25 Years as of 2020. She did her school education &
-        college education at Chandigarh University. From an early age,
-         She loves acting & dancing. She also acted in school events &
-          college events. After graduation, Sruishty started her career in Films &
-       give so many auditions in many advertisements & serials.`
+      "description": "Ashleen comes from Punjab and she is social media influencer. She was born on 31 August in Punjab, India. She belongs to a Hindu family."
     },
     {
-      id: 'ce6',
-      category: ['Pollywood', 'Tik tok', 'Instagram', 'model', 'social media influencer'],
-      categoryId: ['social media influencer'],
-      name: 'K jatti',
-      fullname: '	Karmandeep Kaur',
-      height: "in feet inches - 5\'6\"",
-      age: '26',
-      weight: '	58 Kg.',
-      gender: 'Female',
-      boyfriend: '',
-      profession: 'Social Media Influencer',
-      eyeColor: 'Dark Brown',
-      hairColor: 'Black',
-      imgSrc: "assets/images/k-jatti.jpg",
-      //debut 
-      debut: {
-        singles: "Doctor	Sidhu Moose Wala(2020)",
-        singlesImgSrc: 'assets/images/karmandeep_and_sidhu_moosewala.jpg',
-      },
-
-      // debut ends
-      awards: [],
-      dob: {
-        date: '20',
-        month: 'November',
-        year: '1996'
-      },
-      birthPlace: 'Mohali, Punjab, India',
-      nationality: 'Indian',
-      hometown: 'Mohali, Punjab, India',
-      school: 'Not Known',
-      collegeUniversity: 'Chandigarh University',
-      qualification: 'Graduation',
-      religion: 'Sikhism',
-      zodiacSign: 'Scorpian',
-      foodHabit: 'Not Known',
-      address: 'Mohali, Punjab, India',
-      hobbies: 'Dancing,Acting,Modeling',
-      controversies: [
+      "id": "ce3",
+      "category": [
+        "Pollywood",
+        "punjabi",
+        "Instagram",
+        "Acting",
+        "model",
+        "Social Media Influencer",
+        "Tik tok"
       ],
-      maritalStatus: 'Unmarried',
-      children: '',
-      affairs: 'Not Known',
-      wifeOrHusband: '',
-      parents: {
-        father: 'Not Known',
-        mother: 'Not Known'
+      "categoryId": [
+        "social media influencer"
+      ],
+      "name": "Harmanjot Kaur",
+      "fullname": "Harmanjot Kaur Maan",
+      "height": "in feet inches - 5'5\"",
+      "age": "23",
+      "weight": "\t57 Kg.",
+      "gender": "Female",
+      "girlfriend": "",
+      "boyfriend": "",
+      "profession": "Social Media Influencer",
+      "eyeColor": "Black",
+      "hairColor": "Light Brown",
+      "imgSrc": "assets/images/harmanjot.kaur.jpg",
+      "debut": {
+        "lyrical": "",
+        "lyricalImgSrc": "",
+        "punjabiFilm": "",
+        "punjabiFilmImgSrc": "",
+        "bollywoodFilm": "",
+        "bollywoodFilmImgSrc": "",
+        "punjabiAlbum": "",
+        "punjabiAlbumImgSrc": "",
+        "hindiAlbum": "",
+        "hindiAlbumImgSrc": "",
+        "singles": "",
+        "singlesImgSrc": "",
+        "musicDirection": "",
+        "musicDirectionImgSrc": "",
+        "tv": "",
+        "tvImgSrc": "",
+        "webSeries": "",
+        "webSeriesImgSrc": "",
+        "production": "",
+        "productionImgSrc": ""
       },
-
-      siblings: {
-        brother: 'Brother',
-        sister: ''
+      "awards": [],
+      "dob": {
+        "date": "16",
+        "month": "July",
+        "year": "1998"
       },
-
-      favourites: {
-        food: 'Pasta, Pizza',
-        actor: 'Salman Khan',
-        destination: 'Goa, Jaipur',
-        actress: 'Sonakshi Sinha, Alia Bhatt',
-        singer: 'Sidhu Moosewala',
-        fashionBrand: 'NA',
-        colour: 'Black, Pink',
-        sports: 'Football',
-        sportsman: 'NA',
-        dress: 'NA',
+      "birthPlace": "Rampura, India",
+      "nationality": "Indian",
+      "hometown": "Rampura, Punjab, India",
+      "school": "Not Known",
+      "collegeUniversity": "Not Known",
+      "qualification": "Graduate",
+      "religion": "Sikhism",
+      "zodiacSign": "Cancer",
+      "foodHabit": "Vegetarian",
+      "address": "Amritsar",
+      "hobbies": "Reading, photography, learning, internet surfing.",
+      "controversies": [],
+      "maritalStatus": "Unmarried",
+      "children": "",
+      "affairs": "Not Known",
+      "wifeOrHusband": "Not Known",
+      "parents": {
+        "father": "Not Known",
+        "mother": "Not Known"
       },
-
-      styleQoutient: {
-        carsCollection: "",
-        imgSrc: ""
+      "siblings": {
+        "brother": "Not Known",
+        "sister": "Not Known"
       },
-      moneyFactor: {
-        earning: 'Not known',
-        netWorth: 'Not known',
-        imgSrc: 'assets/images/d911d1faf85329f9cffee5def8b36103.jpg'
+      "favourites": {
+        "food": "White Sauce Pasta, Home Food, Ice Cream & Grilled Sandwich",
+        "actor": "Shah Rukh Khan, Diljit Dosanjh &  Shahid Kapoor",
+        "destination": "Goa, Manali, Ladakh & Switzerland",
+        "actress": "Sonam Bajwa, Alia Bhatt & Katrina Kaif",
+        "singer": "Guru Randhawa.",
+        "fashionBrand": "NA",
+        "colour": "Red, Navy Blue, White & Black",
+        "sports": "Cricket",
+        "sportsman": "Virat Kohli",
+        "dress": "Salwar Kurti, Western Dress, Jeans & Top"
       },
-
-      tattoos: [],
-      facts: {
-        smoke: 'No',
-        alcoholic: 'Not known.'
+      "styleQoutient": {
+        "carsCollection": "",
+        "imgSrc": ""
       },
-
-      otherFacts: [
+      "tattoos": [],
+      "moneyFactor": {
+        "earning": "70-90K INR Monthly",
+        "netWorth": "Not Known",
+        "imgSrc": "assets/images/harmanjot.kaur_.jpg"
+      },
+      "facts": {
+        "smoke": "Not known.",
+        "alcoholic": "Not known."
+      },
+      "otherFacts": [
         {
-          fact: 'K-jatti\'s Instagram',
-          imgCaption: 'K-jatti\'s instagram account',
-          videoSrc: '',
-          instaLink: "https://www.instagram.com/p/B7FwshGlksz/embed/?cr=1&v=12&wp=540&rd=https%3A%2F%2Fwww.wikidekh.com&rp=%2F2020%2F01%2Fkarmandeep-kjatti.html#%7B%22ci%22%3A0%2C%22os%22%3A4149.399999976158%2C%22ls%22%3A4059.399999976158%2C%22le%22%3A4080.399999976158%7D"
+          "fact": "Harmanjot Kaur's Instagram",
+          "imgCaption": "Harmanjot Kaur's instagram account",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/CJSt1I7lzKU/embed/captioned/?cr=1&v=13&wp=540&rd=https%3A%2F%2Fwww.filmyques.in&rp=%2F2021%2F08%2Fharmanjot-kaur.html#%7B%22ci%22%3A0%2C%22os%22%3A2086.2999999523163%2C%22ls%22%3A1851.6999999284744%2C%22le%22%3A1878.1000000238419%7D"
         },
         {
-          fact: 'Karmandeep (Kjatti) love to share her photos and new videos on Instagram.',
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
+          "fact": "Manpreet Kaur And Ashleen Kaur are her good friends.",
+          "imgSrc": "assets/images/celebrities.jpg",
+          "imgCaption": "",
+          "videoSrc": ""
+        }
       ],
-      description: `Kjatti is a TikTok and Instagram Entertainer, Model,
-       and Dancer associated with the Punjabi Music Industry.
-        She was born on 20 November 1996 and his birthplace is Mohali, Punjab, India.
-       She has huge fan following on Instagram Account`
+      "description": "Harmanjot Kaur is a very famous Female Star of Social Media especially Instagram, TikTok, and Snapchat. She is a Fashion Blogger, Indian Model, and Social Media Influencer by profession.\n       So let us tell you about Harmanjot Kaur Age, Height, Hobbies, Boyfriend, Family, Biography, and More."
+    },
+    {
+      "id": "ce4",
+      "category": [
+        "Pollywood",
+        "Instagram",
+        "Acting",
+        "model",
+        "Social Media Influencer",
+        "Tik tok"
+      ],
+      "name": "Manpreet Kaur",
+      "categoryId": [
+        "social media influencer"
+      ],
+      "fullname": "Manpreetdadz Kaur",
+      "height": "in feet inches - 5'5\"",
+      "age": "29",
+      "weight": "\t55 Kg.",
+      "gender": "Female",
+      "boyfriend": "",
+      "profession": "Social Media Influencer",
+      "eyeColor": "Black",
+      "hairColor": "Black",
+      "imgSrc": "assets/images/Manpreet-Kaur.jpg",
+      "debut": {
+        "lyrical": "",
+        "lyricalImgSrc": "",
+        "punjabiFilm": "",
+        "punjabiFilmImgSrc": "",
+        "bollywoodFilm": "",
+        "bollywoodFilmImgSrc": "",
+        "punjabiAlbum": "",
+        "punjabiAlbumImgSrc": "",
+        "hindiAlbum": "",
+        "hindiAlbumImgSrc": "",
+        "singles": "",
+        "singlesImgSrc": "",
+        "musicDirection": "",
+        "musicDirectionImgSrc": "",
+        "tv": "",
+        "tvImgSrc": "",
+        "webSeries": "",
+        "webSeriesImgSrc": "",
+        "production": "",
+        "productionImgSrc": ""
+      },
+      "awards": [],
+      "dob": {
+        "date": "30",
+        "month": "June",
+        "year": "1992"
+      },
+      "birthPlace": "Amritsar , India",
+      "nationality": "Indian",
+      "hometown": "Rampura, Punjab, India",
+      "school": "Not Known",
+      "collegeUniversity": "Not Known",
+      "qualification": "Graduate",
+      "religion": "Sikhism",
+      "zodiacSign": "Cancer",
+      "foodHabit": "Vegetarian",
+      "address": "Amritsar",
+      "hobbies": "Reading, photography, learning, internet surfing.",
+      "controversies": [],
+      "maritalStatus": "Unmarried",
+      "children": "",
+      "affairs": "Not Known",
+      "wifeOrHusband": "Not Known",
+      "parents": {
+        "father": "Not Known",
+        "mother": "Not Known"
+      },
+      "siblings": {
+        "brother": "Not Known",
+        "sister": "Not Known"
+      },
+      "favourites": {
+        "food": "Not Known",
+        "actor": "Ranveer Singh",
+        "destination": "Goa, Manali, Ladakh & Switzerland",
+        "actress": "Sonam Bajwa",
+        "singer": "Not Known",
+        "fashionBrand": "NA",
+        "colour": "Not Known",
+        "sports": "Not Known",
+        "sportsman": "Not Known",
+        "dress": "Not Known"
+      },
+      "styleQoutient": {
+        "carsCollection": "",
+        "imgSrc": ""
+      },
+      "tattoos": [],
+      "moneyFactor": {
+        "earning": "Not Known",
+        "netWorth": "Not Known",
+        "imgSrc": "assets/images/Manpreet-Kaur-Insta.jpg"
+      },
+      "facts": {
+        "smoke": "No",
+        "alcoholic": "No"
+      },
+      "otherFacts": [
+        {
+          "fact": "Manpreet Kaur's Instagram",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/CNuVadwFIKE/embed/captioned/?cr=1&v=13&wp=675&rd=https%3A%2F%2Finstagrambiography.com&rp=%2Fadmin%2Fnews%2Fadd#%7B%22ci%22%3A0%2C%22os%22%3A1411878.750000149%2C%22ls%22%3A1411868.6300001573%2C%22le%22%3A1411869.6399999317%7D"
+        },
+        {
+          "fact": "Harmanjot Kaur And Ashleen Kaur are her good friends.",
+          "imgSrc": "assets/images/celebrities.jpg",
+          "imgCaption": "",
+          "videoSrc": ""
+        }
+      ],
+      "description": "Manpreet Kaur was born on June 30, 1992  in India.\n       She is a celebrity video star web. Manpreet Kaur's height is 5'7\".\n        Manpreet Kaur's weight is 196 lbs.\""
+    },
+    {
+      "id": "ce5",
+      "category": [
+        "Pollywood",
+        "Instagram",
+        "Acting",
+        "model",
+        "punjabi actress",
+        "actress"
+      ],
+      "categoryId": [
+        "Punjabi Actor/Actress, Model"
+      ],
+      "name": "Sruishty Mann",
+      "fullname": "Shruishty Mann",
+      "height": "in feet inches - 5'6\"",
+      "age": "26",
+      "weight": "\t55 Kg.",
+      "gender": "Female",
+      "boyfriend": "",
+      "profession": "Actress, Model",
+      "eyeColor": "Dark Brown",
+      "hairColor": "Black",
+      "imgSrc": "assets/images/sruisht-maan.jpg",
+      "debut": {
+        "lyrical": "",
+        "lyricalImgSrc": "",
+        "punjabiFilm": "",
+        "punjabiFilmImgSrc": "",
+        "bollywoodFilm": "",
+        "bollywoodFilmImgSrc": "",
+        "punjabiAlbum": "",
+        "punjabiAlbumImgSrc": "",
+        "hindiAlbum": "",
+        "hindiAlbumImgSrc": "",
+        "singles": "",
+        "singlesImgSrc": "",
+        "musicDirection": "",
+        "musicDirectionImgSrc": "",
+        "tv": "",
+        "tvImgSrc": "",
+        "webSeries": "",
+        "webSeriesImgSrc": "",
+        "production": "",
+        "productionImgSrc": ""
+      },
+      "awards": [],
+      "dob": {
+        "date": "17",
+        "month": "June",
+        "year": "1995"
+      },
+      "birthPlace": "Jalandhar, Punjab, India",
+      "nationality": "Indian",
+      "hometown": "Jalandhar, Punjab, India",
+      "school": "Not Known",
+      "collegeUniversity": "Not Known",
+      "qualification": "Bachelor of Commerce (B.Com)",
+      "religion": "Sikhism",
+      "zodiacSign": "Gemini",
+      "foodHabit": "Not Known",
+      "address": "Jalandhar, Punjab, India",
+      "hobbies": "Traveling",
+      "controversies": [],
+      "maritalStatus": "Unmarried",
+      "children": "",
+      "affairs": "Arsh Bal (BoyFriend)",
+      "affairsImgSrc": "assets/images/sruishty-maan-with-boyfriend.jpg",
+      "wifeOrHusband": "Not Known",
+      "parents": {
+        "father": "Not Known",
+        "mother": "Not Known"
+      },
+      "siblings": {
+        "brother": "1 Elder Brother",
+        "sister": "1 Younger Sister"
+      },
+      "favourites": {
+        "food": "Kadai Paneer, Fish & Pasta",
+        "actor": "Hrithik Roshan",
+        "destination": "Dubai, Singapore",
+        "actress": "Kangna Ranaut",
+        "singer": "Guru Randhawa, Selena Gomez",
+        "fashionBrand": "NA",
+        "colour": "Black, Pink",
+        "sports": "Football",
+        "sportsman": "NA",
+        "dress": "NA"
+      },
+      "styleQoutient": {
+        "carsCollection": "",
+        "imgSrc": ""
+      },
+      "moneyFactor": {
+        "earning": "Not known",
+        "netWorth": "25 lakhs",
+        "imgSrc": "assets/images/sruishty-maan.jpg"
+      },
+      "tattoos": [],
+      "facts": {
+        "smoke": "No",
+        "alcoholic": "Not known."
+      },
+      "otherFacts": [
+        {
+          "fact": "Instagram",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/CajuflTJyo8/embed/"
+        },
+        {
+          "fact": "At Present, Sruishty is committed with Arsh Bal.",
+          "imgSrc": "assets/images/Sruishty-Mann-Boyfriend-celebzbiography.com_.webp",
+          "imgCaption": "Sruishty Mann with her boyfriend",
+          "videoSrc": "",
+          "link": ""
+        },
+        {
+          "fact": "Sruishty is pet lover",
+          "imgSrc": "assets/images/Sruishty-Mann-Dog-celebzbiography.com_.webp",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Sruishty Mann started her acting career from her school life.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Sruishty makes her film debut with the “Just Jatti” song (2019).",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Her first best song is“Jhanjra”.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "She started her career as a model and today she is one of the successful models who has appeared in many music videos.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        }
+      ],
+      "description": "Sruishty was born on 17 June 1995 in Jalandhar, Punjab, India.\n       Now her age is 25 Years as of 2020. She did her school education &\n        college education at Chandigarh University. From an early age,\n         She loves acting & dancing. She also acted in school events &\n          college events. After graduation, Sruishty started her career in Films &\n       give so many auditions in many advertisements & serials."
+    },
+    {
+      "id": "ce6",
+      "category": [
+        "Pollywood",
+        "Tik tok",
+        "Instagram",
+        "model",
+        "social media influencer"
+      ],
+      "categoryId": [
+        "social media influencer"
+      ],
+      "name": "K jatti",
+      "fullname": "\tKarmandeep Kaur",
+      "height": "in feet inches - 5'6\"",
+      "age": "26",
+      "weight": "\t58 Kg.",
+      "gender": "Female",
+      "boyfriend": "",
+      "profession": "Social Media Influencer",
+      "eyeColor": "Dark Brown",
+      "hairColor": "Black",
+      "imgSrc": "assets/images/k-jatti.jpg",
+      "debut": {
+        "singles": "Doctor\tSidhu Moose Wala(2020)",
+        "singlesImgSrc": "assets/images/karmandeep_and_sidhu_moosewala.jpg"
+      },
+      "awards": [],
+      "dob": {
+        "date": "20",
+        "month": "November",
+        "year": "1996"
+      },
+      "birthPlace": "Mohali, Punjab, India",
+      "nationality": "Indian",
+      "hometown": "Mohali, Punjab, India",
+      "school": "Not Known",
+      "collegeUniversity": "Chandigarh University",
+      "qualification": "Graduation",
+      "religion": "Sikhism",
+      "zodiacSign": "Scorpian",
+      "foodHabit": "Not Known",
+      "address": "Mohali, Punjab, India",
+      "hobbies": "Dancing,Acting,Modeling",
+      "controversies": [],
+      "maritalStatus": "Unmarried",
+      "children": "",
+      "affairs": "Not Known",
+      "wifeOrHusband": "",
+      "parents": {
+        "father": "Not Known",
+        "mother": "Not Known"
+      },
+      "siblings": {
+        "brother": "Brother",
+        "sister": ""
+      },
+      "favourites": {
+        "food": "Pasta, Pizza",
+        "actor": "Salman Khan",
+        "destination": "Goa, Jaipur",
+        "actress": "Sonakshi Sinha, Alia Bhatt",
+        "singer": "Sidhu Moosewala",
+        "fashionBrand": "NA",
+        "colour": "Black, Pink",
+        "sports": "Football",
+        "sportsman": "NA",
+        "dress": "NA"
+      },
+      "styleQoutient": {
+        "carsCollection": "",
+        "imgSrc": ""
+      },
+      "moneyFactor": {
+        "earning": "Not known",
+        "netWorth": "Not known",
+        "imgSrc": "assets/images/d911d1faf85329f9cffee5def8b36103.jpg"
+      },
+      "tattoos": [],
+      "facts": {
+        "smoke": "No",
+        "alcoholic": "Not known."
+      },
+      "otherFacts": [
+        {
+          "fact": "K-jatti's Instagram",
+          "imgCaption": "K-jatti's instagram account",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/B7FwshGlksz/embed/?cr=1&v=12&wp=540&rd=https%3A%2F%2Fwww.wikidekh.com&rp=%2F2020%2F01%2Fkarmandeep-kjatti.html#%7B%22ci%22%3A0%2C%22os%22%3A4149.399999976158%2C%22ls%22%3A4059.399999976158%2C%22le%22%3A4080.399999976158%7D"
+        },
+        {
+          "fact": "Karmandeep (Kjatti) love to share her photos and new videos on Instagram.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        }
+      ],
+      "description": "Kjatti is a TikTok and Instagram Entertainer, Model,\n       and Dancer associated with the Punjabi Music Industry.\n        She was born on 20 November 1996 and his birthplace is Mohali, Punjab, India.\n       She has huge fan following on Instagram Account"
     },
     {
       id: 'ce7',

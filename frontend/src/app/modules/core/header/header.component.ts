@@ -150,7 +150,17 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
 
   ngOnInit(): void {
-    this.celebrities = this.celebritiesService.celebrities;
+
+    this.celebritiesService.getCelebrities().then((celebrities: any) => {
+      this.celebrities = celebrities;
+        // this.isLoading=false;
+    }).catch((err) => {
+      console.log(err.message)
+      // this.toastService.error(err.message);
+      // this.isLoading = false;
+      // this.isError= true;
+    })
+    // this.celebrities = this.celebritiesService.celebrities;
 
     setTimeout(() => {
       this.animationState = 'in';
