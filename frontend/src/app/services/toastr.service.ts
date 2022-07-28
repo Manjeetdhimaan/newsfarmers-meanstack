@@ -8,7 +8,6 @@ export class ToasTMessageService {
   constructor(private toastrService: ToastrService) {}
 
   success(message: string, title?: string) {
-    console.log('success')
     this.toastrService.success(message, title ?? 'Success', {
       progressBar: true,
       progressAnimation: 'decreasing',

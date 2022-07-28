@@ -35,61 +35,71 @@ export class AppComponent implements OnInit {
   isCategoryComponent: boolean = false;
 
   capitalizeFirstLetter(string: String) {
-    window.localStorage.setItem
+    // window.localStorage.setItem
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
   
   ngOnInit() {
-    var activatedUrl: any;
     const appTitle = this.titleService.getTitle();
     this.router
       .events.pipe(
         filter(event => event instanceof NavigationEnd),
         map(() => {
-          this.celebrityService.celebrities?.map((a: any) => {
-            a.category.map((n: any) => {
-              if (this.router.url == "/category/" + n.toLowerCase().split(' ').join('-') || this.router.url == "/category/biographies") {
-                this.isCategoryComponent = true;
-              }
-            })
-            if (this.router.url.toLowerCase() === "/" + a.name.toLowerCase().split(' ').join('-')) {
-              this.router.url.toLowerCase();
-              this.isCelebrityUrl = true;
-            }
-          })
-          this.newsService.newsArray.map((news: any) => {
-            if (this.router.url.toLowerCase() === "/news/" + news.title.toLowerCase().split(' ').join('-')) {
-              this.router.url.toLowerCase();
-              this.isNewsUrl = true;
-              activatedUrl = news.title;
-            }
-          })
+          // this.celebrityService.celebrities?.map((a: any) => {
+          //   a.category.map((n: any) => {
+          //     if (this.router.url == "/category/" + n.toLowerCase().split(' ').join('-') || this.router.url == "/category/biographies") {
+          //       this.isCategoryComponent = true;
+          //     }
+          //   })
+          //   if (this.router.url.toLowerCase() === "/" + a.name.toLowerCase().split(' ').join('-')) {
+          //     this.router.url.toLowerCase();
+          //     this.isCelebrityUrl = true;
+          //   }
+          // })
+          // this.newsService.newsArray.map((news: any) => {
+          //   if (this.router.url.toLowerCase() === "/news/" + news.title.toLowerCase().split(' ').join('-')) {
+          //     this.router.url.toLowerCase();
+          //     this.isNewsUrl = true;
+          //     // activatedUrl = news.title;
+          //   }
+          // })
           //getting name from url 
           let routerUrl_split = this.router.url.slice(1).split("-")
           let result = []
           for (let i = 0; i < routerUrl_split.length; i++) {
             result.push(routerUrl_split[i].slice(0, 1).toUpperCase() + routerUrl_split[i].slice(1))
           }
+
+          let newsUrl_split = this.router.url.slice(6).split("-")
+          let newsResult = []
+          for (let i = 0; i < newsUrl_split.length; i++) {
+            newsResult.push(newsUrl_split[i].slice(0, 1).toUpperCase() + newsUrl_split[i].slice(1))
+          }
           const child = this.activatedRoute.firstChild;
           const celebrityChild = child?.snapshot.data['isCelebrity'];
           const newsChild = child?.firstChild?.routeConfig?.data?.['isNews'];
-          console.log('Child', child)
+          const categoryChild = child?.firstChild?.routeConfig?.data?.['isCategoryComponent'];
           if (child?.snapshot.data['title']) {
-            if (this.isCategoryComponent == true) {
-              this.isCategoryComponent = false;
+            if (categoryChild) {
+              // this.isCategoryComponent = false;
               child.snapshot.data['title'] = this.capitalizeFirstLetter(this.router.url.slice(10).split('-').join(' ')) + ' - Newsfarmers';
               this.metaService.updateTag({ name: 'description', content: this.capitalizeFirstLetter(this.router.url.slice(10).split('-').join(' ')) });
               return child.snapshot.data['title'];
             }
             if (newsChild) {
-              this.isNewsUrl = false;
-              child.snapshot.data['title'] = activatedUrl + ' - Newsfarmers';
-              this.metaService.updateTag({ name: 'description', content: activatedUrl });
+              child.snapshot.data['title'] = newsResult.join(" ") + ' - Newsfarmers';
+              this.metaService.updateTag({ name: 'description', content: newsResult.join(" ") });
               return child.snapshot.data['title'];
             }
             if (this.router.url.toLowerCase() === "/news") {
               if (child?.snapshot.data['title']) {
                 child.snapshot.data['title'] = 'News Headline - Newsfarmers';
+                return child.snapshot.data['title'];
+              }
+            }
+            if (this.router.url.toLowerCase() === "/category/biographies") {
+              if (child?.snapshot.data['title']) {
+                child.snapshot.data['title'] = 'Biographies - Newsfarmers';
                 return child.snapshot.data['title'];
               }
             }
@@ -99,9 +109,9 @@ export class AppComponent implements OnInit {
               child.snapshot.data['title'] = result.join(" ") + ' Height, Weight, Age, Family, Affairs, Biography & More' + ' - Newsfarmers';
               return child.snapshot.data['title'];
             }
-            else {
-              return child.snapshot.data['title'] as string;
-            }
+            // else {
+            //   return child.snapshot.data['title'] as string;
+            // }
           }
           return appTitle;
         })

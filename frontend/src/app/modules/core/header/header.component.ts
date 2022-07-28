@@ -67,7 +67,14 @@ export class HeaderComponent implements OnInit, OnDestroy {
   animationMobileHeaderState = 'in';
   isActiveCategoryComponent: boolean = false;
   animationState = 'out';
-  animationMenuState = "down"
+  animationMenuState = "down";
+  celebrities: any;
+  searchText: string;
+  p: number = 1;
+  itemsPerPage: number = 4;
+  isSticky: boolean = false;
+  isStickySearchBar: boolean = true;
+
   @Input() isInput: boolean = true;
   @Output() callHomeScrollMethod = new Subject<any>();
 
@@ -105,7 +112,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
   toggleMenu() {
     this.isToggleMenu = !this.isToggleMenu;
-    this.animationMenuState = this.animationMenuState=='down'?'up': 'down'
+    this.animationMenuState = this.animationMenuState == 'down' ? 'up' : 'down'
     if (this.isToggleMenu) {
       this.namebutton.nativeElement.classList.remove('bi-list');
       this.namebutton.nativeElement.classList.add('bi-x');
@@ -123,12 +130,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.searchBtnClick = true;
   }
 
-  celebrities: any;
-  searchText: string;
-  p: number = 1;
-  itemsPerPage: number = 4;
-  isSticky: boolean = false;
-  isStickySearchBar: boolean = true;
+
+
+
   @ViewChild('search') searchElement: ElementRef;
   @ViewChild('search1') searchElement1: ElementRef;
   @ViewChild('namebutton', { read: ElementRef, static: false }) namebutton: ElementRef;
@@ -150,10 +154,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
 
   ngOnInit(): void {
-
     this.celebritiesService.getCelebrities().then((celebrities: any) => {
       this.celebrities = celebrities;
-        // this.isLoading=false;
     }).catch((err) => {
       console.log(err.message)
       // this.toastService.error(err.message);
@@ -177,37 +179,65 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.namebutton.nativeElement.classList.add('bi-list');
     this.animationMenuState = 'down'
     this.categoryCelebrity = [];
-    this.celebritiesService.celebrities.map((celebrity: any) => {
-      celebrity.category.map((cat: any) => {
-        if (cat.toLowerCase() == event.target.value.toLowerCase()) {
-          // this.viewByCategoryComonent.celebrities = [];
-          this.categoryCelebrity.push(celebrity);
-          // this.viewByCategoryComonent.celebrities = this.categoryCelebrity;
-          // this.viewByCategoryComonent.category = event.target.value.toUpperCase();
-          this.celebritiesService.getSelectedCategories.next(this.categoryCelebrity)
-          this.router.navigate(['category/view']);
-        }
+    this.celebritiesService.getCelebrities().then((celebrities: any) => {
+      celebrities.map((celebrity: any) => {
+        celebrity.category.map((cat: any) => {
+          if (cat?.toLowerCase() === event.target.value.toLowerCase()) {
+            this.categoryCelebrity.push(celebrity);
+            this.isLoading = false;
+            // this.router.navigate(['category/view']);
+          }
+        })
       })
+      this.celebritiesService.getSelectedCategories.next(this.categoryCelebrity);
+      if (event.target.value.toLowerCase() == "all") {
+        this.celebritiesService.getCelebrities().then((celebrities) => {
+          this.categoryCelebrity = celebrities;
+        });
+        this.celebritiesService.getSelectedCategories.next(this.categoryCelebrity);
+        this.isLoading = false;
+      }
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      this.router.navigate(['category/', event.target.value.toLowerCase().split(' ').join('-')]);
+      this.selectedCategory = '';
+    }).catch((err) => {
+      console.log(err.message);
     })
-    if (event.target.value.toLowerCase() == "all") {
-      // this.viewByCategoryComonent.celebrities = [];
-      this.categoryCelebrity = this.celebritiesService.getCelebrities();
-      // this.viewByCategoryComonent.celebrities = this.categoryCelebrity;
-      // this.viewByCategoryComonent.category = event.target.value.toUpperCase();
-      this.celebritiesService.getSelectedCategories.next(this.categoryCelebrity)
-    }
-    // if (this.categoryCelebrity.length <= 0) {
-    //   this.viewByCategoryComonent.celebrities = [];
-    //   this.activatedRoute.params.subscribe((param: Params) => {
-    //     this.viewByCategoryComonent.category = param.view.split('-').join(' ').toUpperCase();
+
+    // this.celebritiesService.celebrities?.map((celebrity: any) => {
+    //   celebrity.category.map((cat: any) => {
+    //     if (cat.toLowerCase() == event.target.value.toLowerCase()) {
+    //       // this.viewByCategoryComonent.celebrities = [];
+    //       this.categoryCelebrity.push(celebrity);
+    //       // this.viewByCategoryComonent.celebrities = this.categoryCelebrity;
+    //       // this.viewByCategoryComonent.category = event.target.value.toUpperCase();
+    //       this.celebritiesService.getSelectedCategories.next(this.categoryCelebrity)
+    //       this.router.navigate(['category/view']);
+    //     }
     //   })
+    // })
+    // if (event.target.value.toLowerCase() == "all") {
+    //   // this.viewByCategoryComonent.celebrities = [];
+    //   this.categoryCelebrity = this.celebritiesService.getCelebrities();
+    //   // this.viewByCategoryComonent.celebrities = this.categoryCelebrity;
+    //   // this.viewByCategoryComonent.category = event.target.value.toUpperCase();
+    //   this.celebritiesService.getSelectedCategories.next(this.categoryCelebrity)
     // }
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-    this.router.navigate(['category/', event.target.value.toLowerCase().split(' ').join('-')]);
-    this.selectedCategory = '';
+    // // if (this.categoryCelebrity.length <= 0) {
+    // //   this.viewByCategoryComonent.celebrities = [];
+    // //   this.activatedRoute.params.subscribe((param: Params) => {
+    // //     this.viewByCategoryComonent.category = param.view.split('-').join(' ').toUpperCase();
+    // //   })
+    // // }
+    // window.scrollTo({
+    //   top: 0,
+    //   behavior: 'smooth'
+    // });
+    // this.router.navigate(['category/', event.target.value.toLowerCase().split(' ').join('-')]);
+    // this.selectedCategory = '';
   }
 
   onClearSearchText() {

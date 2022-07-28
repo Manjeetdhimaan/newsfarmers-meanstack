@@ -8,7 +8,7 @@ const routes: Routes = [
     path: 'biographies',
     component: BiographyComponent, data: {title: 'Biographies - Newsfarmers'}, pathMatch: 'full'
   },
-  { path: ':view', component: ViewByCategoryComponent , data: {title: 'Categories - Newsfarmers'},  pathMatch: 'full'},
+  { path: ':view', component: ViewByCategoryComponent , data: {title: 'Categories - Newsfarmers', isCategoryComponent:'true'},  pathMatch: 'full'},
   
 ];
 

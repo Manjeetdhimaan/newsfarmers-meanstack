@@ -18,7 +18,7 @@
         </a>
     </div>
 </div>
-<div *ngIf="celebrities.length<=0" class="text-center noCategory ">
+<div *ngIf="celebrities.length<=0 && !isLoading" class="text-center noCategory ">
     <h1 class="">No celebrities for this category</h1>
 </div>
 <app-footer *ngIf="!isLoading"></app-footer>

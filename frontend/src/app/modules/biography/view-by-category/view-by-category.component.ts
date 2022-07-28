@@ -14,6 +14,8 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
   isLoading = false;
   uniq: any[] = [];
   borderColor = "black";
+  selectedCelebrity: any;
+  subscription: Subscription;
 
   constructor(private celebritiesService: CelebritiesService,
     private router: Router,
@@ -26,59 +28,78 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
           this.isLoading = true;
           activatedRoute.params.subscribe((param: Params) => {
             this.celebrities = [];
-            celebritiesService.celebrities.map((a: any) => {
-              a.category.map((n: any) => {
-                if (param.view == n.toLowerCase().split(' ').join('-')) {
-                  this.celebrities.push(a);
-                  this.category = n.toLowerCase().split('-').join(' ').toUpperCase();
-                  this.celebrities = [...new Set(this.celebrities)]
-                  this.isLoading = false;
-                }
-                if (param.view == "all") {
-                  this.category = 'ALL'
-                  this.celebrities = this.celebritiesService.celebrities.reverse();
-                  this.celebrities = [...new Set(this.celebrities)];
-                  this.isLoading = false;
-                }
+            this.celebritiesService.getCelebrities().then((celebrities:any) => {
+              celebrities?.map((a: any) => {
+                a.category.map((n: any) => {
+                  if (param.view == n.toLowerCase().split(' ').join('-')) {
+                    this.celebrities.push(a);
+                    this.category = n.toLowerCase().split('-').join(' ').toUpperCase();
+                    this.celebrities = [...new Set(this.celebrities)]
+                    this.isLoading = false;
+                  }
+                  if (param.view == "all") {
+                    this.category = 'ALL'
+                    this.celebrities = this.celebritiesService.celebrities.reverse();
+                    this.celebrities = [...new Set(this.celebrities)];
+                    this.isLoading = false;
+                  }
+                })
               })
             })
+            // celebritiesService.celebrities.map((a: any) => {
+            //   a.category.map((n: any) => {
+            //     if (param.view == n.toLowerCase().split(' ').join('-')) {
+            //       this.celebrities.push(a);
+            //       this.category = n.toLowerCase().split('-').join(' ').toUpperCase();
+            //       this.celebrities = [...new Set(this.celebrities)]
+            //       this.isLoading = false;
+            //     }
+            //     if (param.view == "all") {
+            //       this.category = 'ALL'
+            //       this.celebrities = this.celebritiesService.celebrities.reverse();
+            //       this.celebrities = [...new Set(this.celebrities)];
+            //       this.isLoading = false;
+            //     }
+            //   })
+            // })
           })
           this.celebrities = this.celebrities.reverse();
         }
       });
   }
 
-  subscription: Subscription;
+  
   ngOnInit(): void {
     this.isLoading = true;
     this.celebrities = [];
 
     this.celebritiesService.getCelebrities().then((celebrities: any) => {
-      celebrities.map((a: any) => {
-        this.celebrities = this.celebrities.reverse();
-        if (this.celebrities.length <= 0) {
-          this.activatedRoute.params.subscribe((param: Params) => {
-            this.category = param.view.split('-').join(' ').toUpperCase();
-          })
-        }
+      celebrities?.map((a: any) => {
         a.category.map((n: any) => {
-          if (this.router.url == "/category/" + n.toLocaleLowerCase().split(' ').join('-')) {
+          if (this.router.url == "/category/" + n?.toLowerCase().split(' ').join('-')) {
             this.activatedRoute.params.subscribe((param: Params) => {
               this.category = param.view.split('-').join(' ').toUpperCase();
             })
             this.celebrities.push(a);
-              this.isLoading = false
+              this.isLoading = false;
           }
         })
         if (this.router.url == "/category/all") {
-          this.celebrities = this.celebritiesService.celebrities;
+          this.celebrities = celebrities;
           this.category = 'ALL'
+          this.isLoading = false;
+        }
+        this.celebrities = this.celebrities.reverse();
+        if (this.celebrities.length <= 0) {
+          this.activatedRoute.params.subscribe((param: Params) => {
+            this.category = param.view.split('-').join(' ').toUpperCase();
+            this.isLoading = false;
+          })
         }
       })
     }).catch((err) => {
-      // this.toastService.error(err.message);
+      console.log(err.message);
       this.isLoading = false;
-      // this.isError= true;
     })
 
 
@@ -106,20 +127,23 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
     // setTimeout(() => {
     //   this.isLoading = false
     // }, 300);
-
+   
     this.subscription =  this.celebritiesService.getSelectedCategories
       .subscribe(
         (selectedCategory: any) => {
-          this.celebrities= []
+          this.isLoading = true;
+          this.celebrities= [];
           this.activatedRoute.params.subscribe((param: Params) => {
             this.category = param.view.split('-').join(' ').toUpperCase();
+            this.isLoading = false;
           })
           this.celebrities = selectedCategory;
+          this.isLoading = false;
         }
       );
    this.celebritiesService.getActiveClass.next(true);
   }
-  selectedCelebrity: any
+  
   onNavigate(selected: any) {
     this.isLoading = true;
     window.scrollTo(0, 0);
