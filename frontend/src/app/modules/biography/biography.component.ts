@@ -3,6 +3,7 @@ import { Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
 import { CelebritiesService } from 'src/app/services/celebrities.service';
+import { ToasTMessageService } from 'src/app/services/toastr.service';
 
 @Component({
   selector: 'app-biography',
@@ -11,7 +12,8 @@ import { CelebritiesService } from 'src/app/services/celebrities.service';
 })
 export class BiographyComponent implements OnInit {
   constructor(private celebritiesService: CelebritiesService,
-    private router: Router, private meta: Meta
+    private router: Router, private meta: Meta,
+    private toastService: ToasTMessageService
     ) { }
   celebrities: any[] = [];
   randomCelebrity: any
@@ -27,6 +29,7 @@ export class BiographyComponent implements OnInit {
     this.isLoading=true;
     this.celebritiesService.getCelebrities().then((celebrities: any) => {
       this.randomCelebrity = celebrities[Math.floor((Math.random() * celebrities.length))];
+      this.toastService.success(`${this.randomCelebrity.name}`);
       this.recentPost = celebrities.slice(-6).reverse();
       this.celebrities = celebrities;
       this.shuffled = celebrities.sort(() => 0.5 - Math.random());
@@ -35,7 +38,8 @@ export class BiographyComponent implements OnInit {
         this.isLoading=false;
         this.meta.updateTag({ name: 'description', content: 'Biography Categories'});
     }).catch((err) => {
-      // this.toastService.error(err.message);
+      this.toastService.error(err.message);
+      this.toastService.error('Unable to load biographies archieve');
       this.isLoading = false;
       // this.isError= true;
     })

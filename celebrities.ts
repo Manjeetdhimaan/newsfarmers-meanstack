@@ -1,12 +1,4 @@
-import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
 
-@Injectable({
-  providedIn: 'root'
-})
-
-export class CelebritiesService {
   //'lyricist', 'writer', 'Song writer', 'Music Composer' ,'music director', 'music composer', 'Punjabi singer', 'Singer', 'Record Producer', 'punjabi actress', 'actress', 'model', 'Film Producer', 'Rapper', 'Anchor', 'Director', 'Screenwriter', 'Dialogue writer, 'Film director'
 
   // {
@@ -15,33 +7,6 @@ export class CelebritiesService {
   //   imgCaption: '',
   //   videoSrc: ''
   // },
-  celebrities:any
-  constructor(private http: HttpClient) {
-    this.http.get(`http://localhost:5050/getCelebrity`).subscribe(res => {
-      this.celebrities= res;
-     
-     },
-       error => {
-         console.log(error)
-       })
-   }
-   
-  users: any;
-  url: string = 'https://www.newsfarmers.com/';
-  getSearchedCelebrity = new Subject<any>();
-  getSelectedCategories = new Subject<any>();
-  getActiveClass = new Subject<boolean>();
-  domain = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
-
-  selectedCelebrity(selected: any) {
-    const selectedCelebrity = selected.name.toLowerCase().split(' ').join('-');
-    return selectedCelebrity;
-  }
-
-  async getCelebrities() {
-    return await this.http.get(`http://localhost:5050/getCelebrity`).toPromise();
-    // return this.celebrities.slice();
-  }
 
   // # HTTPS forced
 
@@ -57,7 +22,7 @@ export class CelebritiesService {
 
   // </IfModule>
 
-  celebrities1: any[] = [
+  let celebrities = [
     {
       "id": "ce1",
       "category": [
@@ -73883,4 +73848,3 @@ export class CelebritiesService {
       description: `Arshad Warsi (born 19 April 1968) is an Indian actor, producer, dancer, television personality, choreographer and playback singer who appears in Hindi films. He is the recipient of several awards including a Filmfare Award from five nominations and is noted for acting in varied film genres.`
     },
   ]
-}
