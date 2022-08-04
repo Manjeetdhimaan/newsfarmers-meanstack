@@ -17,6 +17,8 @@ import { NewsService } from 'src/app/services/news.service';
 export class HomeComponent implements OnInit {
   menuBtnClick: boolean = false;
   isLoading: boolean = false;
+  isLoadingNews: boolean = false;
+  isLoadingImage: boolean = false;
   isImg: boolean = true;
   latestNews: any;
   borderColor = "black";
@@ -69,11 +71,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.isLoading = true;
+    this.isLoadingNews = true;
     this.celebritiesService.getCelebrities().then((celebrities: any) => {
       this.randomCelebrity = celebrities[Math.floor((Math.random() * celebrities.length))];
       this.shuffled = celebrities.sort(() => 0.5 - Math.random());
       this.selected = this.shuffled.slice(0, 1);
       this.onGetCategory();
+      this.isLoading = false;
     }).catch((err) => {
       // this.toastService.error(err.message);
       this.isLoading = false;
@@ -84,15 +88,14 @@ export class HomeComponent implements OnInit {
     // this.randomCelebrity = this.celebritiesService.getCelebrities()[Math.floor((Math.random() * this.celebritiesService.getCelebrities().length))];
     
 
-    this.isLoading = true;
     this.newsService.getNews().then((news: any) => {
       this.latestNews = news.slice(-8).reverse();
       // this.toastService.success('Blogs loaded successfully');
-      this.isLoading = false;
+      this.isLoadingNews = false;
       // this.isError = false;
     }).catch((err) => {
       console.log(err);
-      this.isLoading = false;
+      this.isLoadingNews = false;
       // this.isError = true;
       // this.toastService.error(err.message);
     })
@@ -102,19 +105,16 @@ export class HomeComponent implements OnInit {
       this.fragment = fragment;
     });
     this.meta.updateTag({ name: 'description', content: 'Newsfarmers - Biographies of your favourite celebrities' });
-    this.isLoading = false;
     this.document = document.querySelector('#' + this.fragment);
-
-
   }
 
 
   onToggleImage(imgSrc: string) {
-    this.isLoading = true;
+    this.isLoadingImage = true;
     this.imgSrc = imgSrc;
     this.isToggleImage = !this.isToggleImage;
     setTimeout(() => {
-      this.isLoading = false;
+      this.isLoadingImage = false;
     }, 200);
   }
 
@@ -157,19 +157,24 @@ export class HomeComponent implements OnInit {
       celebrity.category.map((cat: any) => {
         if (cat.toLowerCase() == 'social media influencer'.toLowerCase()) {
           this.socialMediaCategory.push(celebrity);
+          this.isLoading = false;
         }
         if (cat.toLowerCase() == 'punjabi singer'.toLowerCase()) {
           this.punjabiSingerCategory.push(celebrity);
+          this.isLoading = false;
         }
         if (cat.toLowerCase() == 'lyricist'.toLowerCase()) {
           this.lyricistCategory.push(celebrity);
+          this.isLoading = false;
         }
         if (cat.toLowerCase() == 'bollywood actor'.toLowerCase() || cat.toLowerCase() == 'bollywood actress'.toLowerCase()) {
           this.bollywoodCategory.push(celebrity);
+          this.isLoading = false;
         }
       })
     })
     if (this.socialMediaCategory.length <= 0) {
+      this.isLoading = false;
     }
   }
 
@@ -308,7 +313,7 @@ export class HomeComponent implements OnInit {
   onNavigateToSelectedNews(news: any) {
     console.log(news)
     window.scrollTo(0, 0);
-    const selectedNews = news.title.toLowerCase().split(' ').join('-');
+    const selectedNews = news.urlTitle.toLowerCase().split(' ').join('-')? news.urlTitle.toLowerCase().split(' ').join('-'): news.title.toLowerCase().split(' ').join('-');
     this.router.navigate(['/news', selectedNews]);
   }
 

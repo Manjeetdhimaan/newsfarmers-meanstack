@@ -27549,7 +27549,6 @@
     "Pollywood",
     "Instagram",
     "Acting",
-    "model",
     "punjabi actor",
     "actor"
   ],
@@ -49439,7 +49438,7 @@
   "siblings": {
     "brother": "Vaibhav Sharma (Elder)",
     "brotherImgSrc": "assets/images/may2022/Aisha-Sharma-with-her-sister-brother.jpg",
-    "sister": "<a href=\"undefined/aisha-sharma\" class=\"celebrity\", target=\"_blank\">Aisha Sharma(Actress)</a>, Reetika Sharma",
+    "sister": "<a href=\"https://www.newsfarmers.com/aisha-sharma\" class=\"celebrity\", target=\"_blank\">Aisha Sharma(Actress)</a>, Reetika Sharma",
     "sisterImgSrc": "assets/images/may2022/neha-sharma-sister.jpg"
   },
   "favourites": {
@@ -72662,290 +72661,292 @@
   "description": "Johnny Lever (born John Prakash Rao Janumala; 14 August 1957) is an Indian actor and comedian who is known for his works in Hindi cinema. He is one of the first stand-up comedians in India. He is the recipient of numerous accolades, including thirteen Filmfare Awards nominations in Filmfare Award for Best Performance in a Comic Role, and has won the award twice, for his work in Deewana Mastana (1997) and Dulhe Raja (1998). He began his career in 1984, and has acted in more than three hundred Hindi films."
 },
     {
-      id: 'ce359',
-      category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actor', 'actor', 'director'],
-      categoryId: ['Bollywood Actor/Actress, Model'],
-      name: `Sanjay Mishra`,
-      otherName: `Sanjay Mishra`,
-      nickName: ``,
-      fullname: ``,
-      height: `in feet inches - 5’ 7”`,
-      weight: '72 Kg',
-      gender: 'Male',
-      boyfriend: '',
-      profession: `Actor, Director`,
-      professionId: ``,
-      eyeColor: 'Black',
-      hairColor: 'White',
-      imgSrc: "assets/images/july2022/sanjay-mishra.jpg",
-      politicalParty: "",
-      politicalPartyImgSrc: "",
-      dob: {
-        date: '6',
-        month: 'October',
-        year: '1963'
-      },
-      dod: {
-        date: '',
-        month: '',
-        year: ''
-      },
-      deathCause: ``,
-      placeOfDeath: ``,
-      birthPlace: `Darbhanga, Bihar`,
-      nationality: 'Indian',
-      hometown: 'Varanasi, Uttar Pradesh, India',
-      school: `Kendriya Vidyalaya BHU, Varanasi, Uttar Pradesh, India`,
-      collegeUniversity: `National School of Drama, New Delhi, India`,
-      qualification: `Graduate of National School of Drama, New Delhi`,
-      religion: 'Hinduism',
-      zodiacSign: 'Libra',
-      bloodGroup: '',
-      foodHabit: '',
-      address: ``,
-      hobbies: `Cooking, Listening to Pink Floyd, Doing Photography`,
-      debut: {
-        lyrical: "",
-        lyricalImgSrc: "",
-        punjabiFilm: ``,
-        punjabiFilmImgSrc: "",
-        bollywoodFilm: `Oh Darling! Yeh Hai India! (1995)`,
-        bollywoodFilmImgSrc: "assets/images/july2022/Oh-Darling-Yeh-Hai-India.jpg",
-        hollywoodFilm: ``,
-        hollywoodFilmImgSrc: "",
-        tollywoodFilm: ``,
-        tollywoodFilmImgSrc: "",
-        tamilFilm: '',
-        tamilFilmImgSrc: "",
-        kannadaFilm: '',
-        kannadaFilmImgSrc: "",
-        punjabiAlbum: '',
-        punjabiAlbumImgSrc: "",
-        hindiAlbum: '',
-        hindiAlbumImgSrc: "",
-        singles: ``,
-        singlesImgSrc: "",
-        musicDirection: "",
-        musicDirectionImgSrc: "",
-        filmDirection: "Pranaam Walekum (2015)",
-        filmDirectionImgSrc: "",
-        tv: `Chanakya (1991)`,
-        tvImgSrc: "",
-        webSeries: "",
-        webSeriesImgSrc: "",
-        production: "",
-        productionImgSrc: "",
-        filmWriter: "",
-        filmWriterImgSrc: "",
-        lastSong: ``,
-        lastSongImgSrc: ``,
-        lastFilm: ``,
-        lastFilmImgSrc: ``
-      },
-      awards: [],
-      controversies: [],
-      maritalStatus: `Married`,
-      affairs: ``,
-      affairsImgSrc: ``,
-      wifeOrHusband: `Kiran Mishra`,
-      wifeOrHusbandImgSrc: `assets/images/july2022/Sanjay-Mishra-with-his-wife-Kiran.jpg`,
-      fiance: '',
-      fianceImgSrc: '',
-      children: {
-        son: `None`,
-        sonImgSrc: ``,
-        sonImgSrc1: '',
-        sonImgSrc2: '',
-        daughter: `Pal Mishra, Lamha Mishra`,
-        daughterImgSrc: 'assets/images/july2022/Sanjay-Mishra-with-his-daughters.jpg'
-      },
-      parents: {
-        father: 'Shambhu Nath Mishra (Civil Servant)',
-        fatherImgSrc: '',
-        mother: 'Name Not Known',
-        motherImgSrc: ''
-      },
-
-      siblings: {
-        brother: `Sumit Mishra, Amit Mishra`,
-        brotherImgSrc: '',
-        sister: `Meenal Mishra`,
-        sisterImgSrc: ''
-      },
-      favourites: {
-        food: `Achari Mutton and Pepper Chicken`,
-        fruit: ``,
-        beverages: ``,
-        actor: `<a href="https://www.newsfarmers.com/irrfan-khan" class="celebrity" target="_blank" rel="noopener">Irrfan Khan</a>, <a href="https://www.newsfarmers.com/nawazuddin-siddiqui" class="celebrity" target="_blank" rel="noopener">Nawazuddin Siddiqui</a>, <a href="https://www.newsfarmers.com/shah-rukh-khan" target="_blank" class="celebrity" rel="noopener">Shah Rukh Khan</a>`,
-        actress: ``,
-        singer: ``,
-        fashionBrand: ``,
-        colour: ``,
-        destination: ``,
-        sports: `Cricket`,
-        sportsman: ``,
-        dress: '',
-        song: ``,
-        film: ``,
-        director: ``
-      },
-      styleQoutient: {
-        carsCollection: "",
-        imgSrc: '',
-      },
-      // INR 6 to 7 crores+/movie (as in 2021)
-      moneyFactor: {
-        earning: `Not Known`,
-        netWorth: 'INR 110 Crore (as in 2021)',
-        imgSrc: 'assets/images/july2022/sanjay-mishra-net.jpg'
-      },
-      tattoos: [],
-      facts: {
-        smoke: 'Not Known',
-        alcoholic: 'Not Known'
-      },
-      otherFacts: [
-        {
-          fact: 'Instagram',
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: '',
-          instaLink: 'https://www.instagram.com/p/Cf6tHLEMssu/embed/'
-        },
-        {
-          fact: "Interview",
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: 'https://www.youtube.com/embed/C0U4r45WDv8?feature=oembed'
-        },
-        {
-          fact: `He was born in Darbhanga, Bihar.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `His father was an employee in the Ministry of Information and Broadcasting in the Government of India.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `His grandfather was a Civil Servant and served as the District Magistrate.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `He was brought up in Varanasi.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `His earliest influence was his grandmother who used to sing for the Patna Radio Station. He used to spend his childhood vacation with her.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `His father had a keen interest in arts, which influenced him to do something in those lines.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `He wasn&#8217;t good at studies and flunked class 10 twice.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `He had heard a lot about the National Schooling of Drama and decided to attend it.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `When he entered NSD, Irrfan Khan was in his final year at NSD.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `Tigmanshu Dhulia was his batchmate at the NSD.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `After graduating from NSD, he moved to Mumbai in 1991.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `He had to struggle a lot in Mumbai for his survival and often had to live on <em>Vada Paav.</em>`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `In the early 1990s, Tigmanshu Dhulia offered him a television serial.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `After watching Ketan Mehta&#8217;s cult film- Mirch Masala, he became a fan of him and decided to be around him.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `He had to give more than 20 takes on the first day of the shoot of a TV serial- <em>Chanakya</em> in 1991.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `During the 1999 Cricket World Cup, he became famous with his Apple Singh commercials for ESPN Star Sports.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `He became a household name after playing the role of a corrupt, soaked in red-tapism bureaucrat- <em>Shukla in </em>the hugely popular sitcom <em>Office Office.</em>`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `His performance in the 2014 film- Ankhon Dekhi was appreciated by the critics for which he got the Filmfare Award for Best Actor (Critics).`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `In 2016, he has also been awarded the Best Actor Award at Indian Film Festival Los Angeles for the film- <em>Masaan.</em>`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `In an interview, he revealed that at one point in time, he had quit his film career and went to Rishikesh, where he worked as a cook and washed dishes at a dhaba. According to him, he had become disillusioned with his career after he lost his father and was himself diagnosed with an illness. While talking about this, he said,<br />
-          <blockquote><p>That time was different. I had no complaints about the industry. I had complaints about my life. My father had passed away at the time, and even I was battling an illness. So instances like these make you really question what you are doing with the time you have.”</p></blockquote>
-          <p>He added,</p>
-          <blockquote><p>I was suffering from a severe illness. Doctors had removed 15 litres of pus from my stomach and just after it got cured, I lost my father. I had started losing my life. So, I went to Rishikesh and started making omelettes at a dhaba near the bank of Ganga. The dhaba owner told me I will have to wash 50 cups a day and I will get Rs 150. But then I thought I need money for my survival.&#8221;</p></blockquote>
-          <p>In the same interview, the actor gave credit to director Rohit Shetty for his comeback in the film industry. He said,</p>
-          <blockquote><p>After working there for a day, people visiting the dhaba started recognising me. They used to say ‘Arre aap to Golmaal mein the na’ and wanted photographs with me. Then my mother used to call me and cry asking me to come home. In between all this, Rohit Shetty called me and offered a role in All the Best. That’s when I decided to get back to work.&#8221;</p></blockquote>`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-      ],
-      description: `Sanjay Mishra (born 6 October 1963) is an Indian actor known for his works predominantly in Hindi cinema and television. An alumnus of National School of Drama, he made his acting debut in the 1995 film Oh Darling! Yeh Hai India!. Later films include Rajkumar (1996) and Satya (1998). He also appeared as Apple Singh, an "icon" used by ESPN Star Sports during the 1999 Cricket World Cup. In 2015, he received the Filmfare Award for Best Actor (Critics) for his performance in Ankhon Dekhi.`
+  "id": "ce359",
+  "category": [
+    "Bollywood",
+    "Instagram",
+    "Acting",
+    "Bollywood actor",
+    "actor",
+    "director"
+  ],
+  "categoryId": [
+    "Bollywood Actor/Actress, Model"
+  ],
+  "name": "Sanjay Mishra",
+  "otherName": "Sanjay Mishra",
+  "nickName": "",
+  "fullname": "",
+  "height": "in feet inches - 5’ 7”",
+  "weight": "72 Kg",
+  "gender": "Male",
+  "boyfriend": "",
+  "profession": "Actor, Director",
+  "professionId": "",
+  "eyeColor": "Black",
+  "hairColor": "White",
+  "imgSrc": "assets/images/july2022/sanjay-mishra.jpg",
+  "politicalParty": "",
+  "politicalPartyImgSrc": "",
+  "dob": {
+    "date": "6",
+    "month": "October",
+    "year": "1963"
+  },
+  "dod": {
+    "date": "",
+    "month": "",
+    "year": ""
+  },
+  "deathCause": "",
+  "placeOfDeath": "",
+  "birthPlace": "Darbhanga, Bihar",
+  "nationality": "Indian",
+  "hometown": "Varanasi, Uttar Pradesh, India",
+  "school": "Kendriya Vidyalaya BHU, Varanasi, Uttar Pradesh, India",
+  "collegeUniversity": "National School of Drama, New Delhi, India",
+  "qualification": "Graduate of National School of Drama, New Delhi",
+  "religion": "Hinduism",
+  "zodiacSign": "Libra",
+  "bloodGroup": "",
+  "foodHabit": "",
+  "address": "",
+  "hobbies": "Cooking, Listening to Pink Floyd, Doing Photography",
+  "debut": {
+    "lyrical": "",
+    "lyricalImgSrc": "",
+    "punjabiFilm": "",
+    "punjabiFilmImgSrc": "",
+    "bollywoodFilm": "Oh Darling! Yeh Hai India! (1995)",
+    "bollywoodFilmImgSrc": "assets/images/july2022/Oh-Darling-Yeh-Hai-India.jpg",
+    "hollywoodFilm": "",
+    "hollywoodFilmImgSrc": "",
+    "tollywoodFilm": "",
+    "tollywoodFilmImgSrc": "",
+    "tamilFilm": "",
+    "tamilFilmImgSrc": "",
+    "kannadaFilm": "",
+    "kannadaFilmImgSrc": "",
+    "punjabiAlbum": "",
+    "punjabiAlbumImgSrc": "",
+    "hindiAlbum": "",
+    "hindiAlbumImgSrc": "",
+    "singles": "",
+    "singlesImgSrc": "",
+    "musicDirection": "",
+    "musicDirectionImgSrc": "",
+    "filmDirection": "Pranaam Walekum (2015)",
+    "filmDirectionImgSrc": "",
+    "tv": "Chanakya (1991)",
+    "tvImgSrc": "",
+    "webSeries": "",
+    "webSeriesImgSrc": "",
+    "production": "",
+    "productionImgSrc": "",
+    "filmWriter": "",
+    "filmWriterImgSrc": "",
+    "lastSong": "",
+    "lastSongImgSrc": "",
+    "lastFilm": "",
+    "lastFilmImgSrc": ""
+  },
+  "awards": [],
+  "controversies": [],
+  "maritalStatus": "Married",
+  "affairs": "",
+  "affairsImgSrc": "",
+  "wifeOrHusband": "Kiran Mishra",
+  "wifeOrHusbandImgSrc": "assets/images/july2022/Sanjay-Mishra-with-his-wife-Kiran.jpg",
+  "fiance": "",
+  "fianceImgSrc": "",
+  "children": {
+    "son": "None",
+    "sonImgSrc": "",
+    "sonImgSrc1": "",
+    "sonImgSrc2": "",
+    "daughter": "Pal Mishra, Lamha Mishra",
+    "daughterImgSrc": "assets/images/july2022/Sanjay-Mishra-with-his-daughters.jpg"
+  },
+  "parents": {
+    "father": "Shambhu Nath Mishra (Civil Servant)",
+    "fatherImgSrc": "",
+    "mother": "Name Not Known",
+    "motherImgSrc": ""
+  },
+  "siblings": {
+    "brother": "Sumit Mishra, Amit Mishra",
+    "brotherImgSrc": "",
+    "sister": "Meenal Mishra",
+    "sisterImgSrc": ""
+  },
+  "favourites": {
+    "food": "Achari Mutton and Pepper Chicken",
+    "fruit": "",
+    "beverages": "",
+    "actor": "<a href=\"https://www.newsfarmers.com/irrfan-khan\" class=\"celebrity\" target=\"_blank\" rel=\"noopener\">Irrfan Khan</a>, <a href=\"https://www.newsfarmers.com/nawazuddin-siddiqui\" class=\"celebrity\" target=\"_blank\" rel=\"noopener\">Nawazuddin Siddiqui</a>, <a href=\"https://www.newsfarmers.com/shah-rukh-khan\" target=\"_blank\" class=\"celebrity\" rel=\"noopener\">Shah Rukh Khan</a>",
+    "actress": "",
+    "singer": "",
+    "fashionBrand": "",
+    "colour": "",
+    "destination": "",
+    "sports": "Cricket",
+    "sportsman": "",
+    "dress": "",
+    "song": "",
+    "film": "",
+    "director": ""
+  },
+  "styleQoutient": {
+    "carsCollection": "",
+    "imgSrc": ""
+  },
+  "moneyFactor": {
+    "earning": "Not Known",
+    "netWorth": "INR 110 Crore (as in 2021)",
+    "imgSrc": "assets/images/july2022/sanjay-mishra-net.jpg"
+  },
+  "tattoos": [],
+  "facts": {
+    "smoke": "Not Known",
+    "alcoholic": "Not Known"
+  },
+  "otherFacts": [
+    {
+      "fact": "Instagram",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": "",
+      "instaLink": "https://www.instagram.com/p/Cf6tHLEMssu/embed/"
     },
+    {
+      "fact": "Interview",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": "https://www.youtube.com/embed/C0U4r45WDv8?feature=oembed"
+    },
+    {
+      "fact": "He was born in Darbhanga, Bihar.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "His father was an employee in the Ministry of Information and Broadcasting in the Government of India.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "His grandfather was a Civil Servant and served as the District Magistrate.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "He was brought up in Varanasi.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "His earliest influence was his grandmother who used to sing for the Patna Radio Station. He used to spend his childhood vacation with her.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "His father had a keen interest in arts, which influenced him to do something in those lines.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "He wasn&#8217;t good at studies and flunked class 10 twice.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "He had heard a lot about the National Schooling of Drama and decided to attend it.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "When he entered NSD, Irrfan Khan was in his final year at NSD.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "Tigmanshu Dhulia was his batchmate at the NSD.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "After graduating from NSD, he moved to Mumbai in 1991.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "He had to struggle a lot in Mumbai for his survival and often had to live on <em>Vada Paav.</em>",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "In the early 1990s, Tigmanshu Dhulia offered him a television serial.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "After watching Ketan Mehta&#8217;s cult film- Mirch Masala, he became a fan of him and decided to be around him.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "He had to give more than 20 takes on the first day of the shoot of a TV serial- <em>Chanakya</em> in 1991.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "During the 1999 Cricket World Cup, he became famous with his Apple Singh commercials for ESPN Star Sports.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "He became a household name after playing the role of a corrupt, soaked in red-tapism bureaucrat- <em>Shukla in </em>the hugely popular sitcom <em>Office Office.</em>",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "His performance in the 2014 film- Ankhon Dekhi was appreciated by the critics for which he got the Filmfare Award for Best Actor (Critics).",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "In 2016, he has also been awarded the Best Actor Award at Indian Film Festival Los Angeles for the film- <em>Masaan.</em>",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "In an interview, he revealed that at one point in time, he had quit his film career and went to Rishikesh, where he worked as a cook and washed dishes at a dhaba. According to him, he had become disillusioned with his career after he lost his father and was himself diagnosed with an illness. While talking about this, he said,<br />\n          <blockquote><p>That time was different. I had no complaints about the industry. I had complaints about my life. My father had passed away at the time, and even I was battling an illness. So instances like these make you really question what you are doing with the time you have.”</p></blockquote>\n          <p>He added,</p>\n          <blockquote><p>I was suffering from a severe illness. Doctors had removed 15 litres of pus from my stomach and just after it got cured, I lost my father. I had started losing my life. So, I went to Rishikesh and started making omelettes at a dhaba near the bank of Ganga. The dhaba owner told me I will have to wash 50 cups a day and I will get Rs 150. But then I thought I need money for my survival.&#8221;</p></blockquote>\n          <p>In the same interview, the actor gave credit to director Rohit Shetty for his comeback in the film industry. He said,</p>\n          <blockquote><p>After working there for a day, people visiting the dhaba started recognising me. They used to say ‘Arre aap to Golmaal mein the na’ and wanted photographs with me. Then my mother used to call me and cry asking me to come home. In between all this, Rohit Shetty called me and offered a role in All the Best. That’s when I decided to get back to work.&#8221;</p></blockquote>",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    }
+  ],
+  "description": "Sanjay Mishra (born 6 October 1963) is an Indian actor known for his works predominantly in Hindi cinema and television. An alumnus of National School of Drama, he made his acting debut in the 1995 film Oh Darling! Yeh Hai India!. Later films include Rajkumar (1996) and Satya (1998). He also appeared as Apple Singh, an \"icon\" used by ESPN Star Sports during the 1999 Cricket World Cup. In 2015, he received the Filmfare Award for Best Actor (Critics) for his performance in Ankhon Dekhi."
+},
     {
       id: 'ce360',
       category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actor', 'actor', 'Comedian'],

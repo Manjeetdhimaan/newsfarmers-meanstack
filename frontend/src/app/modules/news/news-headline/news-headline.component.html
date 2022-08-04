@@ -9,7 +9,7 @@
 <div class="hero-section" *ngIf="newsArray?.length>0 && !isLoading && !isError">
     <div class="card-grid">
         <a class="card" *ngFor="let news of newsArray  | paginate: { itemsPerPage: 40, currentPage: p }"
-            (mouseenter)="onHoverSelectedNews(news)" routerLink="news/{{hoveredNews}}" (click)="onNavigate(news)">
+            (mouseenter)="onHoverSelectedNews(news)" routerLink="{{hoveredNews}}" (click)="onNavigate(news)">
             <div class="card__background" style="background-image: url({{news?.imgSrc}})"></div>
             <div class="card__content">
                 <p class="card__category" style="font-size: 1.2rem;">{{news?.title}}</p>

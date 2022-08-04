@@ -1,6 +1,6 @@
 <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
 
-<div class="marquee-text">
+<div class="marquee-text" *ngIf="!isLoading">
     <marquee width="70%" direction="left" height="25px">
         <h3>Quick Info about {{ celebrity?.name }} <i class="margin-right bi-arrow-right-circle"></i> Height: {{ celebrity?.height }} <span class="margin-right"></span> Weight: {{ celebrity?.weight }} <span class="margin-right"></span> Age: {{celebrity?.dod?.date || celebrity?.dod?.month || celebrity?.dod?.year ? '(at the time of death) ' + getAgeAtTimeOfDeath() : getAge() }}</h3>
     </marquee>

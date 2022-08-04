@@ -26,7 +26,7 @@ export class NewsHeadlineComponent implements OnInit {
     this.isLoading=true;
        this.newsService.getNews().then((news:any) => {
         this.newsArray = news.reverse();
-        this.toastService.success('News Headline loaded successfully');
+        // this.toastService.success('News Headline loaded successfully');
         this.isLoading = false;
         this.isError = false;
       }).catch((err) => {
@@ -46,12 +46,15 @@ export class NewsHeadlineComponent implements OnInit {
   }
 
   onNavigate(news:any) {
+    console.log(news)
     window.scrollTo(0,0);
-    const selectedNews = news.title.toLowerCase().split(' ').join('-');
+    const selectedNews = news.urlTitle?.toLowerCase().split(' ').join('-') ? news.urlTitle?.toLowerCase().split(' ').join('-'): news.title.toLowerCase().split(' ').join('-');
+    console.log(selectedNews)
     this.router.navigate(['/news', selectedNews]);
   }
 
   onHoverSelectedNews(news:any){
     this.hoveredNews = this.newsService.hoverSelectedNews(news);
+    console.log(this.hoveredNews)
   }
 }

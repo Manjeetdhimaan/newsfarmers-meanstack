@@ -35,10 +35,11 @@ export class NewsDecsriptionComponent implements OnInit, OnDestroy {
           activatedRoute.params.subscribe((param: Params) => {
             this.newsService.getNews().then((news: any) => {
               news.map((a: any) => {
-                if (this.router.url.toLowerCase() == "/blogs/" + a?.urlTitle?.toLowerCase().split(' ').join('-')) {
+                const urlTitle = a.urlTitle?.toLowerCase().split(' ').join('-') ? a.urlTitle?.toLowerCase().split(' ').join('-') : a.title.toLowerCase().split(' ').join('-')
+                if (this.router.url.toLowerCase() == "/blogs/" + urlTitle) {
                   this.router.url.toLowerCase();
                   this.news = a;
-                  this.toastService.success(`${a.title}`);
+                  // this.toastService.success(`${a.title}`);
                   // let blogs = this.blogService.blogsArray.slice(-10).reverse();
                   // this.moreBlogs = blogs.sort(() => 0.5 - Math.random());
                   this.latestNews = a.slice(-8).reverse();
@@ -63,10 +64,11 @@ export class NewsDecsriptionComponent implements OnInit, OnDestroy {
     this.isLoading = true;
     this.newsService.getNews().then((news: any) => {
       news.map((a: any) => {
-        if (this.router.url.toLowerCase() == "/news/" + a.title.toLowerCase().split(' ').join('-')) {
+        const urlTitle = a.urlTitle?.toLowerCase().split(' ').join('-') ? a.urlTitle?.toLowerCase().split(' ').join('-') : a.title.toLowerCase().split(' ').join('-')
+        if (this.router.url.toLowerCase() == "/news/" + urlTitle) {
           this.router.url.toLowerCase();
           this.news = a;
-          this.toastService.success(`${a.title}`);
+          // this.toastService.success(`${a.title}`);
           let newsArray = news.slice(-10).reverse();
           this.moreNews = newsArray.sort(() => 0.5 - Math.random());
           this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/news/${a.title.toLowerCase().split(' ').join('-')}` });
@@ -75,7 +77,8 @@ export class NewsDecsriptionComponent implements OnInit, OnDestroy {
           this.isError = false;
         }
       })
-      if (this.router.url.toLowerCase() !== "/news/" + this.news?.title.toLowerCase().split(' ').join('-')) {
+      const currentUrlTitle = this.news?.urlTitle?.toLowerCase().split(' ').join('-') ? this.news?.urlTitle?.toLowerCase().split(' ').join('-') : this.news?.title.toLowerCase().split(' ').join('-')
+      if (this.router.url.toLowerCase() !== "/news/" + currentUrlTitle) {
         this.router.navigate(['/404notfound']);
         this.isLoading = false;
         this.isError = false;
@@ -120,9 +123,9 @@ export class NewsDecsriptionComponent implements OnInit, OnDestroy {
       top: 0,
       behavior: 'smooth'
     });
-    const celebrityName = selected.title.toLowerCase().split(' ');
+    const celebrityName = selected.urlTitle?.toLowerCase().split(' ')? selected.urlTitle?.toLowerCase().split(' '):selected.title.toLowerCase().split(' ');
     const celebrityNameJion = celebrityName.join('-');
-    this.toastService.success(`${selected.title}`);
+    // this.toastService.success(`${selected.title}`);
     this.router.navigate(['news/', celebrityNameJion]);
     this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/news/${selected.title.toLowerCase().split(' ').join('-')}` });
     this.isLoading = false;

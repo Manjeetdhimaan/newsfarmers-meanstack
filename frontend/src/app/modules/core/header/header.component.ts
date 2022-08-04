@@ -172,6 +172,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   categoryCelebrity: any = [];
 
   public onGetCategory(event: any) {
+    this.isLoading = true;
     this.selectedCategory = '';
     this.isDropDownToggle = false;
     this.isToggleMenu = false;
@@ -179,8 +180,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.namebutton.nativeElement.classList.add('bi-list');
     this.animationMenuState = 'down'
     this.categoryCelebrity = [];
-    this.celebritiesService.getCelebrities().then((celebrities: any) => {
-      celebrities.map((celebrity: any) => {
+    this.celebrities.map((celebrity: any) => {
         celebrity.category.map((cat: any) => {
           if (cat?.toLowerCase() === event.target.value.toLowerCase()) {
             this.categoryCelebrity.push(celebrity);
@@ -203,9 +203,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
       });
       this.router.navigate(['category/', event.target.value.toLowerCase().split(' ').join('-')]);
       this.selectedCategory = '';
-    }).catch((err) => {
-      console.log(err.message);
-    })
+    
 
     // this.celebritiesService.celebrities?.map((celebrity: any) => {
     //   celebrity.category.map((cat: any) => {

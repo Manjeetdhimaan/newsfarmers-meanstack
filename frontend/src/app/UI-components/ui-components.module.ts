@@ -4,13 +4,15 @@ import { BackdropComponent } from "./backdrop/backdrop.component";
 import { BackToTopComponent } from "./back-to-top/back-to-top.component";
 import { SpinnerComponent } from "./spinner/spinner.component";
 import { LoadingComponent } from "./loading";
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
     declarations:[
         BackdropComponent,
         BackToTopComponent,
         SpinnerComponent,
-        LoadingComponent
+        LoadingComponent,
+        LoaderComponent
     ],
     
 imports:[
@@ -20,7 +22,8 @@ exports: [
     BackdropComponent,
     BackToTopComponent,
     SpinnerComponent,
-    LoadingComponent
+    LoadingComponent,
+    LoaderComponent
 ]
 })
 export class UIComponentsModule{}

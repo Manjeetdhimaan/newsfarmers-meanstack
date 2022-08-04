@@ -48,7 +48,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
               celebrities.map((celebrity: any) => {
                 this.recentPost = celebrities.slice(-8).reverse();
                 this.celebrities = celebrities;
-                if (this.router.url.toLowerCase() == "/" + celebrity.name.toLowerCase().split(' ').join('-')) {
+                if (this.router.url.toLowerCase() == "/" + celebrity.name?.toLowerCase().split(' ').join('-')) {
                   this.router.url.toLowerCase();
                   this.celebrity = celebrity;
                   this.dobOfCelebrity = this.celebrity.dob.year;
@@ -57,20 +57,20 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
                   this.relatedPostArray = [];
                   const Celebrities = celebrities.slice();
                   const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
-                  // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === this.celebrity.categoryId.toLowerCase());
-                  const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
+                  // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === this.celebrity.categoryId?.toLowerCase());
+                  const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
                   suffledArray.filter((shuffleCelebrity: any) => {
-                    let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a.toLowerCase());
+                    let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a?.toLowerCase());
                     if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
                       this.relatedPostArray.push(shuffleCelebrity);
                     }
                   });
                   // this.toastService.success(`${a.name}`);
-                  this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name.toLowerCase().split(' ').join('-')}` });
+                  this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name?.toLowerCase().split(' ').join('-')}` });
                   this.isLoading = false
                 }
               })
-              if (this.router.url.toLowerCase() !== "/blogs/" + this.celebrity?.name.toLowerCase().split(' ').join('-')) {
+              if (this.router.url.toLowerCase() !== "/blogs/" + this.celebrity?.name?.toLowerCase().split(' ').join('-')) {
                 this.router.navigate(['/404notfound']);
                 this.isLoading = false;
         
@@ -96,34 +96,34 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
     this.isLoading = true;
     // this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
     // this.celebrities = this.celebritiesService.getCelebrities();
-
     this.celebritiesService.getCelebrities().then((celebrities: any) => {
       celebrities.map((celebrity: any) => {
         this.recentPost = celebrities.slice(-8).reverse();
         this.celebrities = celebrities;
-        if (this.router.url.toLowerCase() == "/" + celebrity.name.toLowerCase().split(' ').join('-')) {
+        if (this.router.url.toLowerCase() == "/" + celebrity.name?.toLowerCase().split(' ').join('-')) {
           this.router.url.toLowerCase();
           this.celebrity = celebrity;
+          // this.toastService.success(`${this.celebrity.name}`);
           this.dobOfCelebrity = this.celebrity.dob.year;
           this.dodOfCelebrity = this.celebrity.dod?.year;
           this.exactDOB = this.celebrity.dob.year + '-' + this.celebrity.month + '-' + this.celebrity.date;
           this.relatedPostArray = [];
           const Celebrities = celebrities.slice();
           const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
-          // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === this.celebrity.categoryId.toLowerCase());
-          const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
+          // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === this.celebrity.categoryId?.toLowerCase());
+          const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
           suffledArray.filter((shuffleCelebrity: any) => {
-            let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a.toLowerCase());
+            let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a?.toLowerCase());
             if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
               this.relatedPostArray.push(shuffleCelebrity);
             }
           });
           // this.toastService.success(`${a.name}`);
-          this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name.toLowerCase().split(' ').join('-')}` });
+          this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name?.toLowerCase().split(' ').join('-')}` });
           this.isLoading = false
         }
       })
-      if (this.router.url.toLowerCase() !== "/" + this.celebrity?.name.toLowerCase().split(' ').join('-')) {
+      if (this.router.url.toLowerCase() !== "/" + this.celebrity?.name?.toLowerCase().split(' ').join('-')) {
         this.router.navigate(['/404notfound']);
         this.isLoading = false;
 
@@ -138,7 +138,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
 
 
     // this.celebritiesService.getCelebrities().map((a: any) => {
-    //   if (this.router.url.toLowerCase() == "/" + a.name.toLowerCase().split(' ').join('-')) {
+    //   if (this.router.url.toLowerCase() == "/" + a.name?.toLowerCase().split(' ').join('-')) {
     //     this.router.url.toLowerCase();
     //     this.celebrity = a;
     //     this.dobOfCelebrity = this.celebrity.dob.year;
@@ -147,22 +147,22 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
     //     this.relatedPostArray = [];
     //     const celebrities = this.celebritiesService.getCelebrities().slice();
     //     const suffledArray = celebrities.sort(() => 0.5 - Math.random());
-    //     // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === this.celebrity.categoryId.toLowerCase());
-    //     const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
+    //     // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === this.celebrity.categoryId?.toLowerCase());
+    //     const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
     //     suffledArray.filter((celebrity: any) => {
-    //       let randomCelebrity = celebrity.categoryId.map((a: any) => a.toLowerCase());
+    //       let randomCelebrity = celebrity.categoryId.map((a: any) => a?.toLowerCase());
     //       if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
     //         this.relatedPostArray.push(celebrity);
     //       }
     //     });
     //     this.toastService.success(`${a.name}`);
-    //     this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${a.name.toLowerCase().split(' ').join('-')}` });
+    //     this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${a.name?.toLowerCase().split(' ').join('-')}` });
     //     setTimeout(() => {
     //       this.isLoading = false
     //     }, 0);
     //   }
     // })
-    // if (this.router.url.toLowerCase() !== "/" + this.celebrity?.name.toLowerCase().split(' ').join('-')) {
+    // if (this.router.url.toLowerCase() !== "/" + this.celebrity?.name?.toLowerCase().split(' ').join('-')) {
     //   this.router.navigate(['/404notfound']);
     //   this.isLoading = false;
     // }
@@ -170,22 +170,21 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
     this.subscription = this.celebritiesService.getSearchedCelebrity
       .subscribe(
         (selectedCelebrity: any) => {
-          this.isLoading = true;
           this.relatedPostArray = []
           this.celebrity = selectedCelebrity;
           this.dobOfCelebrity = selectedCelebrity.dob.year;
 
           this.dodOfCelebrity = this.celebrity?.dod?.year;
-          let celebrities = this.celebritiesService.celebrities.slice();
+          let celebrities = this.celebrities.slice();
           const suffledArray = celebrities.sort(() => 0.5 - Math.random());
-          const targetedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
+          const targetedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
           suffledArray.filter((celebrity: any) => {
-            let randomCelebrity = celebrity.categoryId.map((a: any) => a.toLowerCase());
-            if ((randomCelebrity.filter((n: any) => { return targetedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
+            let randomCelebrity = celebrity.categoryId.map((a: any) => a?.toLowerCase());
+            if ((randomCelebrity.filter((n: any) => { return targetedCelebrity.indexOf(n) >= 0; })?.length >= 1)) {
               this.relatedPostArray.push(celebrity);
             }
           });
-          // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === this.celebrity.categoryId.toLowerCase());
+          // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === this.celebrity.categoryId?.toLowerCase());
           this.isLoading = false;
         }
       );
@@ -203,29 +202,25 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
     this.celebrity = selected;
     this.dobOfCelebrity = selected.dob.year;
     this.dodOfCelebrity = selected.dod?.year;
-     this.celebritiesService.getCelebrities().then((celebrities:any) =>{
-      this.celebrities = celebrities
-      const Celebrities = celebrities.slice();
+      // this.celebrities = celebrities
+      const Celebrities = this.celebrities.slice();
       const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
-      const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
+      const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
       suffledArray.filter((celebrity: any) => {
-        let randomCelebrity = celebrity.categoryId.map((a: any) => a.toLowerCase());
+        let randomCelebrity = celebrity.categoryId.map((a: any) => a?.toLowerCase());
         if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
           this.relatedPostArray.push(celebrity);
         }
       });
 
-    this.recentPost = celebrities.slice(-8).reverse();
-    this.router.navigate(['/', selected.name.toLowerCase().split(' ').join('-')]);
-    this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${selected.name.toLowerCase().split(' ').join('-')}` });
+    this.recentPost = this.celebrities.slice(-8).reverse();
+    this.router.navigate(['/', selected.name?.toLowerCase().split(' ').join('-')]);
+    this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${selected.name?.toLowerCase().split(' ').join('-')}` });
     this.isLoading = false;
-    this.toastService.success(`${selected.name}`);
-    }).catch((err) => {
-      console.log(err.message);
-      this.isLoading = false;
-    });
+    // this.toastService.success(`${selected.name}`);
+   
     
-    // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === selected.categoryId.toLowerCase());
+    // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === selected.categoryId?.toLowerCase());
 
   }
 
@@ -242,18 +237,18 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
   //   this.celebrities = this.celebritiesService.getCelebrities();
   //   const celebrities = this.celebritiesService.getCelebrities().slice();
   //   const suffledArray = celebrities.sort(() => 0.5 - Math.random());
-  //   const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a.toLowerCase());
+  //   const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
   //   suffledArray.filter((celebrity: any) => {
-  //     let randomCelebrity = celebrity.categoryId.map((a: any) => a.toLowerCase());
+  //     let randomCelebrity = celebrity.categoryId.map((a: any) => a?.toLowerCase());
   //     if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
   //       this.relatedPostArray.push(celebrity);
   //     }
   //   });
   //   this.toastService.success(`${selected.name}`);
-  //   // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId.toLowerCase() === selected.categoryId.toLowerCase());
+  //   // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === selected.categoryId?.toLowerCase());
   //   this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
-  //   this.router.navigate(['/', selected.name.toLowerCase().split(' ').join('-')]);
-  //   this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${selected.name.toLowerCase().split(' ').join('-')}` });
+  //   this.router.navigate(['/', selected.name?.toLowerCase().split(' ').join('-')]);
+  //   this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${selected.name?.toLowerCase().split(' ').join('-')}` });
   //   this.isLoading = false;
 
 

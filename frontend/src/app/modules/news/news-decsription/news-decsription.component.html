@@ -54,7 +54,7 @@
                         <!-- <h2 style="color: rgb(243, 18, 18);" >No Related post.</h2> -->
                     </div>
                     <div class=" w3-margin w3-margin-top" 
-                    *ngFor="let more of moreNews?.slice(-6)">
+                    *ngFor="let more of moreNews?.slice(-5)">
                     <a><div *ngIf="more?.id.toLowerCase() !== news?.id.toLowerCase()" animation="fadeInUp" delay="0" duration="500" offset="110" triggerOnce="true"  (click)="onNavigate(more)">
                             <img [src]="more?.imgSrc!=''? more?.imgSrc: ''" style="width:100%; border-radius: 24px;" class="w3-card">
                             <div class="w3-container w3-white w3-card" style="padding-left: 1rem; border-radius: 14px">

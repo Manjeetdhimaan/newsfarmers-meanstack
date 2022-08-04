@@ -1,6 +1,9 @@
 <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+<div class="center" *ngIf="isLoading">
+    <app-loader></app-loader>
+</div>
 
-<body class="w3-light-grey">
+<body class="w3-light-grey" *ngIf="!isLoading && !isError">
     <div class="w3-content" style="max-width:1400px">
         <header class="w3-container w3-center w3-padding-32">
         </header>
@@ -23,8 +26,9 @@
                             <div class="w3-row">
                                 <div class="w3-col m8 s12">
                                     <p>
-                                        <a routerLink="/{{selectedCelebrity}}" (mouseenter)="onHoverCelebrity(randomCelebrity)"
-                                             (click)="onNavigate(randomCelebrity)">
+                                        <a routerLink="/{{selectedCelebrity}}"
+                                            (mouseenter)="onHoverCelebrity(randomCelebrity)"
+                                            (click)="onNavigate(randomCelebrity)">
                                             <button class="w3-button w3-padding-large w3-white w3-border"><b> READ MORE
                                                     »</b></button>
                                         </a>
@@ -38,8 +42,9 @@
                         <h1>More From NewsFarmers</h1>
                         <div class="hero-section">
                             <div class="card-grid" *ngIf="!isLoading">
-                                <a routerLink="/{{selectedCelebrity}}" class="card card1" *ngFor="let celebrity of moreCelebrities" (mouseenter)="onHoverCelebrity(celebrity)"
-                                    (click)="onNavigate(celebrity)" >
+                                <a routerLink="/{{selectedCelebrity}}" class="card card1"
+                                    *ngFor="let celebrity of moreCelebrities" (mouseenter)="onHoverCelebrity(celebrity)"
+                                    (click)="onNavigate(celebrity)">
                                     <div class="card__background" style="background-image: url({{celebrity.imgSrc}})">
                                     </div>
                                     <div class="card__content">
@@ -55,11 +60,11 @@
                     <div class="w3-container w3-padding ">
                         <h2>Recent Posts</h2>
                     </div>
-                    <ul class="w3-ul w3-hoverable w3-white" >
-                        <a routerLink="/{{selectedCelebrity}}" *ngFor="let celebrity of recentPost" (mouseenter)="onHoverCelebrity(celebrity)" (click)="onNavigate(celebrity)">
-                            <li class="w3-padding-16"  
-                                 animation="fadeInUp" delay="100"
-                                duration="500" offset="100" triggerOnce="true">
+                    <ul class="w3-ul w3-hoverable w3-white">
+                        <a routerLink="/{{selectedCelebrity}}" *ngFor="let celebrity of recentPost"
+                            (mouseenter)="onHoverCelebrity(celebrity)" (click)="onNavigate(celebrity)">
+                            <li class="w3-padding-16" animation="fadeInUp" delay="100" duration="500" offset="100"
+                                triggerOnce="true">
                                 <img *ngIf="celebrity.imgSrc" src="{{celebrity.imgSrc}}" alt="{{celebrity.name}}"
                                     class="w3-left w3-margin-right" style="width:50px">
                                 <span *ngIf="!celebrity?.professionId">{{celebrity.name}}'s</span> <span
@@ -72,15 +77,15 @@
                 </div>
                 <hr style="visibility:hidden">
                 <div class="w3-col l4">
-                    <a routerLink="/{{selectedCelebrity}}" *ngFor="let item of selected" (mouseenter)="onHoverCelebrity(item)" (click)="onNavigate(item)">
-                        <div  animation="fadeIn"
-                            delay="10" duration="500" offset="70" triggerOnce="true">
-                            <div class="w3-margin w3-margin-top " *ngIf="item.name!=randomCelebrity?.name"
-                                >
+                    <a routerLink="/{{selectedCelebrity}}" *ngFor="let item of selected"
+                        (mouseenter)="onHoverCelebrity(item)" (click)="onNavigate(item)">
+                        <div animation="fadeIn" delay="10" duration="500" offset="70" triggerOnce="true">
+                            <div class="w3-margin w3-margin-top " *ngIf="item.name!=randomCelebrity?.name">
                                 <img src="{{item.imgSrc}}" style="width:100%; border-radius: 24px;" class="w3-card">
                                 <div class="w3-container w3-white w3-card"
                                     style="padding-left: 1rem; border-radius: 14px;">
-                                    <h3 class="h3"><b>{{item.name}}'s Height, Weight, Age,<br> Family, Biography, Net Worth & More</b></h3>
+                                    <h3 class="h3"><b>{{item.name}}'s Height, Weight, Age,<br> Family, Biography, Net
+                                            Worth & More</b></h3>
                                 </div>
                             </div>
                         </div>
@@ -90,5 +95,13 @@
             </div>
         </div><br>
     </div>
-    <app-footer></app-footer>
+
 </body>
+<app-footer *ngIf="!isLoading"></app-footer>
+<div class="container" *ngIf="!isLoading && isError">
+    <div class="w3-row">
+        <div class="w3-col l8 s12" style="text-align: center;">
+            <h1>Unable to load Biographies</h1>
+        </div>
+    </div>
+</div>

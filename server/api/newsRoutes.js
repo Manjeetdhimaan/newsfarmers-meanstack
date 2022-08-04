@@ -81,6 +81,7 @@ router.post('/register', async(req, res) => {
         category: req.body.category,
         categoryId: req.body.categoryId,
         title:req.body.title,
+        urlTitle:req.body.urlTitle,
         imgSrc:req.body.imgSrc,
         instaSimpleLink:req.body.instaSimpleLink,
         twitterSimpleLink:req.body.twitterSimpleLink,

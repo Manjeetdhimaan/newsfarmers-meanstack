@@ -14,6 +14,10 @@ const NewsSchema = new mongoose.Schema({
         type: String,
         trim: true
     },
+    urlTitle: {
+        type: String,
+        trim: true
+    },
     imgSrc: {
         type: String,
         trim: true

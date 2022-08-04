@@ -46,7 +46,7 @@
             <div class="overlay-content" *ngIf="searchText">
                 <div>
                     <!-- animation="fadeInUp" delay="0" duration="500" offset="100" triggerOnce="false" -->
-                    <h1  class="w3-padding-16 results" *ngIf="searchText && (celebrities | filter: searchText.trim()).length > 0">Total results founded for <em style="color: #F91;">{{ searchText }}</em> : ({{ (celebrities | filter: searchText.trim()).length }})</h1>
+                    <h1  class="w3-padding-16 results" *ngIf="searchText && (celebrities | filter: searchText.trim())?.length > 0">Total results founded for <em style="color: #F91;">{{ searchText }}</em> : ({{ (celebrities | filter: searchText.trim())?.length }})</h1>
                     <li  class="w3-padding-16 li" *ngFor="let celebrity of celebrities | filter:searchText.trim()" (click)="onNavigate(celebrity)">
                         <img src="{{celebrity.imgSrc}}" alt="Image" class="w3-left w3-margin-right" style="width:60px" >
                         <span >{{celebrity.name}}'s</span><br>
@@ -54,7 +54,7 @@
                     </li>
                 </div>
                 <hr *ngIf="searchText" style="visibility: hidden;">
-                <mat-list-item  *ngIf="(celebrities | filter: searchText.trim()).length === 0">
+                <mat-list-item  *ngIf="(celebrities | filter: searchText.trim())?.length === 0">
                     <mat-icon animation="fadeInUp" delay="0" duration="500" offset="90000" triggerOnce="false" mat-list-avatar>error</mat-icon>
                     <div  animation="fadeInUp" delay="0" duration="500" offset="90000" triggerOnce="false"mat-line>Oops...! No matching results for: <em>{{searchText}}</em> </div>
                     <hr style="visibility: hidden;">

@@ -23,24 +23,27 @@ export class BiographyComponent implements OnInit {
   moreCelebrities: any
   recentPost: any
   isLoading = false;
+  isError = false;
   borderColor="black";
 
   ngOnInit(): void {
     this.isLoading=true;
     this.celebritiesService.getCelebrities().then((celebrities: any) => {
       this.randomCelebrity = celebrities[Math.floor((Math.random() * celebrities.length))];
-      this.toastService.success(`${this.randomCelebrity.name}`);
+      // this.toastService.success(`${this.randomCelebrity.name}`);
       this.recentPost = celebrities.slice(-6).reverse();
       this.celebrities = celebrities;
       this.shuffled = celebrities.sort(() => 0.5 - Math.random());
       this.selected = this.shuffled.slice(0, 4);
       this.moreCelebrities = this.shuffled.slice(5, 17);
         this.isLoading=false;
+        this.isError=false;
         this.meta.updateTag({ name: 'description', content: 'Biography Categories'});
     }).catch((err) => {
       this.toastService.error(err.message);
       this.toastService.error('Unable to load biographies archieve');
       this.isLoading = false;
+      this.isError = false;
       // this.isError= true;
     })
 
