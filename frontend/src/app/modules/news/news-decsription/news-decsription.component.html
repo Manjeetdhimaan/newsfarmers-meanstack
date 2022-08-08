@@ -36,8 +36,8 @@
                         <app-search ></app-search>
                         <h1>Latest News</h1>
                     </div>
-                    <ul class="w3-ul w3-hoverable w3-white" *ngFor="let latest of latestNews" (click)="onNavigate(latest)">
-                        <a>
+                    <ul class="w3-ul w3-hoverable w3-white" *ngFor="let latest of latestNews"  >
+                        <a (mouseenter)="onHoverSelectedNews(latest)" routerLink="/news/{{hoveredNews}}" (click)="onNavigate(latest)">
                         <li class="w3-padding-16"  animation="fadeInUp" delay="100" duration="500" offset="110" triggerOnce="false">
                             <img *ngIf="latest.imgSrc" [src]="latest.imgSrc" alt="latest?.title" class="w3-left w3-margin-right" style="width:50px">
                              <span *ngIf="!latest?.professionId">{{latest.professionId}}</span> <span >{{latest.title}} </span><br>
@@ -55,7 +55,7 @@
                     </div>
                     <div class=" w3-margin w3-margin-top" 
                     *ngFor="let more of moreNews?.slice(-5)">
-                    <a><div *ngIf="more?.id.toLowerCase() !== news?.id.toLowerCase()" animation="fadeInUp" delay="0" duration="500" offset="110" triggerOnce="true"  (click)="onNavigate(more)">
+                    <a (mouseenter)="onHoverSelectedNews(more)" routerLink="/news/{{hoveredNews}}" ><div *ngIf="more?.id.toLowerCase() !== news?.id.toLowerCase()" animation="fadeInUp" delay="0" duration="500" offset="110" triggerOnce="true"  (click)="onNavigate(more)">
                             <img [src]="more?.imgSrc!=''? more?.imgSrc: ''" style="width:100%; border-radius: 24px;" class="w3-card">
                             <div class="w3-container w3-white w3-card" style="padding-left: 1rem; border-radius: 14px">
                                 <a>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy} from '@angular/core';
 import { NewsService } from 'src/app/services/news.service';
 import { Router } from '@angular/router';
 import { ToasTMessageService } from 'src/app/services/toastr.service';
@@ -8,7 +8,7 @@ import { ToasTMessageService } from 'src/app/services/toastr.service';
   templateUrl: './news-headline.component.html',
   styleUrls: ['./news-headline.component.css', '../../pagenotfound/pagenotfound.component.css']
 })
-export class NewsHeadlineComponent implements OnInit {
+export class NewsHeadlineComponent implements OnInit, OnDestroy {
 
   constructor(private newsService: NewsService, private router: Router, private toastService: ToasTMessageService) { }
 
@@ -16,7 +16,7 @@ export class NewsHeadlineComponent implements OnInit {
   isLoading = false;
   isError = false;
   borderColor = "black";
-  hoveredNews:any;
+  hoveredNews:any="";
 //pagination properties
   p:any;
   responsive:boolean = true;
@@ -24,7 +24,12 @@ export class NewsHeadlineComponent implements OnInit {
 
   ngOnInit(): void {
     this.isLoading=true;
-       this.newsService.getNews().then((news:any) => {
+    if(this.newsService.newsArray) {
+      this.newsArray = this.newsService.newsArray.slice().reverse();
+      this.isLoading = false;
+    }
+    else {
+      this.newsService.getNews().then((news:any) => {
         this.newsArray = news.reverse();
         // this.toastService.success('News Headline loaded successfully');
         this.isLoading = false;
@@ -35,6 +40,8 @@ export class NewsHeadlineComponent implements OnInit {
         this.isError = true;
         this.toastService.error(err.message);
       })
+    }
+    
 
     
     // this.isLoading= true;
@@ -46,15 +53,16 @@ export class NewsHeadlineComponent implements OnInit {
   }
 
   onNavigate(news:any) {
-    console.log(news)
     window.scrollTo(0,0);
     const selectedNews = news.urlTitle?.toLowerCase().split(' ').join('-') ? news.urlTitle?.toLowerCase().split(' ').join('-'): news.title.toLowerCase().split(' ').join('-');
-    console.log(selectedNews)
     this.router.navigate(['/news', selectedNews]);
   }
 
   onHoverSelectedNews(news:any){
     this.hoveredNews = this.newsService.hoverSelectedNews(news);
-    console.log(this.hoveredNews)
+  }
+
+  ngOnDestroy(): void {
+    this.hoveredNews = "";
   }
 }

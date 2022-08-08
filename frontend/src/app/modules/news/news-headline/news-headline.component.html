@@ -10,8 +10,10 @@
     <div class="card-grid">
         <a class="card" *ngFor="let news of newsArray  | paginate: { itemsPerPage: 40, currentPage: p }"
             (mouseenter)="onHoverSelectedNews(news)" routerLink="{{hoveredNews}}" (click)="onNavigate(news)">
-            <div class="card__background" style="background-image: url({{news?.imgSrc}})"></div>
-            <div class="card__content">
+            <div animation="fadeInUp" delay="100" duration="500" offset="110"
+            triggerOnce="false" class="card__background" style="background-image: url({{news?.imgSrc}})"></div>
+            <div class="card__content" animation="fadeInUp" delay="100" duration="500" offset="110"
+            triggerOnce="false">
                 <p class="card__category" style="font-size: 1.2rem;">{{news?.title}}</p>
                 <!-- <h3 class="card__heading">{{news.name}}</h3> -->
             </div>

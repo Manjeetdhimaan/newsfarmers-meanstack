@@ -72,35 +72,54 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.isLoading = true;
     this.isLoadingNews = true;
-    this.celebritiesService.getCelebrities().then((celebrities: any) => {
+    if(this.celebritiesService.celebrities){
+      const celebrities = this.celebritiesService.celebrities.slice();
       this.randomCelebrity = celebrities[Math.floor((Math.random() * celebrities.length))];
-      this.shuffled = celebrities.sort(() => 0.5 - Math.random());
+      this.shuffled = celebrities.slice().sort(() => 0.5 - Math.random());
       this.selected = this.shuffled.slice(0, 1);
       this.onGetCategory();
       this.isLoading = false;
-    }).catch((err) => {
-      // this.toastService.error(err.message);
-      this.isLoading = false;
-      // this.isError= true;
-    })
-    // this.shuffled = this.celebritiesService.getCelebrities().sort(() => 0.5 - Math.random());
-    // this.selected = this.shuffled.slice(0, 1);
-    // this.randomCelebrity = this.celebritiesService.getCelebrities()[Math.floor((Math.random() * this.celebritiesService.getCelebrities().length))];
+    }
+    else{
+      this.celebritiesService.getCelebrities().then((celebrities: any) => {
+        this.randomCelebrity = celebrities[Math.floor((Math.random() * celebrities.length))];
+        this.shuffled = celebrities.sort(() => 0.5 - Math.random());
+        this.selected = this.shuffled.slice(0, 1);
+        this.onGetCategory();
+        this.isLoading = false;
+      }).catch((err) => {
+        // this.toastService.error(err.message);
+        this.isLoading = false;
+        // this.isError= true;
+      })
+      // this.shuffled = this.celebritiesService.getCelebrities().sort(() => 0.5 - Math.random());
+      // this.selected = this.shuffled.slice(0, 1);
+      // this.randomCelebrity = this.celebritiesService.getCelebrities()[Math.floor((Math.random() * this.celebritiesService.getCelebrities().length))];
+      
+    }
     
-
-    this.newsService.getNews().then((news: any) => {
+    if(this.newsService.newsArray) {
+      const news = this.newsService.newsArray.slice();
       this.latestNews = news.slice(-8).reverse();
-      // this.toastService.success('Blogs loaded successfully');
       this.isLoadingNews = false;
-      // this.isError = false;
-    }).catch((err) => {
-      console.log(err);
-      this.isLoadingNews = false;
-      // this.isError = true;
-      // this.toastService.error(err.message);
-    })
+    }
+    else{
+      this.newsService.getNews().then((news: any) => {
+        this.latestNews = news.slice(-8).reverse();
+        // this.toastService.success('Blogs loaded successfully');
+        this.isLoadingNews = false;
+        // this.isError = false;
+      }).catch((err) => {
+        console.log(err);
+        this.isLoadingNews = false;
+        // this.isError = true;
+        // this.toastService.error(err.message);
+      })
+  
+      // this.latestNews = this.newsService.getNews().slice(-8).reverse();
+    }
 
-    // this.latestNews = this.newsService.getNews().slice(-8).reverse();
+  
     this.activatedRoute.fragment.subscribe((fragment: any) => {
       this.fragment = fragment;
     });
@@ -155,19 +174,19 @@ export class HomeComponent implements OnInit {
     this.socialMediaCategory = [];
     this.shuffled.map((celebrity: any) => {
       celebrity.category.map((cat: any) => {
-        if (cat.toLowerCase() == 'social media influencer'.toLowerCase()) {
+        if (cat?.toLowerCase() == 'social media influencer'.toLowerCase()) {
           this.socialMediaCategory.push(celebrity);
           this.isLoading = false;
         }
-        if (cat.toLowerCase() == 'punjabi singer'.toLowerCase()) {
+        if (cat?.toLowerCase() == 'punjabi singer'.toLowerCase()) {
           this.punjabiSingerCategory.push(celebrity);
           this.isLoading = false;
         }
-        if (cat.toLowerCase() == 'lyricist'.toLowerCase()) {
+        if (cat?.toLowerCase() == 'lyricist'.toLowerCase()) {
           this.lyricistCategory.push(celebrity);
           this.isLoading = false;
         }
-        if (cat.toLowerCase() == 'bollywood actor'.toLowerCase() || cat.toLowerCase() == 'bollywood actress'.toLowerCase()) {
+        if (cat?.toLowerCase() == 'bollywood actor'.toLowerCase() || cat?.toLowerCase() == 'bollywood actress'.toLowerCase()) {
           this.bollywoodCategory.push(celebrity);
           this.isLoading = false;
         }

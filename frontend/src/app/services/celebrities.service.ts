@@ -17,6 +17,13 @@ export class CelebritiesService {
   // },
   celebrities:any
   constructor(private http: HttpClient) {
+    this.http.get(`https://www.newsfarmers.com/getCelebrity`).subscribe((cel: any) => {
+      this.celebrities = cel.slice();
+    })
+   }
+
+   getCel() {
+    return this.celebrities.slice();
    }
    
   users: any;
@@ -33,7 +40,7 @@ export class CelebritiesService {
 
   async getCelebrities() {
     // return await Promise.resolve(this.http.get(`https://www.newsfarmers.com/getCelebrity`))
-    return await this.http.get(`getCelebrity`).toPromise();
+    return await this.http.get(`https://www.newsfarmers.com/getCelebrity`).toPromise();
     // return this.celebrities.slice();
   }
 

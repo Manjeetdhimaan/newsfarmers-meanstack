@@ -109,9 +109,7 @@ export class AppComponent implements OnInit {
               child.snapshot.data['title'] = result.join(" ") + ' Height, Weight, Age, Family, Affairs, Biography & More' + ' - Newsfarmers';
               return child.snapshot.data['title'];
             }
-            // else {
-            //   return child.snapshot.data['title'] as string;
-            // }
+              return child.snapshot.data['title'] as string;
           }
           return appTitle;
         })

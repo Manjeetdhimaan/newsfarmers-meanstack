@@ -44,11 +44,12 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
           // this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
           // this.celebrities = this.celebritiesService.getCelebrities();
           activatedRoute.params.subscribe((param: Params) => {
-            this.celebritiesService.getCelebrities().then((celebrities: any) => {
+            if(this.celebritiesService.celebrities){
+              const celebrities = this.celebritiesService.celebrities;
               celebrities.map((celebrity: any) => {
                 this.recentPost = celebrities.slice(-8).reverse();
                 this.celebrities = celebrities;
-                if (this.router.url.toLowerCase() == "/" + celebrity.name?.toLowerCase().split(' ').join('-')) {
+                if (this.router.url.toLowerCase() == "/" + celebrity.name.toLowerCase().split(' ').join('-')) {
                   this.router.url.toLowerCase();
                   this.celebrity = celebrity;
                   this.dobOfCelebrity = this.celebrity.dob.year;
@@ -70,16 +71,41 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
                   this.isLoading = false
                 }
               })
-              if (this.router.url.toLowerCase() !== "/blogs/" + this.celebrity?.name?.toLowerCase().split(' ').join('-')) {
-                this.router.navigate(['/404notfound']);
-                this.isLoading = false;
-        
+            }
+              else{
+                this.celebritiesService.getCelebrities().then((celebrities: any) => {
+                  celebrities.map((celebrity: any) => {
+                    this.recentPost = celebrities.slice(-8).reverse();
+                    this.celebrities = celebrities;
+                    if (this.router.url.toLowerCase() == "/" + celebrity.name.toLowerCase().split(' ').join('-')) {
+                      this.router.url.toLowerCase();
+                      this.celebrity = celebrity;
+                      this.dobOfCelebrity = this.celebrity.dob.year;
+                      this.dodOfCelebrity = this.celebrity.dod?.year;
+                      this.exactDOB = this.celebrity.dob.year + '-' + this.celebrity.month + '-' + this.celebrity.date;
+                      this.relatedPostArray = [];
+                      const Celebrities = celebrities.slice();
+                      const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
+                      // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === this.celebrity.categoryId?.toLowerCase());
+                      const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
+                      suffledArray.filter((shuffleCelebrity: any) => {
+                        let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a?.toLowerCase());
+                        if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
+                          this.relatedPostArray.push(shuffleCelebrity);
+                        }
+                      });
+                      // this.toastService.success(`${a.name}`);
+                      this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name?.toLowerCase().split(' ').join('-')}` });
+                      this.isLoading = false
+                    }
+                  })
+                  
+                }).catch((err) => {
+                  this.toastService.error(err.message);
+                  this.isLoading = false;
+                  // this.isError= true;
+                })
               }
-            }).catch((err) => {
-              this.toastService.error(err.message);
-              this.isLoading = false;
-              // this.isError= true;
-            })
           })
         }
       });
@@ -96,7 +122,9 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
     this.isLoading = true;
     // this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
     // this.celebrities = this.celebritiesService.getCelebrities();
-    this.celebritiesService.getCelebrities().then((celebrities: any) => {
+
+    if(this.celebritiesService.celebrities){
+      const celebrities = this.celebritiesService.celebrities;
       celebrities.map((celebrity: any) => {
         this.recentPost = celebrities.slice(-8).reverse();
         this.celebrities = celebrities;
@@ -128,11 +156,47 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
         this.isLoading = false;
 
       }
-    }).catch((err) => {
-      this.toastService.error(err.message);
-      this.isLoading = false;
-      // this.isError= true;
-    })
+    }
+    else{
+      this.celebritiesService.getCelebrities().then((celebrities: any) => {
+        celebrities.map((celebrity: any) => {
+          this.recentPost = celebrities.slice(-8).reverse();
+          this.celebrities = celebrities;
+          if (this.router.url.toLowerCase() == "/" + celebrity.name?.toLowerCase().split(' ').join('-')) {
+            this.router.url.toLowerCase();
+            this.celebrity = celebrity;
+            // this.toastService.success(`${this.celebrity.name}`);
+            this.dobOfCelebrity = this.celebrity.dob.year;
+            this.dodOfCelebrity = this.celebrity.dod?.year;
+            this.exactDOB = this.celebrity.dob.year + '-' + this.celebrity.month + '-' + this.celebrity.date;
+            this.relatedPostArray = [];
+            const Celebrities = celebrities.slice();
+            const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
+            // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === this.celebrity.categoryId?.toLowerCase());
+            const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
+            suffledArray.filter((shuffleCelebrity: any) => {
+              let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a?.toLowerCase());
+              if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
+                this.relatedPostArray.push(shuffleCelebrity);
+              }
+            });
+            // this.toastService.success(`${a.name}`);
+            this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name?.toLowerCase().split(' ').join('-')}` });
+            this.isLoading = false
+          }
+        })
+        if (this.router.url.toLowerCase() !== "/" + this.celebrity?.name?.toLowerCase().split(' ').join('-')) {
+          this.router.navigate(['/404notfound']);
+          this.isLoading = false;
+  
+        }
+      }).catch((err) => {
+        this.toastService.error(err.message);
+        this.isLoading = false;
+        // this.isError= true;
+      })
+    }
+    
 
 
 

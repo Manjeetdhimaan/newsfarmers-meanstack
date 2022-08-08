@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { Router } from '@angular/router';
+import { elementAt } from 'rxjs';
 
 import { CelebritiesService } from 'src/app/services/celebrities.service';
 import { ToasTMessageService } from 'src/app/services/toastr.service';
@@ -28,7 +29,8 @@ export class BiographyComponent implements OnInit {
 
   ngOnInit(): void {
     this.isLoading=true;
-    this.celebritiesService.getCelebrities().then((celebrities: any) => {
+    if(this.celebritiesService.celebrities){
+      const celebrities = this.celebritiesService.celebrities.slice();
       this.randomCelebrity = celebrities[Math.floor((Math.random() * celebrities.length))];
       // this.toastService.success(`${this.randomCelebrity.name}`);
       this.recentPost = celebrities.slice(-6).reverse();
@@ -39,13 +41,28 @@ export class BiographyComponent implements OnInit {
         this.isLoading=false;
         this.isError=false;
         this.meta.updateTag({ name: 'description', content: 'Biography Categories'});
-    }).catch((err) => {
-      this.toastService.error(err.message);
-      this.toastService.error('Unable to load biographies archieve');
-      this.isLoading = false;
-      this.isError = false;
-      // this.isError= true;
-    })
+    }
+    else{
+      this.celebritiesService.getCelebrities().then((celebrities: any) => {
+        this.randomCelebrity = celebrities[Math.floor((Math.random() * celebrities.length))];
+        // this.toastService.success(`${this.randomCelebrity.name}`);
+        this.recentPost = celebrities.slice(-6).reverse();
+        this.celebrities = celebrities;
+        this.shuffled = celebrities.sort(() => 0.5 - Math.random());
+        this.selected = this.shuffled.slice(0, 4);
+        this.moreCelebrities = this.shuffled.slice(5, 17);
+          this.isLoading=false;
+          this.isError=false;
+          this.meta.updateTag({ name: 'description', content: 'Biography Categories'});
+      }).catch((err) => {
+        this.toastService.error(err.message);
+        this.toastService.error('Unable to load biographies archieve');
+        this.isLoading = false;
+        this.isError = false;
+        // this.isError= true;
+      })
+    }
+   
 
 
 

@@ -8,10 +8,12 @@
 <h1 *ngIf="celebrities.length>1  && category.toLowerCase()=='tik tok'" class="text-center">{{category}}ERS</h1>
 <h1 *ngIf="celebrities.length<=0" class="text-center">{{category}}</h1>
 <div class="hero-section" *ngIf="celebrities.length>0 && !isLoading">
-    <div class="card-grid" *ngIf="!isLoading">
+    <div class="card-grid"  >
         <a class="card" *ngFor="let celebrity of celebrities"  (mouseenter)="onGetSelectedCelebrity(celebrity)" routerLink="/{{selectedCelebrity}}" (click)="onNavigate(celebrity)">
-            <div class="card__background" style="background-image: url({{celebrity.imgSrc}})"></div>
-            <div class="card__content">
+            <div class="card__background" animation="fadeInUp" delay="100" duration="500" offset="110"
+            triggerOnce="false" style="background-image: url({{celebrity.imgSrc}})"></div>
+            <div class="card__content" animation="fadeInUp" delay="100" duration="500" offset="110"
+            triggerOnce="false">
                 <p class="card__category" [innerHTML]="celebrity.profession"></p>
                 <h3 class="card__heading">{{celebrity.name}}</h3>
             </div>

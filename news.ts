@@ -1976,4 +1976,292 @@
       ],
       "description": ""
     },
+    {
+      "id": "news34",
+      "category": [
+        "Bollywood",
+        "Industry",
+        "Bollywood Industry"
+      ],
+      "categoryId": "Bhusan Planning to Drag Projects on Madubala’s Life to Court",
+      "title": "Bhusan Planning to Drag Projects on Madubala’s Life to Court",
+      "urlTitle": "Bhusan Planning to Drag Projects on Madubalas Life to Court",
+      "imgSrc": "assets/newsImages/august2022/madhuwala.jpg",
+      "instaSimpleLink": "",
+      "twitterSimpleLink": "",
+      "facebookSimpleLink": "",
+      "linkedinSimpleLink": "",
+      "otherFacts": [
+        {
+          "fact": "After the official news confirmation about the Madhubala biopic, the family’s approval was also established. This epic biopic was to be produced by Madhubala Ventures Private Limited. Madhur Brij Bhushan, her sister, was also “thrilled that her long-standing dream is finally taking shape in a beautiful way”.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "Now she has a request for everyone. “It’s an extremely emotional occasion for me and my entire family. We have had to wait for a long time to reach this stage wherein all my sisters and I’ve come together to green-light this film. With absolute humbleness, I request that no one should attempt any kind of project – based on / or inspired by Madhubala – without my approval.”",
+          "imgSrc": "assets/newsImages/august2022/madhu-wala.jfif",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "“Please don’t spoil this moment for us. If people don’t pay heed to my requests, I’ll have no other option but to take stern legal action and sue them for transgressing on my family’s rights as well as such emotional and mental harassment,” she added.",
+          "imgSrc": "assets/newsImages/august2022/madhuwla.jpg",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "Bhusan considers herself a fighter and is ready to take matters into her hand if needed. According to her, it is a humble request and not a threat. She wants all the money raised to help causes that were close to Madhubala. She wants her “appa” to be happy and fulfill her life dreams in the most efficient way possible.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        }
+      ],
+      "description": ""
+    },
+    {
+      "id": "news35",
+      "category": [
+        "Bollywood",
+        "Industry",
+        "Bollywood Industry"
+      ],
+      "categoryId": "Dev Patel Going From Reel Hero to Real Hero After Stopping a Fight",
+      "title": "Dev Patel Going From Reel Hero to Real Hero After Stopping a Fight",
+      "urlTitle": "Dev Patel Going From Reel Hero to Real Hero After Stopping a Fight",
+      "imgSrc": "assets/newsImages/august2022/dev-patel.jfif",
+      "instaSimpleLink": "",
+      "twitterSimpleLink": "",
+      "facebookSimpleLink": "",
+      "linkedinSimpleLink": "",
+      "otherFacts": [
+        {
+          "fact": "Dev Patel, the star of Slumdog Millionaire becomes a hero. The Australian outlet, 7News was the first to report this incident. A woman and a man were fighting outside the convenience store in Adelaide, Australia. The man got stabbed and Dev Patel helped him.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "The incident was reported at 8:45 pm on Monday. Emergency was immediately called. According to Dev’s team, “This specific incident highlights a larger systemic issue of marginalised members of society not being treated with the dignity and respect they deserve,”",
+          "imgSrc": "assets/newsImages/august2022/dev-patel-fight.jpg",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "\"Dev acted on his natural instinct to try and de-escalate the situation and break up the fight. The group was thankfully successful in doing so and they remained on site to ensure that the police and eventually the ambulance arrived,\" said Dev’s Team.",
+          "imgSrc": "assets/newsImages/august2022/devpatel.jfif",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "The man is in the hospital and expected to survive. Dev Patel’s successful trial is said to be a heroic act on the actor’s part. He now requests the media to raise this issue for lawmakers so that everyone can be better represented.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        }
+      ],
+      "description": ""
+    },
+    {
+      "id": "news36",
+      "category": [
+        "Bollywood",
+        "Industry",
+        "Bollywood Industry"
+      ],
+      "categoryId": "Laal Singh Chaddha Approved, Aamir Khan's Emotional",
+      "title": "Laal Singh Chaddha Approved, Aamir Khan's Emotional",
+      "urlTitle": "The controversy of the lal singh chadha",
+      "imgSrc": "assets/newsImages/august2022/approval-of-laal-singh-chada.jpg",
+      "instaSimpleLink": "https://www.instagram.com/p/Cgv70mpryLl/",
+      "twitterSimpleLink": "",
+      "facebookSimpleLink": "",
+      "linkedinSimpleLink": "",
+      "otherFacts": [
+        {
+          "fact": "Controversies over the religious aspect of Lal Singh Chaddha and Aamir Khan have been going on for a while. Therefore, to clear the miscommunication, <a href=\"https://www.newsfarmers.com/news/laal-singh-chadha-controversy\" class=\"celebrity\" rel=\"noopener\" target=\"_blank\">Lal Singh Chaddha</a> was screened for the Sikh community.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "Lal Singh Chadha is a movie about a person from the Sikh community. The stars of the movie are Aamir Khan and Kareena Kapoor who were part of the controversies. These misconceptions Kinder the reputation of the movie even before its release. The movie is directed by Advait Chandan, a Hindu.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/Cgv70mpryLl/embed/"
+        },
+        {
+          "fact": "To clear the same, the movie was screened for the Sikh community for their approval. The screening was only done for the Shiromani Gurudwara Parbandhak Committee. According to the makers of Laal Singh Chaddha, they did not want to hurt the sentiments of the Sikh community.",
+          "imgSrc": "assets/newsImages/august2022/laal-singh-chada-approved.jpg",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "After reviewing the movie, the committee allowed it to be released. The makers of the movie stated that the script was shown to the committee before filming. This controversy was over when Aamir khan revealed that <a href=\"https://www.newsfarmers.com/news/kareena-kapoor-khan-shuts-down-pregnancy-rumours-in-style\" class=\"celebrity\" rel=\"noopener\" target=\"_blank\">Kareena Kapoor</a> was not the first choice in Koffee With Karan 7 episode.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        }
+      ],
+      "description": ""
+    },
+    {
+      "id": "news37",
+      "category": [
+        "Bollywood",
+        "Industry",
+        "Bollywood Industry"
+      ],
+      "categoryId": "Is Rocky Aur Rani Ki Prem Kahani Remake of Kuch Kuch Hota Hai",
+      "title": "Is Rocky Aur Rani Ki Prem Kahani Remake of Kuch Kuch Hota Hai?",
+      "urlTitle": "remake of kuch kuch hota hai",
+      "imgSrc": "assets/newsImages/august2022/remake-of-kuch-kuch-hota-hai.jpg",
+      "instaSimpleLink": "https://www.instagram.com/p/Cg3gGIMLday/",
+      "twitterSimpleLink": "",
+      "facebookSimpleLink": "",
+      "linkedinSimpleLink": "",
+      "otherFacts": [
+        {
+          "fact": "Karan Johar is going to cast Ranveer and Alia Bhatt in his upcoming film Rocky Aur Rani Ki Prem Kahani. According to him, both the actors have the chemistry of Shah Rukh Khan and Kajol in Kuch Kuch Hota Hai.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/Cg3gGIMLday/embed/"
+        },
+        {
+          "fact": "In the 1st episode of Koffee with Karan season 1, he said “I would say Ranveer (Singh), Alia (Bhatt), and Janhvi (Kapoor). Alia would play Kajol’s role, Janhvi would play the hottie role - Rani from college - and Ranveer would be Shah Rukh.”",
+          "imgSrc": "assets/newsImages/august2022/remake-of-kuch-kuch-hota-hai-starcast.jpg",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "But there is an issue, recent posts from <a href=\"https://www.newsfarmers.com/news/alia-bhatt-and-ranbir-kapoor-announce-pregnancy\" class=\"celebrity\" rel=\"noopener\" target=\"_blank\">Alia Bhat</a> confirm that she is in fact, pregnant. She shared a hospital photograph and wrote “Our baby ….. coming soon.” To this, everyone including Brahmastra co-star Mouni Roy and Rakul Preet congratulated them.",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "The production of the movie has started. It is assumed that once Alia becomes a mother, the shooting might stop. There have also been some questions about Ranveer after his troll Picture.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        }
+      ],
+      "description": ""
+    },
+    {
+      "id": "news38",
+      "category": [
+        "Bollywood",
+        "Industry",
+        "Bollywood Industry"
+      ],
+      "categoryId": "Are Rajeev Sen and Charu Back Together?, rajeev sen charu, rajiv sen charu, rajeev charu",
+      "title": "Are Rajeev Sen and Charu Back Together?",
+      "urlTitle": "Are Rajeev Sen and Charu Back Together",
+      "imgSrc": "assets/newsImages/august2022/rajeev-charu.jpg",
+      "instaSimpleLink": "https://www.instagram.com/p/Cg_L7DsLVCA/",
+      "twitterSimpleLink": "",
+      "facebookSimpleLink": "",
+      "linkedinSimpleLink": "",
+      "otherFacts": [
+        {
+          "fact": "After dating for a short period of time for 4 months, Charu Sen and Rajeev Sen married each other in 2019. In a recent blog, Charu stated that she plans to end her marriage with Rajeev Sen but later on, she posted a picture with Sindur on her forehead.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "In the blog, she wrote “ Mein kisi jaldbaazi mein ya emotional hoke yeh decision nahi le rahi hun apne poore hosh o awaz mein yeh faisla le rahi hun (I am not taking the decision in a hurry or emotionally. I am taking it consciously). It is not for me, it is for Ziana”",
+          "imgSrc": "assets/newsImages/august2022/rajeev-charu-together.jpg",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "Now, on Friendship Day, Rajeev Sen shared their picture. He shared it on his feed with just a rose. Then he shared it on his Instagram story with the song “Abhi Na Jao Chhod Kar” by Asha Bhosle and Mohammed Rafi.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/Cg_L7DsLVCA/embed/"
+        },
+        {
+          "fact": "Times of India interviewed Rajeev Sen about possible reconciliation with his wife. To which he replied that the picture says it all. Fans of both Rajeev Sen and Charu Asopa Sen are happy with the thought of possible reconciliation.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "Although the photo was posted and rumours started, Charu Asopa Sen has not reacted to the statements yet. She has not posted any pictures or written something for Rajeev Sen. Instead, she has posted with her daughter.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        }
+      ],
+      "description": ""
+    },
+    {
+      "id": "news39",
+      "category": [
+        "Bollywood",
+        "Industry",
+        "Bollywood Industry"
+      ],
+      "categoryId": "Case Filed on Miss Universe Harnaaz Kaur Sandhu, Upasana Singh harnaaz sandhu, harnaaz sandhu Upasana Singh",
+      "title": "Case Filed on Miss Universe Harnaaz Kaur Sandhu",
+      "urlTitle": "Case Filed on Miss Universe Harnaaz Kaur Sandhu",
+      "imgSrc": "assets/newsImages/august2022/harnaaz-sandhu-case.jpg",
+      "instaSimpleLink": "https://www.instagram.com/p/Cg_vUHwrZGM/",
+      "twitterSimpleLink": "",
+      "facebookSimpleLink": "",
+      "linkedinSimpleLink": "",
+      "otherFacts": [
+        {
+          "fact": "Miss Universe Harnaaz Kaur Sandhu has gotten into controversy due to her new film. The famous Punjabi actress Upasana Singh has filed a complaint against Harnaaz Kaur Sandhu for not cooperating with the promotion of the new film.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "The complaint is filed in the civil department of the district court of Chandigarh. Upasana Singh’s lawyers Karan Sachdeva and Irwineet Kaur have made an appeal. No hearing on this matter has started till now.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/Cg_vUHwrZGM/embed/"
+        },
+        {
+          "fact": "\"Bai Ji Kuttangay” is the first film of Miss Universe Harnaaz Kaur Sandhu and is to be released on August 19. As per the contract she is bound to devote some days into the promotion of \"Bai Ji Kuttangay” which she is refusing to do.",
+          "imgSrc": "assets/newsImages/august2022/Upasana-Singh-harnaaz.jpg",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "Because the shooting of the film was completed before her winning this title, people believe she has changed after winning. Because of no response the dates were also changed from 27-05-2022 to 19-08 2022. There has been no response from the side of Harnaaz Kaur till now.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        }
+      ],
+      "description": ""
+    },
   ]

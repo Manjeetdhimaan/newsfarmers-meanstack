@@ -29,11 +29,11 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
           activatedRoute.params.subscribe((param: Params) => {
             this.celebrities = [];
             this.celebritiesService.getCelebrities().then((celebrities:any) => {
-              celebrities?.map((a: any) => {
+              celebrities.map((a: any) => {
                 a.category.map((n: any) => {
-                  if (param.view == n.toLowerCase().split(' ').join('-')) {
+                  if (param.view == n?.toLowerCase().split(' ').join('-')) {
                     this.celebrities.push(a);
-                    this.category = n.toLowerCase().split('-').join(' ').toUpperCase();
+                    this.category = n?.toLowerCase().split('-').join(' ').toUpperCase();
                     this.celebrities = [...new Set(this.celebrities)]
                     this.isLoading = false;
                   }
@@ -72,9 +72,9 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.isLoading = true;
     this.celebrities = [];
-
-    this.celebritiesService.getCelebrities().then((celebrities: any) => {
-      celebrities?.map((a: any) => {
+    if(this.celebritiesService.celebrities) {
+      const celebrities = this.celebritiesService.getCel().reverse();
+      celebrities.map((a: any) => {
         a.category.map((n: any) => {
           if (this.router.url == "/category/" + n?.toLowerCase().split(' ').join('-')) {
             this.activatedRoute.params.subscribe((param: Params) => {
@@ -85,11 +85,11 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
           }
         })
         if (this.router.url == "/category/all") {
-          this.celebrities = celebrities;
+          this.celebrities = celebrities.slice();
           this.category = 'ALL'
           this.isLoading = false;
         }
-        this.celebrities = this.celebrities.reverse();
+        this.celebrities = this.celebrities;
         if (this.celebrities.length <= 0) {
           this.activatedRoute.params.subscribe((param: Params) => {
             this.category = param.view.split('-').join(' ').toUpperCase();
@@ -97,10 +97,38 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
           })
         }
       })
-    }).catch((err) => {
-      console.log(err.message);
-      this.isLoading = false;
-    })
+    }
+    else {
+      this.celebritiesService.getCelebrities().then((celebrities: any) => {
+        celebrities?.map((a: any) => {
+          a.category.map((n: any) => {
+            if (this.router.url == "/category/" + n?.toLowerCase().split(' ').join('-')) {
+              this.activatedRoute.params.subscribe((param: Params) => {
+                this.category = param.view.split('-').join(' ').toUpperCase();
+              })
+              this.celebrities.push(a);
+                this.isLoading = false;
+            }
+          })
+          if (this.router.url == "/category/all") {
+            this.celebrities = celebrities;
+            this.category = 'ALL'
+            this.isLoading = false;
+          }
+          this.celebrities = this.celebrities.reverse();
+          if (this.celebrities.length <= 0) {
+            this.activatedRoute.params.subscribe((param: Params) => {
+              this.category = param.view.split('-').join(' ').toUpperCase();
+              this.isLoading = false;
+            })
+          }
+        })
+      }).catch((err) => {
+        console.log(err.message);
+        this.isLoading = false;
+      })
+    }
+  
 
 
     // this.celebritiesService.celebrities.map((a: any) => {

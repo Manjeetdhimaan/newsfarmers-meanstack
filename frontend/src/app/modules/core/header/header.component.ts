@@ -154,14 +154,22 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
 
   ngOnInit(): void {
-    this.celebritiesService.getCelebrities().then((celebrities: any) => {
+    if (this.celebritiesService.celebrities) {
+      const celebrities = this.celebritiesService.getCel().reverse();
       this.celebrities = celebrities;
-    }).catch((err) => {
-      console.log(err.message)
-      // this.toastService.error(err.message);
-      // this.isLoading = false;
-      // this.isError= true;
-    })
+      console.log("headerCel",celebrities);
+    }
+    else {
+      this.celebritiesService.getCelebrities().then((celebrities: any) => {
+        this.celebrities = celebrities.reverse();
+      }).catch((err) => {
+        console.log(err.message)
+        // this.toastService.error(err.message);
+        // this.isLoading = false;
+        // this.isError= true;
+      })
+    }
+
     // this.celebrities = this.celebritiesService.celebrities;
 
     setTimeout(() => {
@@ -181,29 +189,29 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.animationMenuState = 'down'
     this.categoryCelebrity = [];
     this.celebrities.map((celebrity: any) => {
-        celebrity.category.map((cat: any) => {
-          if (cat?.toLowerCase() === event.target.value.toLowerCase()) {
-            this.categoryCelebrity.push(celebrity);
-            this.isLoading = false;
-            // this.router.navigate(['category/view']);
-          }
-        })
+      celebrity.category.map((cat: any) => {
+        if (cat?.toLowerCase() === event.target.value.toLowerCase()) {
+          this.categoryCelebrity.push(celebrity);
+          this.isLoading = false;
+          // this.router.navigate(['category/view']);
+        }
       })
-      this.celebritiesService.getSelectedCategories.next(this.categoryCelebrity);
-      if (event.target.value.toLowerCase() == "all") {
-        this.celebritiesService.getCelebrities().then((celebrities) => {
-          this.categoryCelebrity = celebrities;
-        });
-        this.celebritiesService.getSelectedCategories.next(this.categoryCelebrity);
-        this.isLoading = false;
-      }
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+    })
+    this.celebritiesService.getSelectedCategories.next(this.categoryCelebrity);
+    if (event.target.value.toLowerCase() == "all") {
+      this.celebritiesService.getCelebrities().then((celebrities) => {
+        this.categoryCelebrity = celebrities;
       });
-      this.router.navigate(['category/', event.target.value.toLowerCase().split(' ').join('-')]);
-      this.selectedCategory = '';
-    
+      this.celebritiesService.getSelectedCategories.next(this.categoryCelebrity);
+      this.isLoading = false;
+    }
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+    this.router.navigate(['category/', event.target.value.toLowerCase().split(' ').join('-')]);
+    this.selectedCategory = '';
+
 
     // this.celebritiesService.celebrities?.map((celebrity: any) => {
     //   celebrity.category.map((cat: any) => {

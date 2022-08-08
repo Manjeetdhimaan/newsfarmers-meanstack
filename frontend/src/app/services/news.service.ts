@@ -8,11 +8,19 @@ import { Subject } from 'rxjs';
 })
 export class NewsService {
 
+  newsArray:any;
   constructor(private http: HttpClient) {
+    this.http.get(`https://www.newsfarmers.com/getNews`).subscribe((news: any) => {
+      this.newsArray = news;
+    })
    }
-  
+
+   onGetNews() {
+    return this.newsArray.slice();
+   }
+
    async getNews(){
-   return await this.http.get(`getNews`).toPromise();
+   return await this.http.get(`https://www.newsfarmers.com/getNews`).toPromise();
   //  return this.newsArray.slice();
  }
 
