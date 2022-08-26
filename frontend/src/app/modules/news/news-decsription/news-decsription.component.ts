@@ -8,7 +8,7 @@ import { ToasTMessageService } from 'src/app/services/toastr.service';
 @Component({
   selector: 'app-news-decsription',
   templateUrl: './news-decsription.component.html',
-  styleUrls: ['./news-decsription.component.css', '../../biography/celebrities/celebrities.component.css', '../../pagenotfound/pagenotfound.component.css']
+  styleUrls: ['./news-decsription.component.css', '../../biography/celebrities/celebrities.component.css']
 })
 export class NewsDecsriptionComponent implements OnInit, OnDestroy {
 
@@ -177,7 +177,6 @@ export class NewsDecsriptionComponent implements OnInit, OnDestroy {
 
   onHoverSelectedNews(news:any){
     this.hoveredNews = this.newsService.hoverSelectedNews(news);
-    console.log(this.hoveredNews)
   }
 
   ngOnDestroy(): void {

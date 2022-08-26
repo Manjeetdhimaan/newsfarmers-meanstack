@@ -15,23 +15,23 @@ export class CelebritiesService {
   //   imgCaption: '',
   //   videoSrc: ''
   // },
-  celebrities:any
-  constructor(private http: HttpClient) {
-    this.http.get(`https://www.newsfarmers.com/getCelebrity`).subscribe((cel: any) => {
-      this.celebrities = cel.slice();
-    })
-   }
-
-   getCel() {
-    return this.celebrities.slice();
-   }
-   
+  celebrities: any;
   users: any;
   url: string = 'https://www.newsfarmers.com/';
   getSearchedCelebrity = new Subject<any>();
   getSelectedCategories = new Subject<any>();
   getActiveClass = new Subject<boolean>();
   domain = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
+
+  constructor(private http: HttpClient) {
+    this.http.get(`https://www.newsfarmers.com/getCelebrity`).subscribe((cel: any) => {
+      this.celebrities = cel.slice();
+    })
+  }
+
+  getCel() {
+    return this.celebrities.slice();
+  }
 
   selectedCelebrity(selected: any) {
     const selectedCelebrity = selected.name.toLowerCase().split(' ').join('-');
@@ -57,6 +57,4 @@ export class CelebritiesService {
   // Header always set Content-Security-Policy "upgrade-insecure-requests;"
 
   // </IfModule>
-
- 
 }

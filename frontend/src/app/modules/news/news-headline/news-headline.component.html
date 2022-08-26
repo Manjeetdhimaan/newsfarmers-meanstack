@@ -4,7 +4,7 @@
 <marquee direction="left" height="20px" *ngIf="!isLoading && !isError">
     {{newsArray?.[0].title}}. <span class="margin-right"></span> {{newsArray?.[1].title}}. <span
         class="margin-right"></span> {{newsArray?.[2].title}}. <span class="margin-right"></span>
-    {{newsArray?.[3].title}}
+    {{newsArray?.[3].title}}.
 </marquee>
 <div class="hero-section" *ngIf="newsArray?.length>0 && !isLoading && !isError">
     <div class="card-grid">

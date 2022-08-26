@@ -1,12 +1,17 @@
 <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
 
-<div class="marquee-text" *ngIf="!isLoading">
+<div class="marquee-text" *ngIf="!isLoading && !isError">
     <marquee width="70%" direction="left" height="25px">
         <h3>Quick Info about {{ celebrity?.name }} <i class="margin-right bi-arrow-right-circle"></i> Height: {{ celebrity?.height }} <span class="margin-right"></span> Weight: {{ celebrity?.weight }} <span class="margin-right"></span> Age: {{celebrity?.dod?.date || celebrity?.dod?.month || celebrity?.dod?.year ? '(at the time of death) ' + getAgeAtTimeOfDeath() : getAge() }}</h3>
     </marquee>
 </div>
+<div class="marquee-text" *ngIf="!isLoading && isError">
+    <marquee width="70%" direction="left" height="25px">
+        <h3>Error while loading <strong>{{ celebrityWhileError }}</strong> Biography</h3>
+    </marquee>
+</div>
 
-<body class="w3-light-grey" *ngIf="!isLoading">
+<body class="w3-light-grey" *ngIf="!isLoading && !isError">
     <div class="w3-content" style="max-width:1400px">
         <header class="w3-container w3-center w3-padding-32">
         </header>
@@ -18,7 +23,8 @@
                                     }}'s</span> <span *ngIf="celebrity?.professionId">{{ celebrity?.name }}
                                     ({{celebrity?.professionId}})</span> Height, Weight, Age, <span
                                     *ngIf="celebrity?.dod?.date || celebrity?.dod?.month || celebrity?.dod?.year">Death,</span>
-                                Family, Affairs,
+                                Family, Affairs, <span
+                                *ngIf="celebrity?.wifeOrHusband">{{ celebrity?.gender.toLowerCase() == "male" ? "Wife" : "Husband" }}, </span>
                                 Biography, Net Worth &
                                 More</b></h1>
                         <div>
@@ -770,6 +776,17 @@
             </div>
         </div><br>
     </div>
-    <app-footer></app-footer>
+   
 </body>
+<div class="container has-error" *ngIf="!isLoading && isError">
+    <div class="w3-row">
+        <div class="w3-col l8 s12" style="text-align: center;position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);">
+            <h1>Error while loading <strong>{{ celebrityWhileError }}</strong> Biography</h1>
+        </div>
+    </div>
+</div>
+<app-footer *ngIf="!isLoading"></app-footer>
 <app-spinner *ngIf="isLoading" [border-color]="borderColor"></app-spinner>

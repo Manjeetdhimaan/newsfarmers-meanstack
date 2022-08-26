@@ -2226,7 +2226,7 @@
       ],
       "categoryId": "Case Filed on Miss Universe Harnaaz Kaur Sandhu, Upasana Singh harnaaz sandhu, harnaaz sandhu Upasana Singh",
       "title": "Case Filed on Miss Universe Harnaaz Kaur Sandhu",
-      "urlTitle": "Case Filed on Miss Universe Harnaaz Kaur Sandhu",
+      "urlTitle": "Case Filed On Miss Universe Harnaaz Kaur Sandhu",
       "imgSrc": "assets/newsImages/august2022/harnaaz-sandhu-case.jpg",
       "instaSimpleLink": "https://www.instagram.com/p/Cg_vUHwrZGM/",
       "twitterSimpleLink": "",
@@ -2256,6 +2256,208 @@
         },
         {
           "fact": "Because the shooting of the film was completed before her winning this title, people believe she has changed after winning. Because of no response the dates were also changed from 27-05-2022 to 19-08 2022. There has been no response from the side of Harnaaz Kaur till now.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        }
+      ],
+      "description": ""
+    },
+    {
+      "id": "news40",
+      "category": [
+        "Bollywood",
+        "Industry",
+        "Bollywood Industry"
+      ],
+      "categoryId": "Urfi and Chahatt in an Instagram Story Catfight",
+      "title": "Urfi and Chahatt in an Instagram Story Catfight",
+      "urlTitle": "Urfi and Chahatt in an Instagram Story Catfight",
+      "imgSrc": "assets/newsImages/august2022/urfi-chahat.jpg",
+      "instaSimpleLink": "https://www.instagram.com/p/ChB6rHQrh9Z/",
+      "twitterSimpleLink": "",
+      "facebookSimpleLink": "",
+      "linkedinSimpleLink": "",
+      "otherFacts": [
+        {
+          "fact": "Urfi Javed and Chahatt Khanna are both famous Indian actresses who got in a fight. Urfi recently wore a dress of yellow color and Chahatt Khanna thrashed her. The comments were made via Instagram stories.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "Chahatt’s Instagram account, tagging the picture said that “Who wears this? And on what streets? I mean anyone would remove their clothes and the media makes them a celebrity? Is Indian media so vulnerable? It’s easy to buy this cheap publicity and media.”",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/ChB6rHQrh9Z/embed/"
+        },
+        {
+          "fact": "“This cheap show you all are promoting to our generation, anyone would pay for spotting and do anything or even go nude and you’ll carry? This is obnoxiously sad. God bless you with some wisdom.” she added.",
+          "imgSrc": "assets/newsImages/august2022/urfi-chahat-2.jpg",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "To which, Urfi wrote “At least I don’t buy followers! Also if you would do your homework, I was there for an interview which is none of your business, you are just jealous that even after paying the paps they are not covering you.”",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "@chahattkhanna also whatever anyone does on this earth is none of your business, why didn’t you upload this story for Ranveer Singh? Shows your hypocrisy. See I didn’t judge you for two divorces, dating away younger men so why judge me?” she added.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "In another Instagram story, she said “At least I earn my own money not living off my two ex-husbands’ alimony. Chahatt Khanna I ain’t coming to you judging you love your life. IDK what these aunties have against me.”",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "The catfight continued as Chahatt wrote “\"Damn funny this woman is, if she thinks people are jealous of her, comparing herself to Ranveer Singh. Lady, please do half of the work he has done, also correcting you, he was shooting for something bare body, he is not running Nude on the streets, doing paid spotting since months, people who are opposing this behavious has nothing to do with your so called fame, but the stupidity happening around the city and the media, also if Ranveer accidentally happened to call you an icon with no choice or in sarcasm, it doesn't mean you can compare yourself with a great actor. This would be all from my side.\"",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+      ],
+      "description": ""
+    },
+    {
+      "id": "news41",
+      "category": [
+        "Bollywood",
+        "Industry",
+        "Bollywood Industry"
+      ],
+      "categoryId": "TejRan Marriage Finally Official by Karan Kundra",
+      "title": "‘TejRan’ Marriage Finally Official by Karan Kundra",
+      "urlTitle": "TejRan Marriage Finally Official by Karan Kundra",
+      "imgSrc": "assets/newsImages/august2022/tejran.jpg",
+      "instaSimpleLink": "https://www.instagram.com/p/ChB7M_psvEK/",
+      "twitterSimpleLink": "",
+      "facebookSimpleLink": "",
+      "linkedinSimpleLink": "",
+      "otherFacts": [
+        {
+          "fact": "Karan Kundra and Tejasswi Prakash are two of the most famous Indian duos. Fans have also named them “TejRan” together. The couple met through Salman Khan’s show and have been together ever since. Fans also consider them an inspiration.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "<strong>𝐅𝐈𝐋𝐌𝐘 𝐌𝐈𝐑𝐂𝐇𝐈-𝐒𝐀𝐁 𝐁𝐎𝐋𝐋𝐘𝐖𝐎𝐎𝐃 𝐇𝐀𝐈</strong> is one of the most famous Bollywood and gossip platforms. Filmy Mirchi recently conducted an interview with Karaan Kundra and asked about the plans of his wedding with Tejasswi Prakash, his girlfriend.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/ChB7M_psvEK/embed/"
+        },
+        {
+          "fact": "“Jaldi hi honi chahiye. Everything is going right. Everything is going wonderful. Miyan bhi raazi, biwi bhi raazi, kazi bhi raazi.” replied Karan Kundra. Fans of both the actors have high hope of them turning into an official couple soon.",
+          "imgSrc": "assets/newsImages/august2022/tejran-marriage.jpeg",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "There had already been many rumors about the Roka of Karan Kundra and Tejasswi Prakash. Their chemistry has captured lives of many people. They are now starring in different projects.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        }
+      ],
+      "description": ""
+    },
+    {
+      "id": "news42",
+      "category": [
+        "Bollywood",
+        "Industry",
+        "Bollywood Industry"
+      ],
+      "categoryId": "Aamir Khan Reveals Why Lal Singh Chaddha is a Sikh",
+      "title": "Aamir Khan Reveals Why Lal Singh Chaddha is a Sikh",
+      "urlTitle": "Aamir Khan Reveals Why Lal Singh Chaddha is a Sikh",
+      "imgSrc": "assets/newsImages/august2022/aamir-khan-reveals-about-laal-singh-chada.jpg",
+      "instaSimpleLink": "https://www.instagram.com/p/ChEay-1LRHP/",
+      "twitterSimpleLink": "",
+      "facebookSimpleLink": "",
+      "linkedinSimpleLink": "",
+      "otherFacts": [
+        {
+          "fact": "After a long break of 4 years, Aamir Khan is back again with a new movie- <a href=\"https://www.newsfarmers.com/news/the-controversy-of-the-lal-singh-chadha\" class=\"celebrity\" rel=\"noopener\" target=\"_blank\">Lal Singh Chaddha</a>. The movie is the remake of Forrest Grump to be released on 11 August 2022. There have been many problems along the way. Now, Aamir Khan has revealed why Lal Singh Chaddha is a Sikh.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "Aamir Khan said “Atul (Atul Kulkarni) in his adaptation (of Forrest Gump) had already placed him as a Sikh… When we received it as a script, we were already reading a Sikh character. So, it felt very natural to us and organic to us. So, none of us questioned why he is a Sikh.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/ChEay-1LRHP/embed/"
+        },
+        {
+          "fact": "But now that I think about it, technically, he could be anyone, he could be south Indian. But I think Atul did that because, in our timeline of recent socio-political history, 1983-84 was a very key time, a very difficult time, and the Sikh community went through a lot of difficulties at that time.",
+          "imgSrc": "assets/newsImages/august2022/laal-singh-chada-approved-2.jpg",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "By making the lead character a Sikh, I think what Atul was trying to do and I think he did that rather well, is that you are actually investing your emotions very strongly in the character, in the incident, and then from there on... in the film”.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        }
+      ],
+      "description": ""
+    },
+    {
+      "id": "news43",
+      "category": [
+        "Pollywood",
+        "Industry",
+        "Pollywood Industry"
+      ],
+      "categoryId": "Karan Aujla and Palak Marriage Date Announced, karan aujla marriage, karan palak, palak karan, palak marriage",
+      "title": "Karan Aujla and Palak Marriage Date Announced",
+      "urlTitle": "Karan Aujla and Palak Marriage Date Announced",
+      "imgSrc": "assets/newsImages/august2022/karan-aujla-wife.jpg",
+      "instaSimpleLink": "https://www.instagram.com/p/Cg_wMjWrTnj/",
+      "twitterSimpleLink": "",
+      "facebookSimpleLink": "",
+      "linkedinSimpleLink": "",
+      "otherFacts": [
+        {
+          "fact": "After being single but committed for a long time, Karan Aujla is marrying. Karan Aujla and Palak are finally getting married. The fans couldn’t be happier with this news. It was unexpected news from the engaged couple.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/Cg_wMjWrTnj/embed/"
+        },
+        {
+          "fact": "Karan Aujla and Palak engaged each other on 26 January 2019 (approximately 2 years ago). Palak shared the pictures of her bridal shower on 7 August 2022 on Instagram. The couple is getting back in the eyes of the public.",
+          "imgSrc": "assets/newsImages/august2022/karan-aujla-marriage.jpg",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": ""
+        },
+        {
+          "fact": "The couple will be having an aesthetic wedding on 3 February 2023. The shower took place in Canada with close friends and family only. The theme was white and purple. Everyone was dressed in similar shades.",
           "imgSrc": "",
           "imgCaption": "",
           "videoSrc": "",

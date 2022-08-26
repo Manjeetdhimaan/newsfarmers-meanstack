@@ -58,7 +58,7 @@ export class BiographyComponent implements OnInit {
         this.toastService.error(err.message);
         this.toastService.error('Unable to load biographies archieve');
         this.isLoading = false;
-        this.isError = false;
+        this.isError = true;
         // this.isError= true;
       })
     }

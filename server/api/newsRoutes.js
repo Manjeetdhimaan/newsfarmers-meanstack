@@ -11,70 +11,6 @@ router.get('', (req, res) => {
     })
 })
 
-// router.post('/register', async(req, res) => {
-//         const newNews = new News({
-//             category: req.body.category,
-//             categoryId: req.body.categoryId,
-//             name: req.body.name,
-//             otherName: req.body.otherName,
-//             nickName: req.body.nickName,
-//             fullname: req.body.fullname,
-//             height: req.body.height,
-//             weight: req.body.weight,
-//             gender: req.body.gender,
-//             profession: req.body.profession,
-//             professionId: req.body.professionId,
-//             eyeColor: req.body.eyeColor,
-//             hairColor: req.body.hairColor,
-//             imgSrc: req.body.imgSrc,
-//             politicalParty: req.body.politicalParty,
-//             politicalPartyImgSrc: req.body.politicalPartyImgSrc,
-//             dob: req.body.dob,
-//             dod: req.body.dod,
-//             deathCause: req.body.deathCause,
-//             placeOfDeath: req.body.placeOfDeath,
-//             birthPlace: req.body.birthPlace,
-//             nationality: req.body.nationality,
-//             hometown: req.body.hometown,
-//             school: req.body.school,
-//             collegeUniversity: req.body.collegeUniversity,
-//             qualification: req.body.qualification,
-//             religion: req.body.religion,
-//             zodiacSign:req.body.zodiacSign,
-//             bloodGroup:req.body.bloodGroup,
-//             foodHabit:req.body.foodHabit,
-//             address:req.body.address,
-//             hobbies:req.body.hobbies,
-//             debut:req.body.debut,
-//             awards:req.body.awards,
-//             controversies:req.body.controversies,
-//             maritalStatus:req.body.maritalStatus,
-//             affairs:req.body.affairs,
-//             affairsImgSrc:req.body.affairsImgSrc,
-//             wifeOrHusband:req.body.wifeOrHusband,
-//             wifeOrHusbandImgSrc:req.body.wifeOrHusbandImgSrc,
-//             fiance:req.body.fiance,
-//             fianceImgSrc:req.body.fianceImgSrc,
-//             children:req.body.children,
-//             parents:req.body.parents,
-//             siblings:req.body.siblings,
-//             favourites:req.body.favourites,
-//             styleQoutient:req.body.styleQoutient,
-//             moneyFactor:req.body.moneyFactor,
-//             tattoos:req.body.tattoos,
-//             facts:req.body.facts,
-//             otherFacts:req.body.otherFacts,
-//             description:req.body.description,
-//         })
-//         await newNews.save().then(news => {
-//             res.status(201).json(news)
-//         }).catch((err) => {
-//             res.status(500).json({
-//                 error: err.message
-//             })
-//         })
-// })
-
 router.post('/register', async(req, res) => {
     const newNews = new News({
         id: req.body.id,
@@ -99,5 +35,72 @@ router.post('/register', async(req, res) => {
     })
 })
 
+
+router.put('/updateNews/:news', (req, res) => {
+    let newsParam = req.params.news.toLowerCase().split('-');
+    let routerUrl_split = newsParam
+    let result = []
+    for (let i = 0; i < routerUrl_split.length; i++) {
+        result.push(routerUrl_split[i].slice(0, 1).toUpperCase() + routerUrl_split[i].slice(1))
+    }
+    const news = result.join(' ');
+    News.findOne({
+        "urlTitle":{ '$regex':new RegExp(news, "i")}
+    }, (err, foundedObject) => {
+        if (err) {
+            console.log(err);
+            res.status(500).send();
+        } else {
+            if (!foundedObject) {
+                res.status(404).send();
+            } else {
+                if (req.body.id) {
+                    foundedObject.id = req.body.id;
+                }
+                if (req.body.category) {
+                    foundedObject.category = req.body.category;
+                }
+                if (req.body.categoryId) {
+                    foundedObject.categoryId = req.body.categoryId;
+                }
+                if (req.body.title) {
+                    foundedObject.title = req.body.title;
+                }
+                if (req.body.urlTitle) {
+                    foundedObject.urlTitle = req.body.urlTitle;
+                }
+                if (req.body.imgSrc) {
+                    foundedObject.imgSrc = req.body.imgSrc;
+                }
+                if (req.body.instaSimpleLink) {
+                    foundedObject.instaSimpleLink = req.body.instaSimpleLink;
+                }
+                if (req.body.twitterSimpleLink) {
+                    foundedObject.twitterSimpleLink = req.body.twitterSimpleLink;
+                }
+                if (req.body.facebookSimpleLink) {
+                    foundedObject.facebookSimpleLink = req.body.facebookSimpleLink;
+                }
+                if (req.body.linkedinSimpleLink) {
+                    foundedObject.linkedinSimpleLink = req.body.linkedinSimpleLink;
+                }
+                if (req.body.otherFacts) {
+                    foundedObject.otherFacts = req.body.otherFacts;
+                }
+                if (req.body.description) {
+                    foundedObject.description = req.body.description;
+                }
+                foundedObject.save((err, updatedObject) => {
+                    if (err) {
+                        console.log(err)
+                        res.status(500).send();
+                    } else {
+                        res.send(updatedObject)
+                    }
+                })
+            }
+        }
+    })
+})
 
 module.exports = router;

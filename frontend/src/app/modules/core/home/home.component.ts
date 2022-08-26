@@ -330,7 +330,6 @@ export class HomeComponent implements OnInit {
   }
 
   onNavigateToSelectedNews(news: any) {
-    console.log(news)
     window.scrollTo(0, 0);
     const selectedNews = news.urlTitle.toLowerCase().split(' ').join('-')? news.urlTitle.toLowerCase().split(' ').join('-'): news.title.toLowerCase().split(' ').join('-');
     this.router.navigate(['/news', selectedNews]);

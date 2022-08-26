@@ -72,40 +72,37 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.isLoading = true;
     this.celebrities = [];
+    this.activatedRoute.params.subscribe((param: Params) => {
+      this.category = param.view.split('-').join(' ').toUpperCase();
+    })
     if(this.celebritiesService.celebrities) {
       const celebrities = this.celebritiesService.getCel().reverse();
       celebrities.map((a: any) => {
         a.category.map((n: any) => {
           if (this.router.url == "/category/" + n?.toLowerCase().split(' ').join('-')) {
-            this.activatedRoute.params.subscribe((param: Params) => {
-              this.category = param.view.split('-').join(' ').toUpperCase();
-            })
+           
             this.celebrities.push(a);
               this.isLoading = false;
           }
         })
-        if (this.router.url == "/category/all") {
-          this.celebrities = celebrities.slice();
-          this.category = 'ALL'
-          this.isLoading = false;
-        }
-        this.celebrities = this.celebrities;
-        if (this.celebrities.length <= 0) {
-          this.activatedRoute.params.subscribe((param: Params) => {
-            this.category = param.view.split('-').join(' ').toUpperCase();
-            this.isLoading = false;
-          })
-        }
       })
+      if (this.router.url == "/category/all") {
+        this.celebrities = celebrities.slice();
+        this.category = 'ALL'
+        this.isLoading = false;
+      }
+      // if (this.celebrities.length <= 0) {
+      //   this.activatedRoute.params.subscribe((param: Params) => {
+      //     this.category = param.view.split('-').join(' ').toUpperCase();
+      //     this.isLoading = false;
+      //   })
+      // }
     }
     else {
       this.celebritiesService.getCelebrities().then((celebrities: any) => {
         celebrities?.map((a: any) => {
           a.category.map((n: any) => {
             if (this.router.url == "/category/" + n?.toLowerCase().split(' ').join('-')) {
-              this.activatedRoute.params.subscribe((param: Params) => {
-                this.category = param.view.split('-').join(' ').toUpperCase();
-              })
               this.celebrities.push(a);
                 this.isLoading = false;
             }
@@ -116,12 +113,6 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
             this.isLoading = false;
           }
           this.celebrities = this.celebrities.reverse();
-          if (this.celebrities.length <= 0) {
-            this.activatedRoute.params.subscribe((param: Params) => {
-              this.category = param.view.split('-').join(' ').toUpperCase();
-              this.isLoading = false;
-            })
-          }
         })
       }).catch((err) => {
         console.log(err.message);
@@ -161,10 +152,10 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
         (selectedCategory: any) => {
           this.isLoading = true;
           this.celebrities= [];
-          this.activatedRoute.params.subscribe((param: Params) => {
-            this.category = param.view.split('-').join(' ').toUpperCase();
-            this.isLoading = false;
-          })
+          // this.activatedRoute.params.subscribe((param: Params) => {
+          //   this.category = param.view.split('-').join(' ').toUpperCase();
+          //   this.isLoading = false;
+          // })
           this.celebrities = selectedCategory;
           this.isLoading = false;
         }
@@ -187,6 +178,5 @@ export class ViewByCategoryComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
      this.subscription.unsubscribe();
      this.celebritiesService.getActiveClass.next(false)
-
   }
 }

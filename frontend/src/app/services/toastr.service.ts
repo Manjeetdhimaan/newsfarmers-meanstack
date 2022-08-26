@@ -7,6 +7,7 @@ import { ToastrService } from 'ngx-toastr';
 export class ToasTMessageService {
   constructor(private toastrService: ToastrService) {}
 
+  
   success(message: string, title?: string) {
     this.toastrService.success(message, title ?? 'Success', {
       progressBar: true,

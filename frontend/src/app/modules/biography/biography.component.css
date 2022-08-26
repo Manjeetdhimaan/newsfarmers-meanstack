@@ -167,3 +167,7 @@ a:hover{
     text-align: center;
     z-index:1000
   }
+
+  .has-error {
+    min-height:90vh
+  }
