@@ -14,8 +14,8 @@ app.use(express.json());
 const newsRoutes = require('./api/newsRoutes');
 const celebrityRoutes = require('./api/celebrityRoutes');
 
-app.use('/getNews', newsRoutes);
-app.use('/getCelebrity', celebrityRoutes);
+app.use('/api/News', newsRoutes);
+app.use('/api/Celebrity', celebrityRoutes);
 
 app.use(express.static(path.join(__dirname, 'www')));
 

@@ -26,7 +26,7 @@ router.get('/getRecentCelebrities', (req, res) => {
         });
 })
 
-router.post('/register', async (req, res) => {
+router.post('/addCelebrity', async (req, res) => {
     const newCelebrity = new Celebrity({
         id: req.body.id,
         category: req.body.category,

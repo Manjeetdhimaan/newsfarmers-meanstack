@@ -11,9 +11,9 @@ router.get('', (req, res) => {
     })
 })
 
-router.post('/register', async(req, res) => {
+router.post('/addNews', async(req, res) => {
     const newNews = new News({
-        id: req.body.id,
+        id: req.body.id, 
         category: req.body.category,
         categoryId: req.body.categoryId,
         title:req.body.title,

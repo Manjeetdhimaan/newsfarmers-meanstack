@@ -73158,13 +73158,13 @@
       description: `Mukesh Tiwari is an Indian actor, who has worked predominantly in Bollywood. He is known for playing negative and comic side roles. He entered the film industry in the year 1998 with the movie China Gate. He is known for his work in The Legend of Bhagat Singh, Gangaajal and Golmaal.`
     },
     {
-      id: 'ce361',
+      id: 'ce361', 
       category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actor', 'actor'],
       categoryId: ['Bollywood Actor/Actress, Model'],
       name: `Rajpal Yadav`,
-      otherName: `Rajpal Yadav, Rajpal Naurang Yadav, RajpalYadav`,
-      nickName: ``,
-      fullname: ``,
+      otherName: `RajpalYadav`,
+      nickName: `Rajpal`,
+      fullname: `Rajpal Naurang Yadav`,
       height: `in feet inches - 5’ 3”`,
       weight: '58 Kg',
       gender: 'Male',
@@ -73172,8 +73172,8 @@
       profession: `Actor`,
       professionId: ``,
       eyeColor: 'Black',
-      hairColor: 'Black',
-      imgSrc: "assets/images/july2022/rajpal-yadav.jpg",
+      hairColor: 'Black ',
+      imgSrc: "assets/images/august2022/rajpal-yadav.jpg",
       politicalParty: "",
       politicalPartyImgSrc: "",
       dob: {
@@ -73195,7 +73195,7 @@
       collegeUniversity: `Bhartendu Academy of Dramatic Arts, Lucknow<br />
       National School of Drama, New Delhi`,
       qualification: `Theatre Course`,
-      religion: 'Hinduism',
+      religion: '',
       zodiacSign: 'Pisces',
       bloodGroup: '',
       foodHabit: '',
@@ -73254,7 +73254,7 @@
       affairs: ``,
       affairsImgSrc: ``,
       wifeOrHusband: `Radha Yadav`,
-      wifeOrHusbandImgSrc: `assets/images/july2022/Rajpal-Yadav-with-his-wife-and-daughter.jpg`,
+      wifeOrHusbandImgSrc: `assets/images/august2022/rajpal-yadav-wife.jfif`,
       fiance: '',
       fianceImgSrc: '',
       children: {
@@ -73262,8 +73262,8 @@
         sonImgSrc: ``,
         sonImgSrc1: '',
         sonImgSrc2: '',
-        daughter: `1`,
-        daughterImgSrc: ''
+        daughter: `Moni`,
+        daughterImgSrc: 'assets/images/august2022/rajpal-yadav-daughter.jpg'
       },
       parents: {
         father: 'Not Known',
@@ -73271,7 +73271,7 @@
         mother: 'Not Known',
         motherImgSrc: ''
       },
-
+  
       siblings: {
         brother: ``,
         brotherImgSrc: '',
@@ -73279,11 +73279,11 @@
         sisterImgSrc: ''
       },
       favourites: {
-        food: `Not Known`,
+        food: `Japanese cuisine`,
         fruit: ``,
         beverages: ``,
-        actor: `<a href="https://www.newsfarmers.com/amitabh-bachchan" class="celebrity" target="_blank" rel="noopener">Amitabh Bachchan</a>, <a href="https://www.newsfarmers.com/aamir-khan" class="celebrity" target="_blank">Aamir Khan</a>, Mehmood and Shakti Kapoor`,
-        actress: ``,
+        actor: `Amitabh Bachchan, Aamir Khan, Mehmood and Shakti Kapoor`,
+        actress: `Not Known`,
         singer: ``,
         fashionBrand: ``,
         colour: ``,
@@ -73299,15 +73299,15 @@
         carsCollection: "",
         imgSrc: '',
       },
-      // INR 6 to 7 crores+/movie (as in 2021)
+      // INR 3 to 4 Crore+/movie (as in 2021)
       moneyFactor: {
-        earning: `Not Known`,
-        netWorth: 'INR 74 Crore (as in 2021)',
-        imgSrc: 'assets/images/july2022/rajpal-yadav-net.jpg'
+        earning: `INR 2 to 3 Crore+/movie (as in 2021)`,
+        netWorth: 'INR 74 Crore (as in 2022)',
+        imgSrc: 'assets/images/august2022/rajpal-yadav-net.jpg'
       },
       tattoos: [],
       facts: {
-        smoke: 'Yes',
+        smoke: 'yes',
         alcoholic: 'Not Known'
       },
       otherFacts: [
@@ -73316,13 +73316,13 @@
           imgSrc: '',
           imgCaption: '',
           videoSrc: '',
-          instaLink: 'https://www.instagram.com/p/Cf4kn0krWfQ/embed/'
+          instaLink: 'https://www.instagram.com/p/Chgmm2voksY/embed/'
         },
         {
           fact: "Interview",
           imgSrc: '',
           imgCaption: '',
-          videoSrc: 'https://www.youtube.com/embed/jgAid09ZR6s?feature=oembed'
+          videoSrc: 'https://www.youtube.com/embed/2gXxDHRN9rM?feature=oembed'
         },
         {
           fact: `Rajpal wanted to be an actor since his childhood, and was part of a theatre group in Shahjahanpur.`,
@@ -73335,12 +73335,6 @@
           imgSrc: '',
           imgCaption: '',
           videoSrc: ''
-        },
-        {
-          fact: `He did a Coke ad commercial with Aishwarya Rai.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: 'https://www.youtube.com/embed/TeXal9Qr7EA?feature=oembed'
         },
         {
           fact: `He won the Best Actor in a negative role award at the Screen Videocon Awards and Sansui Awards in 2000 for his role as Sippa (a dacoit) in the film <em>Jungle</em>.`,
@@ -73365,9 +73359,9 @@
           imgSrc: '',
           imgCaption: '',
           videoSrc: ''
-        },
+        }
       ],
-      description: `Rajpal Naurang Yadav (born 16 March 1971) is an Indian actor, comedian, writer, film director and producer known for his work in Hindi cinema. As a comedian, he has been nominated for several awards such as Filmfare and Screen Awards.`
+      description: `Rajpal Naurang Yadav (born 16 March 1971) is an Indian actor, comedian, screenwriter and film director known for his work in Hindi cinema. As a comedian, he has been nominated for several awards such as Filmfare and Screen Awards.`
     },
     {
       id: 'ce362',
@@ -75302,5 +75296,1219 @@
         },
       ],
       description: `Vishwanath Patekar (born 1 January 1951), better known as Nana Patekar, is an Indian actor, writer, film maker, and a former Indian Territorial Army officer, mainly working in Hindi and Marathi cinema. He is regarded as one of finest actors in Indian Cinema.`
+    },
+    {
+      id: 'ce369', 
+      category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actress', 'actress'],
+      categoryId: ['Bollywood Actor/Actress, Model'],
+      name: `Ankita Srivastava`,
+      otherName: `AnkitaSrivastava, Ankita Srivastva, Ankita Srivastav`,
+      nickName: `Chandni`,
+      fullname: ``,
+      height: `in feet inches - 5’ 7”`,
+      weight: '52 Kg',
+      gender: 'Female',
+      boyfriend: '',
+      profession: `Actress`,
+      professionId: ``,
+      eyeColor: 'Black',
+      hairColor: 'Black',
+      imgSrc: "assets/images/august2022/ankita-srivastava.jpg",
+      politicalParty: "",
+      politicalPartyImgSrc: "",
+      dob: {
+        date: '25',
+        month: 'May',
+        year: '1991'
+      },
+      dod: {
+        date: '',
+        month: '',
+        year: ''
+      },
+      deathCause: ``,
+      placeOfDeath: ``,
+      birthPlace: `Kanpur, Uttar Pradesh`,
+      nationality: 'Indian',
+      hometown: 'Kanpur, Uttar Pradesh',
+      school: `Not Known`,
+      collegeUniversity: `Not Known`,
+      qualification: `Not Known`,
+      religion: 'Hinduism',
+      zodiacSign: 'Gemini',
+      bloodGroup: '',
+      foodHabit: '',
+      address: ``,
+      hobbies: ``,
+      debut: {
+        lyrical: "",
+        lyricalImgSrc: "",
+        punjabiFilm: ``,
+        punjabiFilmImgSrc: "",
+        bollywoodFilm: `Welcome Back (2015)`,
+        bollywoodFilmImgSrc: "assets/images/august2022/ankita-welcome-back.jpg",
+        hollywoodFilm: ``,
+        hollywoodFilmImgSrc: "",
+        tollywoodFilm: ``,
+        tollywoodFilmImgSrc: "",
+        tamilFilm: '',
+        tamilFilmImgSrc: "",
+        kannadaFilm: '',
+        kannadaFilmImgSrc: "",
+        punjabiAlbum: '',
+        punjabiAlbumImgSrc: "",
+        hindiAlbum: '',
+        hindiAlbumImgSrc: "",
+        singles: ``,
+        singlesImgSrc: "",
+        musicDirection: "",
+        musicDirectionImgSrc: "",
+        filmDirection: "",
+        filmDirectionImgSrc: "",
+        tv: ``,
+        tvImgSrc: "",
+        webSeries: "",
+        webSeriesImgSrc: "",
+        production: "",
+        productionImgSrc: "",
+        filmWriter: "",
+        filmWriterImgSrc: "",
+        lastSong: ``,
+        lastSongImgSrc: ``,
+        lastFilm: ``,
+        lastFilmImgSrc: ``
+      },
+      awards: [],
+      controversies: [],
+      maritalStatus: `Unmarried`,
+      affairs: `Not Known`,
+      affairsImgSrc: ``,
+      wifeOrHusband: ``,
+      wifeOrHusbandImgSrc: ``,
+      fiance: '',
+      fianceImgSrc: '',
+      children: {
+        son: ``,
+        sonImgSrc: ``,
+        sonImgSrc1: '',
+        sonImgSrc2: '',
+        daughter: ``,
+        daughterImgSrc: ''
+      },
+      parents: {
+        father: 'Name Not Known',
+        fatherImgSrc: 'assets/images/august2022/Ankita-Srivastava-With-Her-Father-and-Sister.jpg',
+        mother: 'Ruby Arun',
+        motherImgSrc: 'assets/images/august2022/Ankita-Srivastavas-Parents.jpg'
+      },
+  
+      siblings: {
+        brother: `Name Not Known`,
+        brotherImgSrc: 'assets/images/august2022/Ankita-Srivastava-With-Her-Sister-and-Brother.jpg',
+        sister: `Rashi Srivastava`,
+        sisterImgSrc: 'assets/images/august2022/Ankita-Srivastava-With-Her-Sister.jpg'
+      },
+      favourites: {
+        food: ``,
+        fruit: ``,
+        beverages: ``,
+        actor: `<a href="https://www.newsfarmers.com/amitabh-bachchan" class="celebrity" target="_blank" rel="noopener">Amitabh Bachchan</a>`,
+        actress: `<a href="https://www.newsfarmers.com/rekha" class="celebrity" target="_blank" rel="noopener">Rekha</a>`,
+        singer: ``,
+        fashionBrand: ``,
+        colour: ``,
+        destination: ``,
+        sports: ``,
+        sportsman: ``,
+        dress: '',
+        song: ``,
+        film: ``,
+        director: ``
+      },
+      styleQoutient: {
+        carsCollection: "",
+        imgSrc: '',
+      },
+      // INR 3 to 4 Crore+/movie (as in 2021)
+      moneyFactor: {
+        earning: `INR 23-43k per episode (as in 2021)`,
+        netWorth: '2-5 million USD (as in 2022)',
+        imgSrc: 'assets/images/august2022/ankita-srivastava-net.jpg'
+      },
+      tattoos: [],
+      facts: {
+        smoke: 'Not Known',
+        alcoholic: 'Not Known'
+      },
+      otherFacts: [
+        {
+          fact: 'Instagram',
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: '',
+          instaLink: 'https://www.instagram.com/p/CfjGCpdI1lo/embed/'
+        },
+        {
+          fact: "Interview",
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: 'https://www.youtube.com/embed/YUSjwkocjx8?feature=oembed'
+        },
+        {
+          fact: `Ankita Srivastava is an Indian television and film actress.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She started her career as a model.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2015, she appeared in the Bollywood film, &#8216;Welcome Back&#8217; along with the ace Bollywood actors, like Nana Patekar, Anil Kapoor, John Abraham and Paresh Rawal.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2018, she appeared in the Hindi TV serial, ‘Dastaan-E-Mohabbat Salim Anarkali’ (2018).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She participated in the Colors TV show, ‘Mujhse Shaadi Karoge’ along with Jasleen Matharu, Heena Panchal, Sanjjanaa, Hritu Zee and Navdeesh Kaur in 2020.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Her fans call her look-alike of the Bollywood actress Alia Bhatt.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She regularly visits the gym to maintain her fitness.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In an interview, she said that she had learned a lot from Dimple Kapadia while she was shooting for the film ‘Welcome Back.’`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        }
+      ],
+      description: `Ankita Srivastava born on 25 May 1991 in Kanpur, Uttar Pradesh, India is an Indian actress and model. She got huge popularity after she appeared in the 2015 Bollywood movie Welcome Back. In 2020, She appeared in Mujhse Shaadi Karoge season 1 aired on Colors TV.`
+    },
+    {
+      id: 'ce370', 
+      category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actor', 'actor', 'Producer'],
+      categoryId: ['Bollywood Actor/Actress, Model'],
+      name: `Abhay Deol`,
+      otherName: `AbhaySinghDeol, AbhayDeol`,
+      nickName: `Dimpy`,
+      fullname: `Abhay Singh Deol`,
+      height: `in feet inches - 6’ 1”`,
+      weight: '80 Kg',
+      gender: 'Male',
+      boyfriend: '',
+      profession: `Actor, Producer, Writer`,
+      professionId: ``,
+      eyeColor: 'Dark Brown',
+      hairColor: 'Black',
+      imgSrc: "assets/images/august2022/abhay-deol.jpg",
+      politicalParty: "",
+      politicalPartyImgSrc: "",
+      dob: {
+        date: '15',
+        month: 'March',
+        year: '1976'
+      },
+      dod: {
+        date: '',
+        month: '',
+        year: ''
+      },
+      deathCause: ``,
+      placeOfDeath: ``,
+      birthPlace: `Mumbai, Maharashtra, India`,
+      nationality: 'Indian',
+      hometown: 'Mumbai, Maharashtra, India',
+      school: `Not Known`,
+      collegeUniversity: `University of Mumbai (dropout)<br />
+      The City College of New York (for acting &amp; theatre)`,
+      qualification: `College dropout`,
+      religion: 'Sikhism',
+      zodiacSign: 'Pisces',
+      bloodGroup: '',
+      foodHabit: '',
+      address: `Municipal Industrial Estate, Off Dr. E. Moses Road, Worli, Mumbai`,
+      hobbies: `Interior designing, travelling, yoga, martial arts`,
+      debut: {
+        lyrical: "",
+        lyricalImgSrc: "",
+        punjabiFilm: ``,
+        punjabiFilmImgSrc: "",
+        bollywoodFilm: `Socha Na Tha (2005)`,
+        bollywoodFilmImgSrc: "",
+        hollywoodFilm: ``,
+        hollywoodFilmImgSrc: "",
+        tollywoodFilm: ``,
+        tollywoodFilmImgSrc: "",
+        tamilFilm: '',
+        tamilFilmImgSrc: "",
+        kannadaFilm: '',
+        kannadaFilmImgSrc: "",
+        punjabiAlbum: '',
+        punjabiAlbumImgSrc: "",
+        hindiAlbum: '',
+        hindiAlbumImgSrc: "",
+        singles: ``,
+        singlesImgSrc: "",
+        musicDirection: "",
+        musicDirectionImgSrc: "",
+        filmDirection: "",
+        filmDirectionImgSrc: "",
+        tv: ``,
+        tvImgSrc: "",
+        webSeries: "",
+        webSeriesImgSrc: "",
+        production: "",
+        productionImgSrc: "",
+        filmWriter: "",
+        filmWriterImgSrc: "",
+        lastSong: ``,
+        lastSongImgSrc: ``,
+        lastFilm: ``,
+        lastFilmImgSrc: ``
+      },
+      awards: [],
+      controversies: [
+        {
+          title:``,
+          controversy:`He was not happy about being part of 'Aisha' (2010), also starring Sonam Kapoor. According to him, the film derailed from its path and had more to do with clothes than acting.`
+        },
+        {
+          title:``,
+          controversy:`On the eve of the Screen Awards 2014, Abhay attended the event with a black eye. He showed it as a sign of protest against music label 'T-Series' for not releasing the music of his film 'One By Two.' He posted about it on his facebook account that he has since decided to take a stand against the practice of signing certain contracts that he claims may damage remuneration of singers and music composers.`
+        },
+        {
+          title:``,
+          controversy:`In April 2017, he criticized some of the Bollywood actors for endorsing fairness creams with series of Facebook posts, including Shah Rukh Khan, Vidya Balan, Deepika Padukone, Sonam Kapoor, Sidharth Malhotra, Shahid Kapoor, etc. In response to it, Sonam Kapoor, had an online spat with Abhay, reminding him that his cousin Esha Deol had also done a similar ad.`
+        },
+      ],
+      maritalStatus: `Unmarried`,
+      affairs: `Preeti Desai (Model, Actress)`,
+      affairsImgSrc: ``,
+      wifeOrHusband: ``,
+      wifeOrHusbandImgSrc: ``,
+      fiance: '',
+      fianceImgSrc: '',
+      children: {
+        son: ``,
+        sonImgSrc: ``,
+        sonImgSrc1: '',
+        sonImgSrc2: '',
+        daughter: ``,
+        daughterImgSrc: ''
+      },
+      parents: {
+        father: 'Late Ajit Singh Deol (Filmmaker, Actor)',
+        fatherImgSrc: '',
+        mother: 'Usha Deol',
+        motherImgSrc: 'assets/images/august2022/Abhay-Deol-parents.jpg'
+      },
+  
+      siblings: {
+        brother: `Cousins - <a href="https://www.newsfarmers.com/sunny-deol" class="celebrity" target="_blank" rel="noopener">Sunny Deol</a>, <a href="https://www.newsfarmers.com/bobby-deol" class="celebrity" target="_blank" rel="noopener">Bobby Deol</a>`,
+        brotherImgSrc: '',
+        sister: `Cousins - Esha Deol, Ahana Deol, Ajeita Deol, Vijeta Deol`,
+        sisterImgSrc: ''
+      },
+      favourites: {
+        food: `Thai, Chinese cuisine, Tiramisu, Kaju barfi, Gulab jamun, Muffin`,
+        fruit: ``,
+        beverages: ``,
+        actor: `<a href="https://www.newsfarmers.com/salman-khan" class="celebrity" target="_blank" rel="noopener">Salman Khan</a>, <a href="https://www.newsfarmers.com/hrithik-roshan" class="celebrity" target="_blank" rel="noopener">Hrithik Roshan</a>`,
+        actress: `Angelina Jolie`,
+        singer: ``,
+        fashionBrand: ``,
+        colour: `White, Black`,
+        destination: `New York, Mediterranean sea, Thailand`,
+        sports: `Cricket`,
+        sportsman: ``,
+        dress: '',
+        song: ``,
+        film: `<strong>Hollywood:</strong> Bicycle Thieves (1948, Italian), Dr Strangelove (1964), Brazil (1985), Children of Heaven (1997), Star Wars`,
+        director: ``
+      },
+      styleQoutient: {
+        carsCollection: "",
+        imgSrc: '',
+      },
+      // INR 3 to 4 Crore+/movie (as in 2021)
+      moneyFactor: {
+        earning: `INR 3 crores/movie (as in 2021)`,
+        netWorth: 'INR 400 crores(as in 2022)',
+        imgSrc: 'assets/images/august2022/abhay-deol-net.jpg'
+      },
+      tattoos: [],
+      facts: {
+        smoke: 'Yes',
+        alcoholic: 'Yes'
+      },
+      otherFacts: [
+        {
+          fact: 'Instagram',
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: '',
+          instaLink: 'https://www.instagram.com/p/Chys0uIOx-Z/embed/'
+        },
+        {
+          fact: "Interview",
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: 'https://www.youtube.com/embed/bmShgMPG398?feature=oembed'
+        },
+        {
+          fact: `Abhay is the paternal nephew of Dharmendra and cousin of Sunny Deol and Bobby Deol.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He spent his childhood in a joint family and was so close to Dharmendra that he grew up calling his parents, Ajit Uncle and Usha Aunty.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Initially, he had 4 professions in mind: acting, painting, philosophy and journalism. He chose acting as he was involved in theatre in school.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He got the nickname &#8216;Dimpy&#8217; due to his dimples.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `His debut &#8216;Socha Na Tha&#8217; (2005) was produced by his uncle Dharmendra, and was the directorial debut film of Imtiaz Ali. Though the film was critically acclaimed, it did not do well at the box office.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2007, he tasted his first Bollywood success with the multi-star cast film &#8216;Honeymoon Travels Pvt. Ltd.&#8217;`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He won the Best Actor Award at the Mahindra Indo-American Arts Council Film Festival in New York for his role in &#8216;Manorama Six Feet Under&#8217; (2007).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `His first solo hit was &#8216;Oye Lucky! Lucky Oye!&#8217; (2008) which became extremely popular.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He got training in deep-sea diving for his role in the film &#8216;Zindagi Na Milegi Dobara&#8217; (2011).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `His long time girlfriend Preeti Desai was the Miss Great Britain 2006.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He has a production house, &#8220;Forbidden Films&#8221;.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He was on the cover of Man’s World and Time Out Mumbai, with heading &#8216;Fresh Face of Indian Movies.&#8217;`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He played the role of a thief in the film &#8216;Oye Lucky! Lucky Oye!&#8217;, but in real life, he became a victim of a major thievery in real life as in September 2013 his SUV car, Mitsubishi Pajero, was stolen from a residential area in Santa Cruz, Mumbai.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2014, he faced financial crisis after his maiden production film &#8216;One By Two&#8217; performed poorly at the box-office. As a result, he had to mortgage his Juhu flat worth INR 2-4 crore to take care of his financial troubles.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+      ],
+      description: `Abhay Singh Deol (born 15 March 1976) is an Indian actor and producer who is known for his work in Hindi films. Born in the Deol family, he made his on-screen debut in 2005 with Imtiaz Ali's romantic comedy Socha Na Tha.
+      After the modest success of his debut, Deol was praised for his performances in films such as Manorama Six Feet Under (2007) and Oye Lucky! Lucky Oye! (2008). His breakthrough role came in 2009 with the starring role as Dev in Anurag Kashyap's black comedy Dev.D, a modern-day adaptation of Devdas. Following the success of the film, Deol gained wider recognition`
+    },
+    {
+      id: 'ce371', 
+      category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actress', 'actress', 'Interior Designer'],
+      categoryId: ['Bollywood Actor/Actress, Model'],
+      name: `Neelam Kothari`,
+      otherName: `NeelamKothari, Neelam Kothari Soni, Soni Neelam, Neelam Soni, NeelamSoni, SoniNeelam`,
+      nickName: ``,
+      fullname: `Neelam Kothari Soni`,
+      height: `in feet inches - 5’ 5”`,
+      weight: '61 Kg',
+      gender: 'Female',
+      boyfriend: '',
+      profession: `Actress, Interior Designer`,
+      professionId: ``,
+      eyeColor: 'Brown',
+      hairColor: 'Brown ',
+      imgSrc: "assets/images/august2022/neelam-kothari.jpg",
+      politicalParty: "",
+      politicalPartyImgSrc: "",
+      dob: {
+        date: '9',
+        month: 'November',
+        year: '1969'
+      },
+      dod: {
+        date: '',
+        month: '',
+        year: ''
+      },
+      deathCause: ``,
+      placeOfDeath: ``,
+      birthPlace: `Hong Kong`,
+      nationality: 'Indian',
+      hometown: 'Hong Kong',
+      school: `Island School, Hong Kong`,
+      collegeUniversity: `Not Known`,
+      qualification: `N/A`,
+      religion: '',
+      zodiacSign: 'Scorpio',
+      bloodGroup: '',
+      foodHabit: '',
+      address: ``,
+      hobbies: `Cooking, Travelling`,
+      debut: {
+        lyrical: "",
+        lyricalImgSrc: "",
+        punjabiFilm: ``,
+        punjabiFilmImgSrc: "",
+        bollywoodFilm: `Jawaani (1984) as 'Sanam'`,
+        bollywoodFilmImgSrc: "",
+        hollywoodFilm: ``,
+        hollywoodFilmImgSrc: "",
+        tollywoodFilm: ``,
+        tollywoodFilmImgSrc: "",
+        tamilFilm: '',
+        tamilFilmImgSrc: "",
+        kannadaFilm: '',
+        kannadaFilmImgSrc: "",
+        punjabiAlbum: '',
+        punjabiAlbumImgSrc: "",
+        hindiAlbum: '',
+        hindiAlbumImgSrc: "",
+        singles: ``,
+        singlesImgSrc: "",
+        musicDirection: "",
+        musicDirectionImgSrc: "",
+        filmDirection: "",
+        filmDirectionImgSrc: "",
+        tv: ``,
+        tvImgSrc: "",
+        webSeries: "Fabulous Lives of Bollywood Wives (2020) as 'Herself'",
+        webSeriesImgSrc: "assets/images/august2022/The-Fabulous-Lives-of-Bollywood-Wives-Poster.jpg",
+        production: "",
+        productionImgSrc: "",
+        filmWriter: "",
+        filmWriterImgSrc: "",
+        lastSong: ``,
+        lastSongImgSrc: ``,
+        lastFilm: ``,
+        lastFilmImgSrc: ``
+      },
+      awards: [
+        {
+          year:`2019`,
+          award:`Blackswan Award for Women Empowerment`
+        },
+        {
+          year:`2019`,
+          award:`Iconic Achievers Award for Most Promising Jeweller of The Year`
+        },
+        {
+          year:`2019`,
+          award:`Global Spa Fit and Fab Jeweller Award`
+        },
+      ],
+      controversies: [
+        {
+          title:``,
+          controversy:`On 5 April 2018, Neelam, along with "Hum Saath Saath Hain" co-stars Saif Ali Khan, Tabu and Sonali Bendre, was acquitted by Jodhpur High Court in the 1998 blackbuck killing case in which Salman Khan was convicted and was sentenced to 5-year jail; Magistrate Dev Kumar Khatri pronounced the verdict.`
+        }
+      ],
+      maritalStatus: `Married`,
+      affairs: `Bobby Deol (actor), Samir Soni (Actor)`,
+      affairsImgSrc: ``,
+      wifeOrHusband: `• Rishi Sethia (son of a UK based businessman; Divorced)<br />, • Samir Soni`,
+      wifeOrHusbandImgSrc: `assets/images/august2022/neelam-kothari-family.jpg`,
+      fiance: '',
+      fianceImgSrc: '',
+      children: {
+        son: `None`,
+        sonImgSrc: ``,
+        sonImgSrc1: '',
+        sonImgSrc2: '',
+        daughter: `Ahana`,
+        daughterImgSrc: 'assets/images/august2022/neelam-kothari-family.jpg'
+      },
+      parents: {
+        father: 'Shishir Kothari (Businessman)',
+        fatherImgSrc: '',
+        mother: 'Parveen Kothari (Former Model)',
+        motherImgSrc: ''
+      },
+  
+      siblings: {
+        brother: `Afsheen Kothari`,
+        brotherImgSrc: '',
+        sister: `None`,
+        sisterImgSrc: ''
+      },
+      favourites: {
+        food: ``,
+        fruit: ``,
+        beverages: ``,
+        actor: `<a href="https://www.newsfarmers.com/amitabh-bachchan" class="celebrity" target="_blank" rel="noopener">Amitabh Bachchan</a>`,
+        actress: `Not Known`,
+        singer: ``,
+        fashionBrand: ``,
+        colour: ``,
+        destination: ``,
+        sports: ``,
+        sportsman: ``,
+        dress: '',
+        song: ``,
+        film: ``,
+        director: ``
+      },
+      styleQoutient: {
+        carsCollection: "",
+        imgSrc: '',
+      },
+      // INR 3 to 4 Crore+/movie (as in 2021)
+      moneyFactor: {
+        earning: `Not Known`,
+        netWorth: 'INR 21 crore(as in 2022)',
+        imgSrc: 'assets/images/august2022/neelam-kothari-net.jpg'
+      },
+      tattoos: [],
+      facts: {
+        smoke: 'Not Known',
+        alcoholic: 'Not Known'
+      },
+      otherFacts: [
+        {
+          fact: 'Instagram',
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: '',
+          instaLink: 'https://www.instagram.com/p/ChpDe8irK-r/embed/'
+        },
+        {
+          fact: "Interview",
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: 'https://www.youtube.com/embed/K7OTlIqZeNc?feature=oembed'
+        },
+        {
+          fact: `Neelam Kothari is an Indian actress turned jewellery designer.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She grew up in a well-to-do family in Hong Kong.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In her school days, she was a member of Rutherford house.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Later, her family shifted from Hong Kong to Bangkok.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Neelam knows how to play the Keyboard since childhood. She was also trained in the Jazz and Ballet dance forms in childhood.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Once when Neelam was on a holiday to Mumbai, she was approached by the film director Ramesh Behl to play a role in his film &#8220;Jawaani&#8221; (1984).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Although her debut film &#8220;Jawaani&#8221; did not perform well at the box office, Neelam was approached for films like “Andaz Pyar Ka” (1986), “Khudgarz” (1987), “Khatron Ke Khiladi” (1988), “Sindoor” (1988), and “Gharana” (1989).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She shot to fame with the film &#8220;Ghar Ka Chiraaz&#8221; (1989) in which she played the role of &#8216;Kiran.&#8217;`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She has also appeared in the Bollywood films “Agneepath” (1990), “Indrajeet” (1991), “Santaan” (1995), “Kuch Kuch Hota Hai” (1998), and “Hum Saath Saath Hain” (1999).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2001, Neelam gave up her acting career and established herself as a jewellery designer.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2011, Kothari opened a jewellery store named Neelam Kothari Fine Jewels in Mumbai.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `When Neelam started her acting career in 1984, she did not even know how to speak Hindi.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She has been featured on the cover of the Better Homes &amp; Gardens magazine.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Neelam is an avid dog lover and has a pet dog named Casper.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She is a good friend of Ekta Kapoor, Maheep Kapoor, Seema Khan`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In an interview, Neelam shared that the first car that she ever bought with her own money was a dark blue coloured Maruti 1000.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+      ],
+      description: `Neelam Kothari Soni (born November 9, 1969) is a British actress and jewellery designer from Hong Kong, known mononymously as Neelam. She made her acting debut with Jawaani (1984) opposite debutant Karan Shah. Neelam has thereafter starred opposite Govinda in Love 86 (1986), Ilzaam (1986), Sindoor (1986), Khudgarz (1987), Hatya (1988), Farz Ki Jung (1989), Taaqatwar (1989) and Do Qaidi (1989). She starred opposite Chunkey Pandey in films Aag Hi Aag (1987), Paap Ki Duniya (1988), Khatron Ke Khiladi (1988), Billoo Badshah (1989), Ghar Ka Chiraag (1989), and Mitti Aur Sona (1989).`
+    },
+    {
+      id: 'ce372', 
+      category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actress', 'actress', 'Miss India'],
+      categoryId: ['Bollywood Actor/Actress, Model'],
+      name: `Niharika Singh`,
+      otherName: `NiharikaSingh, Miss India Niharika Singh`,
+      nickName: ``,
+      fullname: ``,
+      height: `in feet inches - 5’ 7”`,
+      weight: '55 Kg',
+      gender: 'Female',
+      boyfriend: '',
+      profession: `Actress`,
+      professionId: ``,
+      eyeColor: 'Dark Brown',
+      hairColor: 'Black ',
+      imgSrc: "assets/images/august2022/niharika-singh.jpg",
+      politicalParty: "",
+      politicalPartyImgSrc: "",
+      dob: {
+        date: '31',
+        month: 'August',
+        year: '1982'
+      },
+      dod: {
+        date: '',
+        month: '',
+        year: ''
+      },
+      deathCause: ``,
+      placeOfDeath: ``,
+      birthPlace: `Not Known`,
+      nationality: 'Indian',
+      hometown: 'Dehradun, Uttarathand, India',
+      school: `All Saints' College, Nainital`,
+      collegeUniversity: `Shri Ram College of Commerce, New Delhi`,
+      qualification: `Dropout - B.Com (Hons.)`,
+      religion: '',
+      zodiacSign: 'Virgo',
+      bloodGroup: '',
+      foodHabit: '',
+      address: ``,
+      hobbies: `Travelling, Cooking, Reading`,
+      debut: {
+        lyrical: "",
+        lyricalImgSrc: "",
+        punjabiFilm: ``,
+        punjabiFilmImgSrc: "",
+        bollywoodFilm: `Miss Lovely (2012)`,
+        bollywoodFilmImgSrc: "",
+        hollywoodFilm: ``,
+        hollywoodFilmImgSrc: "",
+        tollywoodFilm: ``,
+        tollywoodFilmImgSrc: "",
+        tamilFilm: '',
+        tamilFilmImgSrc: "",
+        kannadaFilm: '',
+        kannadaFilmImgSrc: "",
+        punjabiAlbum: '',
+        punjabiAlbumImgSrc: "",
+        hindiAlbum: '',
+        hindiAlbumImgSrc: "",
+        singles: ``,
+        singlesImgSrc: "",
+        musicDirection: "",
+        musicDirectionImgSrc: "",
+        filmDirection: "",
+        filmDirectionImgSrc: "",
+        tv: ``,
+        tvImgSrc: "",
+        webSeries: "",
+        webSeriesImgSrc: "",
+        production: "",
+        productionImgSrc: "",
+        filmWriter: "",
+        filmWriterImgSrc: "",
+        lastSong: ``,
+        lastSongImgSrc: ``,
+        lastFilm: ``,
+        lastFilmImgSrc: ``
+      },
+      awards: [],
+      controversies: [],
+      maritalStatus: `Unmarried`,
+      affairs: `<a href="https://www.newsfarmers.com/nawazuddin-siddiqui" class="celebrity" target="_blank" rel="noopener">Nawazuddin Siddiqui</a> (Actor, Ex-boyfriend)`,
+      affairsImgSrc: ``,
+      wifeOrHusband: ``,
+      wifeOrHusbandImgSrc: ``,
+      fiance: '',
+      fianceImgSrc: '',
+      children: {
+        son: ``,
+        sonImgSrc: ``,
+        sonImgSrc1: '',
+        sonImgSrc2: '',
+        daughter: ``,
+        daughterImgSrc: ''
+      },
+      parents: {
+        father: 'Not Known (Worked in Uttarakhand Tourism)',
+        fatherImgSrc: '',
+        mother: 'Not Known',
+        motherImgSrc: ''
+      },
+  
+      siblings: {
+        brother: ``,
+        brotherImgSrc: '',
+        sister: ``,
+        sisterImgSrc: ''
+      },
+      favourites: {
+        food: `Japanese cuisine`,
+        fruit: ``,
+        beverages: ``,
+        actor: `Dilip Kumar`,
+        actress: `Swara Bhaskar, Tillotama Shome, Lisa Ray`,
+        singer: ``,
+        fashionBrand: ``,
+        colour: ``,
+        destination: ``,
+        sports: ``,
+        sportsman: ``,
+        dress: '',
+        song: ``,
+        film: ``,
+        director: ``
+      },
+      styleQoutient: {
+        carsCollection: "",
+        imgSrc: '',
+      },
+      // INR 3 to 4 Crore+/movie (as in 2021)
+      moneyFactor: {
+        earning: `Not Known`,
+        netWorth: '$ 13.5 million (as in 2022)',
+        imgSrc: 'assets/images/august2022/Niharika-Singh-net.jpg'
+      },
+      tattoos: [],
+      facts: {
+        smoke: 'Not Known',
+        alcoholic: 'Not Known'
+      },
+      otherFacts: [
+        // {
+        //   fact: 'Instagram',
+        //   imgSrc: '',
+        //   imgCaption: '',
+        //   videoSrc: '',
+        //   instaLink: 'https://www.instagram.com/p/ChpDe8irK-r/embed/'
+        // },
+        {
+          fact: "Interview",
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: 'https://www.youtube.com/embed/fCFyA645BLA?feature=oembed'
+        },
+        {
+          fact: `Niharika had a movable childhood as she relocated to various places in the North of India as her father worked for Uttar Pradesh Tourism, and after the division of Uttar Pradesh in 2000, he worked for Uttarakhand Tourism.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `At the tender age of 4, she gave her first stage performance as &#8220;Bharat Mata&#8221; or Mother India.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She was always interested in acting and did theatre workshops with Sahitya Kala Parishad for 3 years.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `At the age of 17, she started modeling in Dehradun, and after she dropped out of college in Delhi, she moved to Mumbai in 2003.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2005, at the age of 21, she was crowned with the title of Femina Miss India Earth.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `The same year, she became the goodwill ambassador for Rotary Blood Bank.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2006,  she signed a 10 film contract with Late Raj Kanwar in 2006, unfortunately, those films were never made.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She has learned acting skills from Barry John Acting Studio, New Delhi, and also did a Film Appreciation course from the Film and Television Institute of India, Pune.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She has also featured in TV commercials and music videos.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She doesn&#8217;t drink tea or coffee.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In October 2017, Nawazuddin Siddiqui released his biography called &#8216;An Ordinary Life&#8217;, in which he revealed that he had a long affair with Niharika Singh.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        }
+      ],
+      description: `Niharika Singh (born 31 August 1982) is an Indian film actress. She began her career as a model and won the title of Miss Earth India in 2005. As an actor, she made her debut with the critically acclaimed drama Miss Lovely which competed in Un Certain Regard at the 2012 Cannes Film Festival. Niharika was selected for Berlinale Talents in 2016.`
+    },
+    {
+      id: 'ce373', 
+      category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actor', 'actor'],
+      categoryId: ['Bollywood Actor/Actress, Model'],
+      name: `Manoj Pahwa`,
+      otherName: `ManojPahwa, Manoj Pawa`,
+      nickName: ``,
+      fullname: ``,
+      height: `in feet inches - 5’ 7”`,
+      weight: '95 Kg',
+      gender: 'Male',
+      boyfriend: '',
+      profession: `Actor`,
+      professionId: ``,
+      eyeColor: 'Dark Brown',
+      hairColor: 'Black ',
+      imgSrc: "assets/images/august2022/manoj-pahwa.jpg",
+      politicalParty: "",
+      politicalPartyImgSrc: "",
+      dob: {
+        date: '8',
+        month: 'December',
+        year: '1963'
+      },
+      dod: {
+        date: '',
+        month: '',
+        year: ''
+      },
+      deathCause: ``,
+      placeOfDeath: ``,
+      birthPlace: `Delhi`,
+      nationality: 'Indian',
+      hometown: 'Delhi',
+      school: `National Public School, New Delhi`,
+      collegeUniversity: `N/A`,
+      qualification: `N/A`,
+      religion: '',
+      zodiacSign: 'Sagittarius',
+      bloodGroup: '',
+      foodHabit: '',
+      address: `61, Sai Shakti, Yari Road, Versova, Andheri, Mumbai`,
+      hobbies: ``,
+      debut: {
+        lyrical: "",
+        lyricalImgSrc: "",
+        punjabiFilm: ``,
+        punjabiFilmImgSrc: "",
+        bollywoodFilm: `Tere Mere Sapne (1996)`,
+        bollywoodFilmImgSrc: "assets/images/august2022/Manoj-Pahwas-Debut-Film.jpg",
+        hollywoodFilm: ``,
+        hollywoodFilmImgSrc: "",
+        tollywoodFilm: ``,
+        tollywoodFilmImgSrc: "",
+        tamilFilm: '',
+        tamilFilmImgSrc: "",
+        kannadaFilm: '',
+        kannadaFilmImgSrc: "",
+        punjabiAlbum: '',
+        punjabiAlbumImgSrc: "",
+        hindiAlbum: '',
+        hindiAlbumImgSrc: "",
+        singles: ``,
+        singlesImgSrc: "",
+        musicDirection: "",
+        musicDirectionImgSrc: "",
+        filmDirection: "",
+        filmDirectionImgSrc: "",
+        tv: `Hum Log (1984)`,
+        tvImgSrc: "",
+        webSeries: "",
+        webSeriesImgSrc: "",
+        production: "",
+        productionImgSrc: "",
+        filmWriter: "",
+        filmWriterImgSrc: "",
+        lastSong: ``,
+        lastSongImgSrc: ``,
+        lastFilm: ``,
+        lastFilmImgSrc: ``
+      },
+      awards: [],
+      controversies: [],
+      maritalStatus: `Married`,
+      affairs: `Seema Pahwa`,
+      affairsImgSrc: ``,
+      wifeOrHusband: `Seema Pahwa (Actress)`,
+      wifeOrHusbandImgSrc: `assets/images/august2022/Manoj-Pahwa-With-His-Wife.jpg`,
+      fiance: '',
+      fianceImgSrc: '',
+      children: {
+        son: `Mayank`,
+        sonImgSrc: ``,
+        sonImgSrc1: '',
+        sonImgSrc2: '',
+        daughter: `Manukriti`,
+        daughterImgSrc: ''
+      },
+      parents: {
+        father: 'Not Known',
+        fatherImgSrc: '',
+        mother: 'Not Known',
+        motherImgSrc: ''
+      },
+  
+      siblings: {
+        brother: `1 Brother`,
+        brotherImgSrc: '',
+        sister: `Sunita Gupta and Rekha Pathak`,
+        sisterImgSrc: ''
+      },
+      favourites: {
+        food: ``,
+        fruit: ``,
+        beverages: ``,
+        actor: ``,
+        actress: ``,
+        singer: ``,
+        fashionBrand: ``,
+        colour: ``,
+        destination: ``,
+        sports: ``,
+        sportsman: ``,
+        dress: '',
+        song: ``,
+        film: ``,
+        director: ``
+      },
+      styleQoutient: {
+        carsCollection: "",
+        imgSrc: '',
+      },
+      // INR 3 to 4 Crore+/movie (as in 2021)
+      moneyFactor: {
+        earning: `Not Known`,
+        netWorth: '$ 3 million (as in 2022)',
+        imgSrc: 'assets/images/august2022/manoj-pahwa-net.jpg'
+      },
+      tattoos: [],
+      facts: {
+        smoke: 'Not Known',
+        alcoholic: 'Not Known'
+      },
+      otherFacts: [
+        // {
+        //   fact: 'Instagram',
+        //   imgSrc: '',
+        //   imgCaption: '',
+        //   videoSrc: '',
+        //   instaLink: 'https://www.instagram.com/p/Chgmm2voksY/embed/'
+        // }, 
+        {
+          fact: "Interview",
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: 'https://www.youtube.com/embed/UrGLLholP4M?feature=oembed'
+        },
+        {
+          fact: `Manoj Pahwa is a well-known Indian television and film actor.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `His father was born in Pakistan, and his mother was from Uttar Pradesh. While talking about his family in an interview, Manoj said,<br>
+          <blockquote><p>My mother is from Uttar Pradesh while my father’s roots are in Pakistan. I have stayed in Punjab for a long time since we had relatives in Jalandhar, Ludhiana and in Ambala Cantt in Haryana. After my father expired, I had to look after our business of automotive parts since I am the eldest child. But, after I had married off my two younger sisters, I handed over the business to my younger brother and moved to Mumbai in 1994 along with my wife, two children and my mother.”</p></blockquote>`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `His father had a garage shop in Delhi, and he wanted Manoj to look after their own business, but Manoj wanted to make his career in acting. In an interview, Manoj said,<br>
+          <blockquote><p>I started doing Ramleela and theatre. One day when I told my father that I wanted to join this field, I was heavily scolded. His dialogues still echoes: ‘Ghar ke dhandha chor kar bhaandgiri karange’. But acting was destined and here I am. But my advice to people interested in this field is to first attain qualification and then jump into it.”</p></blockquote>`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `After his father’s death, he looked after his family business for a few years.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He met the popular Indian actress Seema Bhargavawhile he was working with the theatre group ‘Sambhav Group.’ Soon, they became friends and fell in love with each other, and on 23 January 1988, they got married to each other.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2017, there were rumours that his son got engaged to Shahid Kapoor’s sister, Sanah Kapur`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He has worked in various theatrical productions of ‘Mandi House,’ ‘Sambhav Group,’ ‘All India Radio,’ and ‘Doordarshan.’`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Later, he moved to Mumbai from Delhi with his family to pursue his career in acting. He has acted in various Hindi television shows like ‘Shanti’ (1995), ‘Just Mohabbat’ (1996), ‘Sab Golmaal Hai’ (1997), ‘Gudgudee’ (1998), ‘Office Office’ (2001), and ‘A Suitable Boy’ (2020).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Some of his popular Hindi films are ‘Dhamaal’ (2007), ‘Singh is King’ (2008), ‘Ready’ (2011), ‘Mausam’ (2011), ‘Dabangg 2’ (2012), ‘Jolly LLB’ (2013), ‘Dil Dhadakne Do’ (2015), ‘Mulk’ (2018), and ‘Article 15’ (2019).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Manoj has acted in a few regional films like ‘Engeyum Kadhal’ (2011, Tamil), and ‘Disco Singh’ (2014, Punjabi).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2011, during the shoot for the Bollywood film ‘Mausam’ (directed by Pankaj Kapur) in Chandigarh, he met the regional producers, which led to his Punjabi film debut &#8216;Heer &amp; Hero&#8217; (2013).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He has appeared in more than 200 TV commercials. After appearing in the ‘8 PM whiskey commercial’ in which he played the role of a Pakistani army officer, the famous Indian actor Kamal Haasan spotted him in the advertisement and offered him a role in the film ‘Hey Ram’ (2000).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In the late 1990s, he used to get Rs. 8,000 per day for a shoot.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In an interview, he talked about his love for theatres, he said,<br>
+          <blockquote><p>Theatre is the gym for actors. For a performer, theatre is the medium that gives an opportunity to work on your skill, your imagination, physical and mental strength as an actor. You upgrade yourself in theatre to stay relevant.”</p></blockquote>`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+      ],
+      description: `Manoj Pahwa (born 8 December 1963) is an Indian film and television actor who is noted for his role as Bhatia in the comedy series Office Office (2001). He has acted in over 70 films as a character actor, including 7½ Phere (2005), Being Cyrus (2005), Singh Is King (2008), Dabangg 2 (2012), Jolly LLB (2013), Dil Dhadakne Do (2015), Mulk (2018), Article 15.`
     }
   ]

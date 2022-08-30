@@ -120,325 +120,252 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
 
   curetCel = [
     {
-    id: 'ce368', 
-    category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actor', 'actor', 'Filmmaker'],
-    categoryId: ['Bollywood Actor/Actress, Model'],
-    name: `Nana Patekar`,
-    otherName: `NanaPatekar, Naana Patekar`,
-    nickName: `Nana`,
-    fullname: `Vishwanath Patekar`,
-    height: `in feet inches - 5’ 7”`,
-    weight: '70 Kg',
-    gender: 'Male',
-    boyfriend: '',
-    profession: `Actor, Writer, Philanthropist, and Filmmaker`,
-    professionId: ``,
-    eyeColor: 'Dark Brown',
-    hairColor: 'Salt &amp; Pepper',
-    imgSrc: "assets/images/august2022/nana-patekar.jpg",
-    politicalParty: "",
-    politicalPartyImgSrc: "",
-    dob: {
-      date: '1',
-      month: 'January',
-      year: '1951'
-    },
-    dod: {
-      date: '',
-      month: '',
-      year: ''
-    },
-    deathCause: ``,
-    placeOfDeath: ``,
-    birthPlace: `Murud-Janjira, Bombay State (now, Maharashtra), India`,
-    nationality: 'Indian',
-    hometown: 'Mumbai, Maharashtra, India',
-    school: `• Samarth Vidyalaya, Dadar West, Mumbai<br />
-    • Bandra School of Arts (now L.S. Raheja School of Art) in Mumbai`,
-    collegeUniversity: `Sir J.J Institute of Applied Arts, Mumbai`,
-    qualification: `A Commercial Arts diploma from J J School of Arts`,
-    religion: 'Agnostic',
-    zodiacSign: 'Capricorn',
-    bloodGroup: '',
-    foodHabit: '',
-    address: `304 Sheetal, Apna Ghar Society, Samarth Nagar, Andheri, Mumbai`,
-    hobbies: `Cooking, Doing Philanthropy`,
-    debut: {
-      lyrical: "",
-      lyricalImgSrc: "",
-      punjabiFilm: ``,
-      punjabiFilmImgSrc: "",
-      bollywoodFilm: `Gaman (1978)`,
-      bollywoodFilmImgSrc: "",
-      hollywoodFilm: ``,
-      hollywoodFilmImgSrc: "",
-      tollywoodFilm: ``,
-      tollywoodFilmImgSrc: "",
-      tamilFilm: '',
-      tamilFilmImgSrc: "",
-      kannadaFilm: '',
-      kannadaFilmImgSrc: "",
-      punjabiAlbum: '',
-      punjabiAlbumImgSrc: "",
-      hindiAlbum: '',
-      hindiAlbumImgSrc: "",
-      singles: ``,
-      singlesImgSrc: "",
-      musicDirection: "",
-      musicDirectionImgSrc: "",
-      filmDirection: "Prahaar: The Final Attack (1991)",
-      filmDirectionImgSrc: "",
-      tv: ``,
-      tvImgSrc: "",
-      webSeries: "",
-      webSeriesImgSrc: "",
-      production: "",
-      productionImgSrc: "",
-      filmWriter: "",
-      filmWriterImgSrc: "",
-      lastSong: ``,
-      lastSongImgSrc: ``,
-      lastFilm: `The Body (2019); as "SP Jairaj Rawal"`,
-      lastFilmImgSrc: ``
-    },
-    awards: [
-      {
-        year:`1990`,
-        award:`Best Supporting Actor for Parinda`
+      id: 'ce374', 
+      category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actor', 'actor'],
+      categoryId: ['Bollywood Actor/Actress, Model'],
+      name: `Manoj Pahwa`,
+      otherName: `ManojPahwa, Manoj Pawa`,
+      nickName: ``,
+      fullname: ``,
+      height: `in feet inches - 5’ 7”`,
+      weight: '95 Kg',
+      gender: 'Male',
+      boyfriend: '',
+      profession: `Actor`,
+      professionId: ``,
+      eyeColor: 'Dark Brown',
+      hairColor: 'Black ',
+      imgSrc: "assets/images/august2022/manoj-pahwa.jpg",
+      politicalParty: "",
+      politicalPartyImgSrc: "",
+      dob: {
+        date: '8',
+        month: 'December',
+        year: '1963'
       },
-      {
-        year:`1995`,
-        award:`Best Actor for Krantiveer`
+      dod: {
+        date: '',
+        month: '',
+        year: ''
       },
-      {
-        year:`1997`,
-        award:`Best Supporting Actor for Agni Sakshi`
+      deathCause: ``,
+      placeOfDeath: ``,
+      birthPlace: `Delhi`,
+      nationality: 'Indian',
+      hometown: 'Delhi',
+      school: `National Public School, New Delhi`,
+      collegeUniversity: `N/A`,
+      qualification: `N/A`,
+      religion: '',
+      zodiacSign: 'Sagittarius',
+      bloodGroup: '',
+      foodHabit: '',
+      address: `61, Sai Shakti, Yari Road, Versova, Andheri, Mumbai`,
+      hobbies: ``,
+      debut: {
+        lyrical: "",
+        lyricalImgSrc: "",
+        punjabiFilm: ``,
+        punjabiFilmImgSrc: "",
+        bollywoodFilm: `Tere Mere Sapne (1996)`,
+        bollywoodFilmImgSrc: "assets/images/august2022/Manoj-Pahwas-Debut-Film.jpg",
+        hollywoodFilm: ``,
+        hollywoodFilmImgSrc: "",
+        tollywoodFilm: ``,
+        tollywoodFilmImgSrc: "",
+        tamilFilm: '',
+        tamilFilmImgSrc: "",
+        kannadaFilm: '',
+        kannadaFilmImgSrc: "",
+        punjabiAlbum: '',
+        punjabiAlbumImgSrc: "",
+        hindiAlbum: '',
+        hindiAlbumImgSrc: "",
+        singles: ``,
+        singlesImgSrc: "",
+        musicDirection: "",
+        musicDirectionImgSrc: "",
+        filmDirection: "",
+        filmDirectionImgSrc: "",
+        tv: `Hum Log (1984)`,
+        tvImgSrc: "",
+        webSeries: "",
+        webSeriesImgSrc: "",
+        production: "",
+        productionImgSrc: "",
+        filmWriter: "",
+        filmWriterImgSrc: "",
+        lastSong: ``,
+        lastSongImgSrc: ``,
+        lastFilm: ``,
+        lastFilmImgSrc: ``
       },
-      {
-        year:`1990`,
-        award:`Best Supporting Actor for Parinda`
+      awards: [],
+      controversies: [],
+      maritalStatus: `Married`,
+      affairs: `Seema Pahwa`,
+      affairsImgSrc: ``,
+      wifeOrHusband: `Seema Pahwa (Actress)`,
+      wifeOrHusbandImgSrc: `assets/images/august2022/Manoj-Pahwa-With-His-Wife.jpg`,
+      fiance: '',
+      fianceImgSrc: '',
+      children: {
+        son: `Mayank`,
+        sonImgSrc: ``,
+        sonImgSrc1: '',
+        sonImgSrc2: '',
+        daughter: `Manukriti`,
+        daughterImgSrc: ''
       },
-      {
-        year:`1992`,
-        award:`Best Villain for Angaar`
+      parents: {
+        father: 'Not Known',
+        fatherImgSrc: '',
+        mother: 'Not Known',
+        motherImgSrc: ''
       },
-      {
-        year:`2013`,
-        award:`Padma Shri by the Government of India`
+  
+      siblings: {
+        brother: `1 Brother`,
+        brotherImgSrc: '',
+        sister: `Sunita Gupta and Rekha Pathak`,
+        sisterImgSrc: ''
       },
-    ],
-    controversies: [
-      {
-        title:``,
-        controversy:`In 2008, during the shooting of the movie "Horn O.K. Pleassse," Bollywood actress Tanushree Dutta levelled allegations of 'indecent behaviour' against Nana Patekar. After 10 years, she re-erupted the incident during the MeToo campaign and filed an FIR against "Nana Patekar" on 6 October 2018.`
+      favourites: {
+        food: ``,
+        fruit: ``,
+        beverages: ``,
+        actor: ``,
+        actress: ``,
+        singer: ``,
+        fashionBrand: ``,
+        colour: ``,
+        destination: ``,
+        sports: ``,
+        sportsman: ``,
+        dress: '',
+        song: ``,
+        film: ``,
+        director: ``
       },
-      {
-        title:``,
-        controversy:`In 2014, he slammed the extension of parole to the jailed actor Sanjay Dutt and vowed to never work with the convicted star.`
-      },
-      {
-        title:``,
-        controversy:`In 2016, he supported the ban of Pakistani artists in the Bollywood and said, "Pakistan, artistes come later. My nation comes first. I don’t know anyone except my country and don’t want to know anything else. Artistes are small insects in front of the nation, we are worth nothing compared to the country. I don’t want to know what Bollywood says. I was in the army for two years. Our jawans are the real heroes. We are ordinary, useless people. Do not pay attention to what we say. Do you understand whom am I talking about? Humlog jo patar patar karte hain, unpe dhyan mat do. Unki aukat nahi utni."`
-      },
-    ],
-    maritalStatus: `Separated`,
-    affairs: `• Manisha Koirala (Actress)<br />
-    • Ayesha Jhulka (Actress)<br />`,
-    affairsImgSrc: ``,
-    wifeOrHusband: `Neelakanthi Patekar (a former Bank Officer)`,
-    wifeOrHusbandImgSrc: ``,
-    fiance: '',
-    fianceImgSrc: '',
-    children: {
-      son: `Malhar Patekar &amp; 1 More (died)`,
-      sonImgSrc: ``,
-      sonImgSrc1: '',
-      sonImgSrc2: '',
-      daughter: `None`,
-      daughterImgSrc: ''
-    },
-    parents: {
-      father: 'Gajanand Patekar (Businessman)',
-      fatherImgSrc: '',
-      mother: 'Nirmala Patekar (Homemaker)',
-      motherImgSrc: ''
-    },
-
-    siblings: {
-      brother: `Ashok and Dilip Patekar`,
-      brotherImgSrc: '',
-      sister: `Not known`,
-      sisterImgSrc: ''
-    },
-    favourites: {
-      food: `Mutton Dishes, Malai Kabab, Prawns, Konkani Style Fish Curry, Goan Fish Curry`,
-      fruit: ``,
-      beverages: ``,
-      actor: ``,
-      actress: `Smita Patil, <a href="https://www.newsfarmers.com/madhuri-dixit" class="celebrity" target="_blank" rel="noopener">Madhuri Dixit</a>`,
-      singer: `Kishore Kumar, Lata Mangeshkar`,
-      fashionBrand: ``,
-      colour: ``,
-      destination: ``,
-      sports: ``,
-      sportsman: ``,
-      dress: '',
-      song: `"Itni shakti hame dena daata, man ka vishwas kamjor ho na" from the film Ankush (1986)`,
-      film: ``,
-      director: ``
-    },
-    styleQoutient: {
-      carsCollection: "",
-      imgSrc: '',
-    },
-    // INR 3 to 4 Crore+/movie (as in 2021)
-    moneyFactor: {
-      earning: `INR 4 to 5 Crore+/movie (as in 2021)`,
-      netWorth: 'INR  55 Crore (as in 2022)',
-      imgSrc: 'assets/images/august2022/nana_patekar-net.jpg'
-    },
-    tattoos: [],
-    facts: {
-      smoke: 'No (quit at the age of 56)',
-      alcoholic: 'Yes'
-    },
-    otherFacts: [
-      // {
-      //   fact: 'Instagram',
-      //   imgSrc: '',
-      //   imgCaption: '',
-      //   videoSrc: '',
-      //   instaLink: 'https://www.instagram.com/p/ChHTXyYhGlI/embed/'
-      // },
-      {
-        fact: "Interview",
+      styleQoutient: {
+        carsCollection: "",
         imgSrc: '',
-        imgCaption: '',
-        videoSrc: 'https://www.youtube.com/embed/3xB9AXldYlo?feature=oembed'
       },
-      {
-        fact: `He was born to a textile businessman in Murud-Janjira (in the then Bombay State).`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
+      // INR 3 to 4 Crore+/movie (as in 2021)
+      moneyFactor: {
+        earning: `Not Known`,
+        netWorth: '$ 3 million (as in 2022)',
+        imgSrc: 'assets/images/august2022/manoj-pahwa-net.jpg'
       },
-      {
-        fact: `When Nana was in his seventh standard, his mother sent him to her sister&#8217;s house in Mumbai as he was very mischievous. A year later, his aunt packed his bags and sent him back to Murud because she felt that her children were getting spoilt under Nana&#8217;s influence.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
+      tattoos: [],
+      facts: {
+        smoke: 'Not Known',
+        alcoholic: 'Not Known'
       },
-      {
-        fact: `Before coming into the acting profession, he did odd jobs like painting Zebra crossings, painting movie posters, etc., to earn a living.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `Since the age of 5, he started acting and worked for long on the Marathi stage, acting in various award-winning plays including Hamidabaichi Kothi and Purush before moving to Marathi films and television and then making his foray into Bollywood.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `When he was 13-year-old, he used to paint cinema posters; for which, he was paid ₹35 and one meal.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `In the begging of his career, Nana worked as a commercial artist and visualizer at Strusa Advertising.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `He also worked in an advertising agency for some time.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `During an interview, he revealed that, during his initial days in the Bollywood, he had to face discrimination for not being a handsome hunk. To this, he says, &#8220;Mein jaanta hoon ki mein khoobsurat nahin hoon (I know I am not beautiful). But I wanted to make my performances beautiful. They should talk for you. Always let your work talk for yourself. No matter how much you give interviews, or how much you are written about, it is always the performance which counts.&#8221;`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `For his entry into the Bollywood, he gives credit to the Bollywood actress Smita Patil, as she knew him from Pune and took him to Ravi Chopra for a role.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `When Nana was 28-year-old, he lost his father, and within two-and-a-half years of that, he lost his first son.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `Once, he used to criticise the Filmfare Jury for its awards management. However, when he won the best actor award for Krantiveer in 1995, he accepted the award, cried in public and told that he had thought the awards were a farce till he himself won one.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `Despite his close links with the Shiv Sena, Nana got involved with the &#8216;Citizen of Peace Movement&#8217; during the 1992 riots in Bombay.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `His son Malahar also acted in Prahaar, as the young Nana Patekar.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `Nana counts himself among the modest citizens of India, and he substantiates it by living in a 1 BHK apartment with his mother.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `Even after becoming a famous actor, he used to hang out with his old friends in a Mahim bar and drink himself silly.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `During an interview, he revealed that he celebrates his son&#8217;s birthday in an orphanage.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `Nana has also revealed about his smoking habit and said, &#8220;I used to smoke 60 cigarettes per day till I was 56. But then I just threw it and left it.&#8221;`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `Nana had a narrow escape from getting burned during the filming of the last scene of the film Parinda.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `He is very popular for his quintessential laughing and dialogue delivery.`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-      {
-        fact: `Around 40 years after making his acting debut, in 2017, he did his first commercial for &#8216;Vikram Tea.&#8217;`,
-        imgSrc: '',
-        imgCaption: '',
-        videoSrc: ''
-      },
-    ],
-    description: `Vishwanath Patekar (born 1 January 1951), better known as Nana Patekar, is an Indian actor, writer, film maker, and a former Indian Territorial Army officer, mainly working in Hindi and Marathi cinema. He is regarded as one of finest actors in Indian Cinema.`
-  }
+      otherFacts: [
+        // {
+        //   fact: 'Instagram',
+        //   imgSrc: '',
+        //   imgCaption: '',
+        //   videoSrc: '',
+        //   instaLink: 'https://www.instagram.com/p/Chgmm2voksY/embed/'
+        // }, 
+        {
+          fact: "Interview",
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: 'https://www.youtube.com/embed/UrGLLholP4M?feature=oembed'
+        },
+        {
+          fact: `Manoj Pahwa is a well-known Indian television and film actor.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `His father was born in Pakistan, and his mother was from Uttar Pradesh. While talking about his family in an interview, Manoj said,<br>
+          <blockquote><p>My mother is from Uttar Pradesh while my father’s roots are in Pakistan. I have stayed in Punjab for a long time since we had relatives in Jalandhar, Ludhiana and in Ambala Cantt in Haryana. After my father expired, I had to look after our business of automotive parts since I am the eldest child. But, after I had married off my two younger sisters, I handed over the business to my younger brother and moved to Mumbai in 1994 along with my wife, two children and my mother.”</p></blockquote>`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `His father had a garage shop in Delhi, and he wanted Manoj to look after their own business, but Manoj wanted to make his career in acting. In an interview, Manoj said,<br>
+          <blockquote><p>I started doing Ramleela and theatre. One day when I told my father that I wanted to join this field, I was heavily scolded. His dialogues still echoes: ‘Ghar ke dhandha chor kar bhaandgiri karange’. But acting was destined and here I am. But my advice to people interested in this field is to first attain qualification and then jump into it.”</p></blockquote>`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `After his father’s death, he looked after his family business for a few years.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He met the popular Indian actress Seema Bhargavawhile he was working with the theatre group ‘Sambhav Group.’ Soon, they became friends and fell in love with each other, and on 23 January 1988, they got married to each other.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2017, there were rumours that his son got engaged to Shahid Kapoor’s sister, Sanah Kapur`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He has worked in various theatrical productions of ‘Mandi House,’ ‘Sambhav Group,’ ‘All India Radio,’ and ‘Doordarshan.’`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Later, he moved to Mumbai from Delhi with his family to pursue his career in acting. He has acted in various Hindi television shows like ‘Shanti’ (1995), ‘Just Mohabbat’ (1996), ‘Sab Golmaal Hai’ (1997), ‘Gudgudee’ (1998), ‘Office Office’ (2001), and ‘A Suitable Boy’ (2020).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Some of his popular Hindi films are ‘Dhamaal’ (2007), ‘Singh is King’ (2008), ‘Ready’ (2011), ‘Mausam’ (2011), ‘Dabangg 2’ (2012), ‘Jolly LLB’ (2013), ‘Dil Dhadakne Do’ (2015), ‘Mulk’ (2018), and ‘Article 15’ (2019).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Manoj has acted in a few regional films like ‘Engeyum Kadhal’ (2011, Tamil), and ‘Disco Singh’ (2014, Punjabi).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2011, during the shoot for the Bollywood film ‘Mausam’ (directed by Pankaj Kapur) in Chandigarh, he met the regional producers, which led to his Punjabi film debut &#8216;Heer &amp; Hero&#8217; (2013).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `He has appeared in more than 200 TV commercials. After appearing in the ‘8 PM whiskey commercial’ in which he played the role of a Pakistani army officer, the famous Indian actor Kamal Haasan spotted him in the advertisement and offered him a role in the film ‘Hey Ram’ (2000).`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In the late 1990s, he used to get Rs. 8,000 per day for a shoot.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In an interview, he talked about his love for theatres, he said,<br>
+          <blockquote><p>Theatre is the gym for actors. For a performer, theatre is the medium that gives an opportunity to work on your skill, your imagination, physical and mental strength as an actor. You upgrade yourself in theatre to stay relevant.”</p></blockquote>`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+      ],
+      description: `Manoj Pahwa (born 8 December 1963) is an Indian film and television actor who is noted for his role as Bhatia in the comedy series Office Office (2001). He has acted in over 70 films as a character actor, including 7½ Phere (2005), Being Cyrus (2005), Singh Is King (2008), Dabangg 2 (2012), Jolly LLB (2013), Dil Dhadakne Do (2015), Mulk (2018), Article 15.`
+    }
 ]
 
   ngOnInit(): void {

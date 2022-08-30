@@ -27,6 +27,10 @@ export class CelebritiesService {
     this.http.get(`https://www.newsfarmers.com/getCelebrity`).subscribe((cel: any) => {
       this.celebrities = cel.slice();
     })
+    
+    // this.http.get(`api/Celebrity`).subscribe((cel: any) => {
+    //   this.celebrities = cel.slice();
+    // })
   }
 
   getCel() {
@@ -40,8 +44,12 @@ export class CelebritiesService {
 
   async getCelebrities() {
     // return await Promise.resolve(this.http.get(`https://www.newsfarmers.com/getCelebrity`))
+
+
     return await this.http.get(`https://www.newsfarmers.com/getCelebrity`).toPromise();
-    // return this.celebrities.slice();
+
+// while deploying with integrated approach
+     // return await this.http.get(`api/Celebrity`).toPromise();
   }
 
   // # HTTPS forced

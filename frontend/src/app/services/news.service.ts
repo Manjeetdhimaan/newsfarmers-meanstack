@@ -13,6 +13,11 @@ export class NewsService {
     this.http.get(`https://www.newsfarmers.com/getNews`).subscribe((news: any) => {
       this.newsArray = news;
     })
+
+    // while deploying with integrated approach
+        // this.http.get(`api/News`).subscribe((news: any) => {
+        //   this.newsArray = news;
+        // })
    }
 
    onGetNews() {
@@ -20,8 +25,11 @@ export class NewsService {
    }
 
    async getNews(){
-   return await this.http.get(`https://www.newsfarmers.com/getNews`).toPromise();
-  //  return this.newsArray.slice();
+  // for testing purpose or when deploying separately from server side
+           return await this.http.get(`https://www.newsfarmers.com/getNews`).toPromise();
+
+  // while deploying with integrated approach
+      //  return await this.http.get(`api/News`).toPromise();
  }
 
  getSearchedNews = new Subject<{}>();

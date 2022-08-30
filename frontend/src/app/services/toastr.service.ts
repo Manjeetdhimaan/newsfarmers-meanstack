@@ -20,7 +20,7 @@ export class ToasTMessageService {
   error(message: string, title?: string) {
     this.toastrService.error(message, title ?? 'Error', {
       progressBar: true,
-      progressAnimation: 'decreasing',
+      progressAnimation: 'increasing',
       closeButton: true,
       timeOut: 3000
     });
