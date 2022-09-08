@@ -7,6 +7,7 @@ import { Meta } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CelebritiesService } from 'src/app/services/celebrities.service';
 import { NewsService } from 'src/app/services/news.service';
+import { ToasTMessageService } from 'src/app/services/toastr.service';
 
 @Component({
   selector: 'app-home',
@@ -55,7 +56,8 @@ export class HomeComponent implements OnInit {
     private http: HttpClient,
     private activatedRoute: ActivatedRoute, private renderer: Renderer2,
     private meta: Meta,
-    private newsService: NewsService
+    private newsService: NewsService,
+    private toastService: ToasTMessageService
   ) {
     this.renderer.listen('window', 'click', (e: Event) => {
       if (!this.menuBtnClick) {
@@ -113,7 +115,7 @@ export class HomeComponent implements OnInit {
         console.log(err);
         this.isLoadingNews = false;
         // this.isError = true;
-        // this.toastService.error(err.message);
+        this.toastService.error(err.message);
       })
   
       // this.latestNews = this.newsService.getNews().slice(-8).reverse();

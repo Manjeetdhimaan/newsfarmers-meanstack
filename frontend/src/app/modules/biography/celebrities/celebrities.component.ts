@@ -509,7 +509,6 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
         }
       );
 
-
   }
 
   onNavigate(selected: any) {

@@ -15,10 +15,10 @@ import { Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@
       state('out', style({
         'visibility': 'hidden',
         'opacity': '0',
-        'transform': 'translateY(150px)'
+        'transform': 'translateY(-550px)'
       })),
-      transition('in => out', animate('400ms ease-in-out')),
-      transition('out => in', animate('400ms ease-in-out'))
+      transition('in => out', animate('700ms ease-in-out')),
+      transition('out => in', animate('700ms ease-in-out'))
     ]),
   ]
 })
@@ -76,7 +76,8 @@ export class BackToTopComponent implements OnInit {
       let scroll = window.pageYOffset;
       if (scroll > this.currentPosition) {
         this.animationState = 'out';
-      } else {
+      } 
+      else {
         this.animationState = this.getCurrentScrollTop() > this.scrollDistance / 2 ? 'in' : 'out';
       }
       this.currentPosition = scroll;

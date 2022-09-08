@@ -24,7 +24,7 @@ export class CelebritiesService {
   domain = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
 
   constructor(private http: HttpClient) {
-    this.http.get(`https://www.newsfarmers.com/getCelebrity`).subscribe((cel: any) => {
+    this.http.get(`https://www.newsfarmers.com/api/Celebrity`).subscribe((cel: any) => {
       this.celebrities = cel.slice();
     })
     
@@ -46,7 +46,7 @@ export class CelebritiesService {
     // return await Promise.resolve(this.http.get(`https://www.newsfarmers.com/getCelebrity`))
 
 
-    return await this.http.get(`https://www.newsfarmers.com/getCelebrity`).toPromise();
+    return await this.http.get(`https://www.newsfarmers.com/api/Celebrity`).toPromise();
 
 // while deploying with integrated approach
      // return await this.http.get(`api/Celebrity`).toPromise();

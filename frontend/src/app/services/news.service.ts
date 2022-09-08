@@ -10,7 +10,7 @@ export class NewsService {
 
   newsArray:any;
   constructor(private http: HttpClient) {
-    this.http.get(`https://www.newsfarmers.com/getNews`).subscribe((news: any) => {
+    this.http.get(`https://www.newsfarmers.com/api/News`).subscribe((news: any) => {
       this.newsArray = news;
     })
 
@@ -26,7 +26,7 @@ export class NewsService {
 
    async getNews(){
   // for testing purpose or when deploying separately from server side
-           return await this.http.get(`https://www.newsfarmers.com/getNews`).toPromise();
+           return await this.http.get(`https://www.newsfarmers.com/api/News`).toPromise();
 
   // while deploying with integrated approach
       //  return await this.http.get(`api/News`).toPromise();
