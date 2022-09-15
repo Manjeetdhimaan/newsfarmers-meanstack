@@ -79,8 +79,8 @@
                                 <tr animation="fadeInUp" delay="0" duration="500" offset="110" triggerOnce="false"
                                     *ngIf="!celebrity?.dod?.date || !celebrity?.dod?.month || !celebrity?.dod?.year">
                                     <th scope="row">Age(as of {{currentYear}})</th>
-                                    <td> {{getAge()}}</td>
-                                    <!-- {{getExactAge(celebrity.dob.year+'-'+celebrity.dob.month+'-'+celebrity.dob.date)}} -->
+                                    <!-- <td> {{getAge()}}</td> -->
+                                    <td> {{getExactAge(celebrity.dob.year+'-'+(celebrity.dob.month ? celebrity.dob.month : 1) +'-'+ (celebrity.dob.date ? celebrity.dob.date : 1) )}}</td>
                                 </tr>
                                 <tr animation="fadeInUp" delay="0" duration="500" offset="110" triggerOnce="false">
                                     <th scope="row">Height (approx.)</th>

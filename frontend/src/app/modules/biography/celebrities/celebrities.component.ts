@@ -29,7 +29,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
   previous: any;
   borderColor = "black"
   subscription: Subscription;
-  celebrityWhileError:string;
+  celebrityWhileError: string;
 
   constructor(private celebritiesService: CelebritiesService,
     private router: Router,
@@ -46,7 +46,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
           // this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
           // this.celebrities = this.celebritiesService.getCelebrities();
           activatedRoute.params.subscribe((param: Params) => {
-            if(this.celebritiesService.celebrities){
+            if (this.celebritiesService.celebrities) {
               const celebrities = this.celebritiesService.celebrities;
               celebrities.map((celebrity: any) => {
                 this.recentPost = celebrities.slice(-8).reverse();
@@ -74,40 +74,40 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
                 }
               })
             }
-              else{
-                this.celebritiesService.getCelebrities().then((celebrities: any) => {
-                  celebrities.map((celebrity: any) => {
-                    this.recentPost = celebrities.slice(-8).reverse();
-                    this.celebrities = celebrities;
-                    if (this.router.url.toLowerCase() == "/" + celebrity.name.toLowerCase().split(' ').join('-')) {
-                      this.router.url.toLowerCase();
-                      this.celebrity = celebrity;
-                      this.dobOfCelebrity = this.celebrity.dob.year;
-                      this.dodOfCelebrity = this.celebrity.dod?.year;
-                      this.exactDOB = this.celebrity.dob.year + '-' + this.celebrity.month + '-' + this.celebrity.date;
-                      this.relatedPostArray = [];
-                      const Celebrities = celebrities.slice();
-                      const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
-                      // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === this.celebrity.categoryId?.toLowerCase());
-                      const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
-                      suffledArray.filter((shuffleCelebrity: any) => {
-                        let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a?.toLowerCase());
-                        if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
-                          this.relatedPostArray.push(shuffleCelebrity);
-                        }
-                      });
-                      // this.toastService.success(`${a.name}`);
-                      this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name?.toLowerCase().split(' ').join('-')}` });
-                      this.isLoading = false
-                    }
-                  })
-                  
-                }).catch((err) => {
-                  this.toastService.error(err.message);
-                  this.isLoading = false;
-                  this.isError= true;
+            else {
+              this.celebritiesService.getCelebrities().then((celebrities: any) => {
+                celebrities.map((celebrity: any) => {
+                  this.recentPost = celebrities.slice(-8).reverse();
+                  this.celebrities = celebrities;
+                  if (this.router.url.toLowerCase() == "/" + celebrity.name.toLowerCase().split(' ').join('-')) {
+                    this.router.url.toLowerCase();
+                    this.celebrity = celebrity;
+                    this.dobOfCelebrity = this.celebrity.dob.year;
+                    this.dodOfCelebrity = this.celebrity.dod?.year;
+                    this.exactDOB = this.celebrity.dob.year + '-' + this.celebrity.month + '-' + this.celebrity.date;
+                    this.relatedPostArray = [];
+                    const Celebrities = celebrities.slice();
+                    const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
+                    // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === this.celebrity.categoryId?.toLowerCase());
+                    const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
+                    suffledArray.filter((shuffleCelebrity: any) => {
+                      let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a?.toLowerCase());
+                      if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
+                        this.relatedPostArray.push(shuffleCelebrity);
+                      }
+                    });
+                    // this.toastService.success(`${a.name}`);
+                    this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name?.toLowerCase().split(' ').join('-')}` });
+                    this.isLoading = false
+                  }
                 })
-              }
+
+              }).catch((err) => {
+                this.toastService.error(err.message);
+                this.isLoading = false;
+                this.isError = true;
+              })
+            }
           })
         }
       });
@@ -118,30 +118,30 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
   //   return a1.filter((n: any) => { return a2.indexOf(n) !== -1; });
   // }
 
-  curetCel = [
+  curentCel = [
     {
-      id: 'ce374', 
+      id: 'ce365',
       category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actor', 'actor'],
       categoryId: ['Bollywood Actor/Actress, Model'],
-      name: `Manoj Pahwa`,
-      otherName: `ManojPahwa, Manoj Pawa`,
+      name: `Manoj Bajpayee`,
+      otherName: `ManojBajpayee Manoj Vajpayee`,
       nickName: ``,
       fullname: ``,
-      height: `in feet inches - 5’ 7”`,
-      weight: '95 Kg',
+      height: `in feet inches - 5’ 11”`,
+      weight: '70 Kg',
       gender: 'Male',
       boyfriend: '',
       profession: `Actor`,
       professionId: ``,
-      eyeColor: 'Dark Brown',
-      hairColor: 'Black ',
-      imgSrc: "assets/images/august2022/manoj-pahwa.jpg",
+      eyeColor: 'Black',
+      hairColor: 'Black',
+      imgSrc: "assets/images/august2022/manoj-bajpayee.jpg",
       politicalParty: "",
       politicalPartyImgSrc: "",
       dob: {
-        date: '8',
-        month: 'December',
-        year: '1963'
+        date: '23',
+        month: 'April',
+        year: '1969'
       },
       dod: {
         date: '',
@@ -150,25 +150,27 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
       },
       deathCause: ``,
       placeOfDeath: ``,
-      birthPlace: `Delhi`,
+      birthPlace: `Belwa, West Champaran district, Bihar, India`,
       nationality: 'Indian',
-      hometown: 'Delhi',
-      school: `National Public School, New Delhi`,
-      collegeUniversity: `N/A`,
-      qualification: `N/A`,
-      religion: '',
-      zodiacSign: 'Sagittarius',
+      hometown: 'His ancestry belonging is a small village called Belwa on the border of Nepal near the town Narkatiaganj in West Champaran, Bihar',
+      school: `Khrist Raja High School, Bettiah`,
+      collegeUniversity: `Satyawati College, Delhi<br />
+      Ramjas College, Delhi`,
+      qualification: `Graduate in History<br />
+      Drama`,
+      religion: 'Hinduism',
+      zodiacSign: 'Taurus',
       bloodGroup: '',
       foodHabit: '',
-      address: `61, Sai Shakti, Yari Road, Versova, Andheri, Mumbai`,
-      hobbies: ``,
+      address: ``,
+      hobbies: `Theatre plays`,
       debut: {
         lyrical: "",
         lyricalImgSrc: "",
         punjabiFilm: ``,
         punjabiFilmImgSrc: "",
-        bollywoodFilm: `Tere Mere Sapne (1996)`,
-        bollywoodFilmImgSrc: "assets/images/august2022/Manoj-Pahwas-Debut-Film.jpg",
+        bollywoodFilm: `Bandit Queen (1994)`,
+        bollywoodFilmImgSrc: "",
         hollywoodFilm: ``,
         hollywoodFilmImgSrc: "",
         tollywoodFilm: ``,
@@ -187,7 +189,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
         musicDirectionImgSrc: "",
         filmDirection: "",
         filmDirectionImgSrc: "",
-        tv: `Hum Log (1984)`,
+        tv: `Swabhimaan (1995)`,
         tvImgSrc: "",
         webSeries: "",
         webSeriesImgSrc: "",
@@ -200,42 +202,75 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
         lastFilm: ``,
         lastFilmImgSrc: ``
       },
-      awards: [],
-      controversies: [],
+      awards: [
+        {
+          year:`1998`,
+          award:`National Film Award for Best Supporting Actor for Satya<br />
+                  Filmfare Critics Award for Best Actor for Satya.`
+        },
+        {
+          year:`1999`,
+          award:`Filmfare Critics Award for Best Actor for Shool`
+        },
+        {
+          year:`2003`,
+          award:`National Film Award – Special Jury Award / Special Mention for Pinjar`
+        },
+        {
+          year:`2016`,
+          award:`Filmfare Short Film Awards Best Actor for Taandav.<br />
+           Filmfare Critics Award for Best Actor for Aligarh.<br />
+           Asia Pacific Screen Award for Best Performance by an Actor for Aligarh.`
+        },
+        {
+          year:`2019`,
+          award:`National Film Award for Best Actor for Bhonsle`
+        },
+      ],
+      controversies: [
+        {
+          title:``,
+          controversy:`He refused the offer to work in Aamir Khan's film Dangal, as he was not happy with his role.`
+        },
+        {
+          title:``,
+          controversy:`Juhi Chawla, the producer of the film Chalk N Duster sacked him from her film and replaced him with Rishi Kapoor to play the role of a quizmaster, as she thought that Manoj's looks are not good enough to carry out this role.`
+        },
+      ],
       maritalStatus: `Married`,
-      affairs: `Seema Pahwa`,
+      affairs: ``,
       affairsImgSrc: ``,
-      wifeOrHusband: `Seema Pahwa (Actress)`,
-      wifeOrHusbandImgSrc: `assets/images/august2022/Manoj-Pahwa-With-His-Wife.jpg`,
+      wifeOrHusband: `Shabana Raza (Neha) (Actress)`,
+      wifeOrHusbandImgSrc: `assets/images/august2022/manoj-bajpayee-wife-daughter.jpg`,
       fiance: '',
       fianceImgSrc: '',
       children: {
-        son: `Mayank`,
+        son: `None`,
         sonImgSrc: ``,
         sonImgSrc1: '',
         sonImgSrc2: '',
-        daughter: `Manukriti`,
+        daughter: `Ava Nayla`,
         daughterImgSrc: ''
       },
       parents: {
-        father: 'Not Known',
+        father: 'Radhakant Bajpai (Farmer)',
         fatherImgSrc: '',
         mother: 'Not Known',
         motherImgSrc: ''
       },
   
       siblings: {
-        brother: `1 Brother`,
+        brother: `2 Brothers (Names not known)`,
         brotherImgSrc: '',
-        sister: `Sunita Gupta and Rekha Pathak`,
+        sister: `3 Sisters (Names not known)`,
         sisterImgSrc: ''
       },
       favourites: {
-        food: ``,
+        food: `Biryani, Penne pasta`,
         fruit: ``,
         beverages: ``,
-        actor: ``,
-        actress: ``,
+        actor: `<a href="https://www.newsfarmers.com/amitabh-bachchan" class="celebrity" target="_blank" rel="noopener">Amitabh Bachchan</a>, <a href="https://www.newsfarmers.com/naseeruddin-shah" class="celebrity" target="_blank" rel="noopener">Naseeruddin Shah</a>, `,
+        actress: `<a href="https://www.newsfarmers.com/tabu" class="celebrity" target="_blank" rel="noopener">Tabu</a>, Smita Patil`,
         singer: ``,
         fashionBrand: ``,
         colour: ``,
@@ -253,9 +288,9 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
       },
       // INR 3 to 4 Crore+/movie (as in 2021)
       moneyFactor: {
-        earning: `Not Known`,
-        netWorth: '$ 3 million (as in 2022)',
-        imgSrc: 'assets/images/august2022/manoj-pahwa-net.jpg'
+        earning: `INR 5 to 6 Crore+/movie (as in 2021)`,
+        netWorth: 'INR  140 Crore (as in 2022)',
+        imgSrc: 'assets/images/august2022/manoj-bajpayee-net.jpg'
       },
       tattoos: [],
       facts: {
@@ -263,121 +298,92 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
         alcoholic: 'Not Known'
       },
       otherFacts: [
-        // {
-        //   fact: 'Instagram',
-        //   imgSrc: '',
-        //   imgCaption: '',
-        //   videoSrc: '',
-        //   instaLink: 'https://www.instagram.com/p/Chgmm2voksY/embed/'
-        // }, 
+        {
+          fact: 'Instagram',
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: '',
+          instaLink: 'https://www.instagram.com/p/CgydkvUjvaS/embed/'
+        },
         {
           fact: "Interview",
           imgSrc: '',
           imgCaption: '',
-          videoSrc: 'https://www.youtube.com/embed/UrGLLholP4M?feature=oembed'
+          videoSrc: 'https://www.youtube.com/embed/pcyBoK3uNlo?feature=oembed'
         },
         {
-          fact: `Manoj Pahwa is a well-known Indian television and film actor.`,
+          fact: `Manoj got famous for his role of Bhiku Mahatre in Ram Gopal Varma’s film <em>Satya </em>and won many awards for his role as a gangster.`,
           imgSrc: '',
           imgCaption: '',
           videoSrc: ''
         },
         {
-          fact: `His father was born in Pakistan, and his mother was from Uttar Pradesh. While talking about his family in an interview, Manoj said,<br>
-          <blockquote><p>My mother is from Uttar Pradesh while my father’s roots are in Pakistan. I have stayed in Punjab for a long time since we had relatives in Jalandhar, Ludhiana and in Ambala Cantt in Haryana. After my father expired, I had to look after our business of automotive parts since I am the eldest child. But, after I had married off my two younger sisters, I handed over the business to my younger brother and moved to Mumbai in 1994 along with my wife, two children and my mother.”</p></blockquote>`,
+          fact: `After getting rejected thrice from the National School of Drama, Delhi, he tried to commit suicide.`,
           imgSrc: '',
           imgCaption: '',
           videoSrc: ''
         },
         {
-          fact: `His father had a garage shop in Delhi, and he wanted Manoj to look after their own business, but Manoj wanted to make his career in acting. In an interview, Manoj said,<br>
-          <blockquote><p>I started doing Ramleela and theatre. One day when I told my father that I wanted to join this field, I was heavily scolded. His dialogues still echoes: ‘Ghar ke dhandha chor kar bhaandgiri karange’. But acting was destined and here I am. But my advice to people interested in this field is to first attain qualification and then jump into it.”</p></blockquote>`,
+          fact: `He learned acting skills from Barry John&#8217;s workshop on the advice of actor Raghubir Yadav. At that time Shah Rukh Khan was his batch-mate in those acting classes.`,
           imgSrc: '',
           imgCaption: '',
           videoSrc: ''
         },
         {
-          fact: `After his father’s death, he looked after his family business for a few years.`,
+          fact: `He was earlier married to a Delhi girl but got divorced later, and then he married actress Shabana Khan, popularly known as Neha, who did films like Kareeb, Fiza, etc.`,
           imgSrc: '',
           imgCaption: '',
           videoSrc: ''
         },
         {
-          fact: `He met the popular Indian actress Seema Bhargavawhile he was working with the theatre group ‘Sambhav Group.’ Soon, they became friends and fell in love with each other, and on 23 January 1988, they got married to each other.`,
+          fact: `In 1995, he did his first TV serial called Swaabhimaan, which also had actors like Ashutosh Rana and Rohit Roy.`,
           imgSrc: '',
           imgCaption: '',
           videoSrc: ''
         },
         {
-          fact: `In 2017, there were rumours that his son got engaged to Shahid Kapoor’s sister, Sanah Kapur`,
+          fact: `His parents liked veteran actor Manoj Kumar, so they choose his name as Manoj, though he wanted to have the name Samar Bajpai.`,
           imgSrc: '',
           imgCaption: '',
           videoSrc: ''
         },
         {
-          fact: `He has worked in various theatrical productions of ‘Mandi House,’ ‘Sambhav Group,’ ‘All India Radio,’ and ‘Doordarshan.’`,
+          fact: `He along with Amitabh Bachchan jumped from a big height of 30 feet for a waterfall scene in the film Aks.`,
           imgSrc: '',
           imgCaption: '',
           videoSrc: ''
         },
         {
-          fact: `Later, he moved to Mumbai from Delhi with his family to pursue his career in acting. He has acted in various Hindi television shows like ‘Shanti’ (1995), ‘Just Mohabbat’ (1996), ‘Sab Golmaal Hai’ (1997), ‘Gudgudee’ (1998), ‘Office Office’ (2001), and ‘A Suitable Boy’ (2020).`,
+          fact: `He won National Film Award for films like <em>Pinjar</em> and <em>Satya</em>.`,
           imgSrc: '',
           imgCaption: '',
           videoSrc: ''
         },
         {
-          fact: `Some of his popular Hindi films are ‘Dhamaal’ (2007), ‘Singh is King’ (2008), ‘Ready’ (2011), ‘Mausam’ (2011), ‘Dabangg 2’ (2012), ‘Jolly LLB’ (2013), ‘Dil Dhadakne Do’ (2015), ‘Mulk’ (2018), and ‘Article 15’ (2019).`,
+          fact: `In September 2020, he gave his voice and performed in a Bhojpuri rap song that rips into the romanticisation of big cities from the point of view of a male migrant worker. Directed by Anubhav Sinha with lyrics by Dr Sagar and music by Anurag Saikia, the song speaks of a male migrant worker&#8217;s longing for home and &#8220;chokha-baati&#8221; while he toils in the big city. Throughout the song, the refrain is &#8220;Bambai Main Ka Ba&#8221; (What is there in Bombay?)`,
           imgSrc: '',
           imgCaption: '',
           videoSrc: ''
         },
-        {
-          fact: `Manoj has acted in a few regional films like ‘Engeyum Kadhal’ (2011, Tamil), and ‘Disco Singh’ (2014, Punjabi).`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `In 2011, during the shoot for the Bollywood film ‘Mausam’ (directed by Pankaj Kapur) in Chandigarh, he met the regional producers, which led to his Punjabi film debut &#8216;Heer &amp; Hero&#8217; (2013).`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `He has appeared in more than 200 TV commercials. After appearing in the ‘8 PM whiskey commercial’ in which he played the role of a Pakistani army officer, the famous Indian actor Kamal Haasan spotted him in the advertisement and offered him a role in the film ‘Hey Ram’ (2000).`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `In the late 1990s, he used to get Rs. 8,000 per day for a shoot.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `In an interview, he talked about his love for theatres, he said,<br>
-          <blockquote><p>Theatre is the gym for actors. For a performer, theatre is the medium that gives an opportunity to work on your skill, your imagination, physical and mental strength as an actor. You upgrade yourself in theatre to stay relevant.”</p></blockquote>`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
+        
       ],
-      description: `Manoj Pahwa (born 8 December 1963) is an Indian film and television actor who is noted for his role as Bhatia in the comedy series Office Office (2001). He has acted in over 70 films as a character actor, including 7½ Phere (2005), Being Cyrus (2005), Singh Is King (2008), Dabangg 2 (2012), Jolly LLB (2013), Dil Dhadakne Do (2015), Mulk (2018), Article 15.`
+      description: `Manoj Bajpayee (born 23 April 1969), also called as Manoj Bajpai, is an Indian actor who predominantly works in Hindi cinema and has also done Telugu and Tamil language films. He is the recipient of three National Film Awards, six Filmfare Awards, and two Asia Pacific Screen Awards. Regarded as one of the most successful actors of Hindi cimema, he doesn't let his professional achievements or failures define him as an artist. In 2019, he was awarded India's fourth-highest civilian honour, the Padma Shri, for his contributions in art.`
     }
-]
+  ]
 
   ngOnInit(): void {
     // alert( "JanFebMarAprMayJunjulAugSepOctNovDec".indexOf("jul") / 3 + 1 );
-    const domain = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
+
+    // const domain = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
+    
+    // console.log('Domain', domain)
     this.isLoading = true;
     // this.recentPost = this.celebritiesService.getCelebrities().slice(-8).reverse();
     // this.celebrities = this.celebritiesService.getCelebrities();
 
-    if(this.celebritiesService.celebrities){
-      const celebrities = this.celebritiesService.getCel();
-      // const celebrities = this.curetCel;
+    // if (this.celebritiesService.celebrities) {
+    //   const celebrities = this.celebritiesService.getCel();
+      const celebrities = this.curentCel;
       celebrities.map((celebrity: any) => {
         this.recentPost = celebrities.slice(-8).reverse();
         this.celebrities = celebrities;
@@ -409,49 +415,49 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
         this.isLoading = false;
 
       }
-    }
-    else{
-      this.celebritiesService.getCelebrities().then((celebrities: any) => {
-        celebrities.map((celebrity: any) => {
-          this.recentPost = celebrities.slice(-8).reverse();
-          this.celebrities = celebrities;
-          if (this.router.url.toLowerCase() == "/" + celebrity.name?.toLowerCase().split(' ').join('-')) {
-            this.router.url.toLowerCase();
-            this.celebrity = celebrity;
-            // this.toastService.success(`${this.celebrity.name}`);
-            this.dobOfCelebrity = this.celebrity.dob.year;
-            this.dodOfCelebrity = this.celebrity.dod?.year;
-            this.exactDOB = this.celebrity.dob.year + '-' + this.celebrity.month + '-' + this.celebrity.date;
-            this.relatedPostArray = [];
-            const Celebrities = celebrities.slice();
-            const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
-            // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === this.celebrity.categoryId?.toLowerCase());
-            const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
-            suffledArray.filter((shuffleCelebrity: any) => {
-              let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a?.toLowerCase());
-              if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
-                this.relatedPostArray.push(shuffleCelebrity);
-              }
-            });
-            // this.toastService.success(`${a.name}`);
-            this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name?.toLowerCase().split(' ').join('-')}` });
-            this.isLoading = false;
-            this.isError = false;
-          }
-        })
-        if (this.router.url.toLowerCase() !== "/" + this.celebrity?.name?.toLowerCase().split(' ').join('-')) {
-          this.router.navigate(['/404notfound']);
-          this.isLoading = false;
-          this.isError = false;
-        }
-      }).catch((err) => {
-        this.celebrityWhileError = this.router.url.slice(1).toUpperCase().split('-').join(' ');
-        this.toastService.error(err.message);
-        this.isLoading = false;
-        this.isError= true;
-      })
-    }
-    
+    // }
+    // else {
+    //   this.celebritiesService.getCelebrities().then((celebrities: any) => {
+    //     celebrities.map((celebrity: any) => {
+    //       this.recentPost = celebrities.slice(-8).reverse();
+    //       this.celebrities = celebrities;
+    //       if (this.router.url.toLowerCase() == "/" + celebrity.name?.toLowerCase().split(' ').join('-')) {
+    //         this.router.url.toLowerCase();
+    //         this.celebrity = celebrity;
+    //         // this.toastService.success(`${this.celebrity.name}`);
+    //         this.dobOfCelebrity = this.celebrity.dob.year;
+    //         this.dodOfCelebrity = this.celebrity.dod?.year;
+    //         this.exactDOB = this.celebrity.dob.year + '-' + this.celebrity.month + '-' + this.celebrity.date;
+    //         this.relatedPostArray = [];
+    //         const Celebrities = celebrities.slice();
+    //         const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
+    //         // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === this.celebrity.categoryId?.toLowerCase());
+    //         const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
+    //         suffledArray.filter((shuffleCelebrity: any) => {
+    //           let randomCelebrity = shuffleCelebrity.categoryId.map((a: any) => a?.toLowerCase());
+    //           if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
+    //             this.relatedPostArray.push(shuffleCelebrity);
+    //           }
+    //         });
+    //         // this.toastService.success(`${a.name}`);
+    //         this.meta.updateTag({ property: 'og:url', content: `https://www.newsfarmers.com/${celebrity.name?.toLowerCase().split(' ').join('-')}` });
+    //         this.isLoading = false;
+    //         this.isError = false;
+    //       }
+    //     })
+    //     if (this.router.url.toLowerCase() !== "/" + this.celebrity?.name?.toLowerCase().split(' ').join('-')) {
+    //       this.router.navigate(['/404notfound']);
+    //       this.isLoading = false;
+    //       this.isError = false;
+    //     }
+    //   }).catch((err) => {
+    //     this.celebrityWhileError = this.router.url.slice(1).toUpperCase().split('-').join(' ');
+    //     this.toastService.error(err.message);
+    //     this.isLoading = false;
+    //     this.isError = true;
+    //   })
+    // }
+
 
 
 
@@ -521,16 +527,16 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
     this.celebrity = selected;
     this.dobOfCelebrity = selected.dob.year;
     this.dodOfCelebrity = selected.dod?.year;
-      // this.celebrities = celebrities
-      const Celebrities = this.celebrities.slice();
-      const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
-      const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
-      suffledArray.filter((celebrity: any) => {
-        let randomCelebrity = celebrity.categoryId.map((a: any) => a?.toLowerCase());
-        if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
-          this.relatedPostArray.push(celebrity);
-        }
-      });
+    // this.celebrities = celebrities
+    const Celebrities = this.celebrities.slice();
+    const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
+    const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
+    suffledArray.filter((celebrity: any) => {
+      let randomCelebrity = celebrity.categoryId.map((a: any) => a?.toLowerCase());
+      if ((randomCelebrity.filter((n: any) => { return selectedCelebrity.indexOf(n) >= 0; }).length >= 1)) {
+        this.relatedPostArray.push(celebrity);
+      }
+    });
 
     this.recentPost = this.celebrities.slice(-8).reverse();
     this.router.navigate(['/', selected.name?.toLowerCase().split(' ').join('-')]);
@@ -538,8 +544,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
     this.isLoading = false;
     this.isError = false;
     // this.toastService.success(`${selected.name}`);
-   
-    
+
     // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === selected.categoryId?.toLowerCase());
 
   }
@@ -588,7 +593,6 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
   }
 
   getExactAge(dateString: string) {
-    debugger;
     const ageInMilliseconds = +new Date() - +new Date(dateString);
     return Math.floor(ageInMilliseconds / 1000 / 60 / 60 / 24 / 365); // convert to years
   }

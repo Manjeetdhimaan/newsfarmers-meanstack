@@ -62,6 +62,10 @@ export class NewsHeadlineComponent implements OnInit, OnDestroy {
     this.hoveredNews = this.newsService.hoverSelectedNews(news);
   }
 
+  scrollTop() {
+    window.scrollTo(0,0);
+  }
+
   ngOnDestroy(): void {
     this.hoveredNews = "";
   }
