@@ -1,0 +1,37 @@
+RewriteOptions inherit
+# HTTPS forced
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+ErrorDocument 404 /index.html
+
+# ensure www.
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+
+            RewriteEngine On
+            
+# Redirect Public ports to NodeJS port
+RewriteEngine On
+RewriteRule ^$ http://localhost:5050/ [P,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ http://localhost:5050/$1 [P,L]
+
+</IfModule>
+
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^newsfarmers\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.newsfarmers\.com$
+RewriteRule ^(.*)$ "https\:\/\/www\.newsfarmers\.com\/$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^newsfarmers\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.newsfarmers\.com$

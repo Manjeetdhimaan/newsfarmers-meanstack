@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbioApp=self.webpackChunkbioApp||[]).push([[592],{8394:(c,_,o)=>{o.d(_,{d:()=>p});var n=o(9808),u=o(7587);let p=(()=>{class e{}return e.\u0275fac=function(l){return new(l||e)},e.\u0275mod=u.oAB({type:e}),e.\u0275inj=u.cJS({imports:[n.ez]}),e})()}}]);
