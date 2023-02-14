@@ -69,7 +69,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   animationState = 'out';
   animationMenuState = "down";
   celebrities: any;
-  searchText: string;
+  searchText: string = '';
   p: number = 1;
   itemsPerPage: number = 4;
   isSticky: boolean = false;
@@ -158,7 +158,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
     if (this.celebritiesService.celebrities) {
       const celebrities = this.celebritiesService.getCel().reverse();
       this.celebrities = celebrities;
-      console.log("headerCel",celebrities);
     }
     else {
       this.celebritiesService.getCelebrities().then((celebrities: any) => {

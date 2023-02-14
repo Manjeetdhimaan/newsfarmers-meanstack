@@ -397,7 +397,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
 
     if (this.celebritiesService.celebrities) {
       const celebrities = this.celebritiesService.getCel();
-      //const celebrities = this.curentCel;
+      // const celebrities = this.curentCel;
       celebrities.map((celebrity: any) => {
         this.recentPost = celebrities.slice(-8).reverse();
         this.celebrities = celebrities;
@@ -409,8 +409,8 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
           this.dodOfCelebrity = this.celebrity.dod?.year;
           this.exactDOB = this.celebrity.dob.year + '-' + this.celebrity.month + '-' + this.celebrity.date;
           this.relatedPostArray = [];
-          const Celebrities = celebrities.slice();
-          const suffledArray = Celebrities.sort(() => 0.5 - Math.random());
+          const celebritiesSlice = celebrities.slice();
+          const suffledArray = celebritiesSlice.sort(() => 0.5 - Math.random());
           // this.relatedPostArray = suffledArray.filter((celebrity: any) => celebrity.categoryId?.toLowerCase() === this.celebrity.categoryId?.toLowerCase());
           const selectedCelebrity = this.celebrity.categoryId.map((a: any) => a?.toLowerCase());
           suffledArray.filter((shuffleCelebrity: any) => {

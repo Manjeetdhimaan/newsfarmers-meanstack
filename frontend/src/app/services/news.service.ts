@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { Subject } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class NewsService {
   url= 'https://www.newsfarmers.com/';
   localUrl = '' // localhost port here...
   constructor(private http: HttpClient) {
-    this.http.get(`api/News`).subscribe((news: any) => {
+    this.http.get(`${environment.baseApiUrl}/News`).subscribe((news: any) => {
       this.newsArray = news;
     })
 
@@ -28,7 +29,7 @@ export class NewsService {
 
    async getNews(){
   // for testing purpose or when deploying separately from server side
-           return await this.http.get(`api/News`).toPromise();
+           return await this.http.get(`${environment.baseApiUrl}/News`).toPromise();
 
   // while deploying with integrated approach
       //  return await this.http.get(`api/News`).toPromise();

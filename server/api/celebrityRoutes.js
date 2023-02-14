@@ -19,7 +19,7 @@ router.get('/getRecentCelebrities', (req, res) => {
         }).limit(8).then(recentCelbs => {
             res.status(200).json(recentCelbs);
         })
-        .catch(e => {
+        .catch(err => {
             res.status(500).json({
                 error: err.message
             })
@@ -83,9 +83,9 @@ router.post('/addCelebrity', async (req, res) => {
         description: req.body.description,
     })
     await newCelebrity.save().then(celebrity => {
-        res.status(201).json(celebrity)
+        return res.status(201).json(celebrity)
     }).catch((err) => {
-        res.status(500).json({
+        return res.status(500).json({
             error: err.message
         })
     })
