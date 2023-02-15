@@ -76762,265 +76762,270 @@
   ],
   "description": "Harikrishan Giri Goswami (born 24 July 1937), better known by his screen name Manoj Kumar, is an Indian actor, filmmaker, screenwriter, lyricist and editor who worked in Hindi cinema. He is known for acting and making films with patriotic themes, and has been given the nickname Bharat Kumar. He is the recipient of a National Film Award and seven Filmfare Awards, in varied categories."
 },
+{
+  "id": "ce375",
+  "category": [
+    "Bollywood",
+    "Instagram",
+    "Acting",
+    "Bollywood actor",
+    "actor",
+    "Director"
+  ],
+  "categoryId": [
+    "Bollywood Actor/Actress, Model"
+  ],
+  "name": "Naseeruddin Shah",
+  "otherName": "NaseeruddinShah, Shah Naseeruddin",
+  "nickName": "",
+  "fullname": "",
+  "height": "in feet inches - 5’ 7”",
+  "weight": "71 Kg",
+  "gender": "Male",
+  "boyfriend": "",
+  "profession": "Actor, Director",
+  "professionId": "",
+  "eyeColor": "Dark Brown",
+  "hairColor": "White",
+  "imgSrc": "assets/images/october2022/naseerudin-shah.jpg",
+  "politicalParty": "",
+  "politicalPartyImgSrc": "",
+  "dob": {
+    "date": "20",
+    "month": "July",
+    "year": "1950"
+  },
+  "dod": {
+    "date": "",
+    "month": "",
+    "year": ""
+  },
+  "deathCause": "",
+  "placeOfDeath": "",
+  "birthPlace": "Barabanki, Uttar Pradesh, India",
+  "nationality": "Indian",
+  "hometown": "Barabanki, Uttar Pradesh, India",
+  "school": "St. Anselm's Ajmer, Rajasthan<br />\n      St Joseph's College, Nainital",
+  "collegeUniversity": "Aligarh Muslim University, Uttar Pradesh<br />\n      National School of Drama, Delhi",
+  "qualification": "Graduate in Arts",
+  "religion": "Islam",
+  "zodiacSign": "Leo",
+  "bloodGroup": "",
+  "foodHabit": "",
+  "address": "04, Sand Pebbles, Perry Cross Road, Bandra (West), Mumbai",
+  "hobbies": "Playing Tennis, Reading",
+  "debut": {
+    "lyrical": "",
+    "lyricalImgSrc": "",
+    "punjabiFilm": "",
+    "punjabiFilmImgSrc": "",
+    "bollywoodFilm": "Nishant (1975)",
+    "bollywoodFilmImgSrc": "",
+    "hollywoodFilm": "",
+    "hollywoodFilmImgSrc": "",
+    "tollywoodFilm": "",
+    "tollywoodFilmImgSrc": "",
+    "tamilFilm": "",
+    "tamilFilmImgSrc": "",
+    "kannadaFilm": "",
+    "kannadaFilmImgSrc": "",
+    "punjabiAlbum": "",
+    "punjabiAlbumImgSrc": "",
+    "hindiAlbum": "",
+    "hindiAlbumImgSrc": "",
+    "singles": "",
+    "singlesImgSrc": "",
+    "musicDirection": "",
+    "musicDirectionImgSrc": "",
+    "filmDirection": "Yun Hota to Kya Hota (2006)",
+    "filmDirectionImgSrc": "",
+    "tv": "",
+    "tvImgSrc": "",
+    "webSeries": "",
+    "webSeriesImgSrc": "",
+    "production": "",
+    "productionImgSrc": "",
+    "filmWriter": "",
+    "filmWriterImgSrc": "",
+    "lastSong": "",
+    "lastSongImgSrc": "",
+    "lastFilm": "",
+    "lastFilmImgSrc": ""
+  },
+  "awards": [],
+  "controversies": [
     {
-      id: 'ce375', 
-      category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actor', 'actor', 'Director'],
-      categoryId: ['Bollywood Actor/Actress, Model'],
-      name: `Naseeruddin Shah`,
-      otherName: `NaseeruddinShah, Shah Naseeruddin`,
-      nickName: ``,
-      fullname: ``,
-      height: `in feet inches - 5’ 7”`,
-      weight: '71 Kg',
-      gender: 'Male',
-      boyfriend: '',
-      profession: `Actor, Director`,
-      professionId: ``,
-      eyeColor: 'Dark Brown',
-      hairColor: 'White',
-      imgSrc: "assets/images/october2022/naseerudin-shah.jpg",
-      politicalParty: "",
-      politicalPartyImgSrc: "",
-      dob: {
-        date: '20',
-        month: 'July',
-        year: '1950'
-      },
-      dod: {
-        date: '',
-        month: '',
-        year: ''
-      },
-      deathCause: ``,
-      placeOfDeath: ``,
-      birthPlace: `Barabanki, Uttar Pradesh, India`,
-      nationality: 'Indian',
-      hometown: 'Barabanki, Uttar Pradesh, India',
-      school: `St. Anselm's Ajmer, Rajasthan<br />
-      St Joseph's College, Nainital`,
-      collegeUniversity: `Aligarh Muslim University, Uttar Pradesh<br />
-      National School of Drama, Delhi`,
-      qualification: `Graduate in Arts`,
-      religion: 'Islam',
-      zodiacSign: 'Leo',
-      bloodGroup: '',
-      foodHabit: '',
-      address: `04, Sand Pebbles, Perry Cross Road, Bandra (West), Mumbai`,
-      hobbies: `Playing Tennis, Reading`,
-      debut: {
-        lyrical: "",
-        lyricalImgSrc: "",
-        punjabiFilm: ``,
-        punjabiFilmImgSrc: "",
-        bollywoodFilm: `Nishant (1975)`,
-        bollywoodFilmImgSrc: "",
-        hollywoodFilm: ``,
-        hollywoodFilmImgSrc: "",
-        tollywoodFilm: ``,
-        tollywoodFilmImgSrc: "",
-        tamilFilm: '',
-        tamilFilmImgSrc: "",
-        kannadaFilm: '',
-        kannadaFilmImgSrc: "",
-        punjabiAlbum: '',
-        punjabiAlbumImgSrc: "",
-        hindiAlbum: '',
-        hindiAlbumImgSrc: "",
-        singles: ``,
-        singlesImgSrc: "",
-        musicDirection: "",
-        musicDirectionImgSrc: "",
-        filmDirection: "Yun Hota to Kya Hota (2006)",
-        filmDirectionImgSrc: "",
-        tv: ``,
-        tvImgSrc: "",
-        webSeries: "",
-        webSeriesImgSrc: "",
-        production: "",
-        productionImgSrc: "",
-        filmWriter: "",
-        filmWriterImgSrc: "",
-        lastSong: ``,
-        lastSongImgSrc: ``,
-        lastFilm: ``,
-        lastFilmImgSrc: ``
-      },
-      awards: [],
-      controversies: [
-        {
-          title:``,
-          controversy:`In an interview in 2016, Naseeruddin Shah referred to late superstar Rajesh Khanna as a "mediocre actor". He further added that a 'poor actor' like Rajesh Khanna was responsible for the mediocrity in films in the 70's. However, the comments did not go well with Khanna's fans and family and Shah was heavily criticized for defaming a deceased superstar.`
-        },
-        {
-          title:``,
-          controversy:`In May 2016, Anupam Kher raked up a storm on Twitter when he shared a collage of Kashmiri Pandits killed during the 1990 exodus. The tweet came in regard to the killing of Hizbul Mujahideen's 'poster boy' Burhan Wani in an encounter. Shah, however, did not like Kher's tweet and took a dig at his former co-star. He said, "A person who has never lived in Kashmir has started a fight for Kashmiri Pandits. Suddenly, he has become a displaced person." Infuriated by Shah's take, Kher then tweeted, "Shah Saab ki Jai Ho. By that logic, NRIs should not think about India at all.:)"`
-        },
-        {
-          title:``,
-          controversy:`Shah went to Pakistan in early 2015 to promote his memoir, And Then One Day, at the Lahore Literary Festival. While addressing media and fans at the venue, Shah started talking about the animosity between the two countries. "Indians are being brainwashed into believing that Pakistan is an enemy country without being aware of the historical background. Politicians will change colors whenever it suits them. But artists from both countries must look beyond the political animosity", Shah said. This statement, however, hurt Indian sentiments. Pressure group Shiv Sena even issued a statement saying that only the near and dear ones of the 26/11 victims would understand that why there is so much hatred against Pakistan.`
-        },
-      ],
-      maritalStatus: `Widower`,
-      affairs: ``,
-      affairsImgSrc: ``,
-      wifeOrHusband: `Late Parveen Murada aka Manara Sikri(First wife), Ratna Pathak, Actress`,
-      wifeOrHusbandImgSrc: `assets/images/october2022/Naseeruddin-Shah-present-wife-Ratna-Pathak.jpg`,
-      fiance: '',
-      fianceImgSrc: '',
-      children: {
-        son: `Imaad Shah, Vivaan Shah (Both Actors)`,
-        sonImgSrc: ``,
-        sonImgSrc1: '',
-        sonImgSrc2: '',
-        daughter: `Heeba Shah, Actress (Daughter from first wife)`,
-        daughterImgSrc: ''
-      },
-      parents: {
-        father: 'Aley Mohammed Shah',
-        fatherImgSrc: '',
-        mother: 'Farrukh Sultan',
-        motherImgSrc: ''
-      },
-  
-      siblings: {
-        brother: `Retd. Lt. General Zameerud-din Shah and 2 more`,
-        brotherImgSrc: '',
-        sister: `N/A`,
-        sisterImgSrc: ''
-      },
-      favourites: {
-        food: ``,
-        fruit: ``,
-        beverages: ``,
-        actor: `Mohanlal, Nedumudi Venu, Shammi Kapoor, Dara Singh, Boman Irani`,
-        actress: ``,
-        singer: ``,
-        fashionBrand: ``,
-        colour: `Black`,
-        destination: `Dubai`,
-        sports: `Tennis`,
-        sportsman: ``,
-        dress: '',
-        song: ``,
-        film: `<strong>Bollywood:</strong> Masaan (2015), Dil Chahta Hai (2001)`,
-        director: `Neeraj Pandey, Rajkumar Hirani, Neeraj Ghaywan`
-      },
-      styleQoutient: {
-        carsCollection: "",
-        imgSrc: '',
-      },
-      // INR 3 to 4 Crore+/movie (as in 2021)
-      moneyFactor: {
-        earning: `Not Known`,
-        netWorth: 'Not Known',
-        imgSrc: 'assets/images/october2022/naseerudin-shah-net.jpg'
-      },
-      tattoos: [],
-      facts: {
-        smoke: 'Not Known',
-        alcoholic: 'Not Known'
-      },
-      otherFacts: [
-        {
-          fact: 'Instagram',
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: '',
-          instaLink: 'https://www.instagram.com/p/B_2G-UVp2HV/embed/'
-        }, 
-        {
-          fact: "Interview",
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: 'https://www.youtube.com/embed/XvjLyUU6FG0?feature=oembed'
-        },
-        {
-          fact: `Naseeruddin started acting (Theatre) at a young age of 14. Shakespeare&#8217;s <em>Merchant of Venice</em> was his first theatrical show.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `Not many people know that Naseeruddin is a descendant of a 19th-century warlord named <em>Jan-Fishan Khan</em>. The latter helped the British during the Indian Rebellion of 1857.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `Shah&#8217;s debut movie, Nishant (1975), was awarded the National Award in the Best Film category. The film was subsequently nominated for the Oscars.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `Rajendra Jaspal, a fellow actor and classmate of Shah, once stabbed him in the canteen of FTII. The former was envious of Shah signing certain films which he believed should have been his.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `His first wife, Late Parveen Murad, was 16 years older than him at the time of their marriage. 2 years later, the couple had a tiff and decided to part ways. However, Shah did not divorce his wife, as in his <i>nikaahnama</i> (Muslim marriage contract), Shah had not only promised a huge amount of money to his wife as alimony but had also disclaimed the right to bigamy.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `Even after becoming an established actor, Shah did not give up his love for theater. As a result, he along with a few friends founded a theater group named <em>Motley Productions</em> in the year 1977.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `Interestingly, Shah was the first choice to play the role of Mahatma Gandhi in the film- Gandhi (1982). However, Ben Kingsley overshadowed him at the auditions and grabbed the role.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `For his immense contribution to the field of acting/theater, Shah was awarded the <em>Padma Shri</em> in 1987 followed by the <em>Padma Bhushan</em> in 2003.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `Aside from Bollywood, Shah has also acted in a number Hollywood and Pakistani movies. His role of <em>Captain Nemo</em> in the 2003 Hollywood flick, <i>The League of Extraordinary Gentlemen, </i>was widely appreciated. Additionally, his second Pakistani film, <i>Zinda Bhaag </i>was selected as the country&#8217;s official entry into the 86th Academy Awards in the Best Foreign Language Film category.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `Notably, Shah has been honored with the lifetime membership of International Film And Television Club of Asian Academy of Film and Television.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `His brother, Retd. Lt. General Zameerud-din Shah, is the present (2016) vice-chancellor of Aligarh Muslim University (AMU), UP.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `Bad luck has constantly followed Shah as to date more than 20 feature films starring him have been shelved.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `Shah released his memoir titled <em>And Then One day</em> in 2014. In the memoir, the actor has admitted to having consumed marijuana (gaanja) in various phases of his life and credits it with giving him clarity of thought.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-        {
-          fact: `According to reports, the directors of Harry Potter wanted to audition Naseeruddin Shah for the role of <em>Albus Dumbledore</em>, after the actor who played it passed away prior to the shooting of the third installment of the movie series. Shah, however, refused to audition and the role was passed over to English actor Michael Gambon.`,
-          imgSrc: '',
-          imgCaption: '',
-          videoSrc: ''
-        },
-      ],
-      description: `Naseeruddin Shah (born 20 July 1950) is an Indian actor. He is notable in Indian parallel cinema. He has also starred in international productions. He has won numerous awards in his career, including three National Film Awards, three Filmfare Awards and the Volpi Cup for Best Actor at the Venice Film Festival. The Government of India honoured him with the Padma Shri and the Padma Bhushan awards for his contributions to Indian cinema.`
+      "title": "",
+      "controversy": "In an interview in 2016, Naseeruddin Shah referred to late superstar Rajesh Khanna as a \"mediocre actor\". He further added that a 'poor actor' like Rajesh Khanna was responsible for the mediocrity in films in the 70's. However, the comments did not go well with Khanna's fans and family and Shah was heavily criticized for defaming a deceased superstar."
     },
+    {
+      "title": "",
+      "controversy": "In May 2016, Anupam Kher raked up a storm on Twitter when he shared a collage of Kashmiri Pandits killed during the 1990 exodus. The tweet came in regard to the killing of Hizbul Mujahideen's 'poster boy' Burhan Wani in an encounter. Shah, however, did not like Kher's tweet and took a dig at his former co-star. He said, \"A person who has never lived in Kashmir has started a fight for Kashmiri Pandits. Suddenly, he has become a displaced person.\" Infuriated by Shah's take, Kher then tweeted, \"Shah Saab ki Jai Ho. By that logic, NRIs should not think about India at all.:)\""
+    },
+    {
+      "title": "",
+      "controversy": "Shah went to Pakistan in early 2015 to promote his memoir, And Then One Day, at the Lahore Literary Festival. While addressing media and fans at the venue, Shah started talking about the animosity between the two countries. \"Indians are being brainwashed into believing that Pakistan is an enemy country without being aware of the historical background. Politicians will change colors whenever it suits them. But artists from both countries must look beyond the political animosity\", Shah said. This statement, however, hurt Indian sentiments. Pressure group Shiv Sena even issued a statement saying that only the near and dear ones of the 26/11 victims would understand that why there is so much hatred against Pakistan."
+    }
+  ],
+  "maritalStatus": "Widower",
+  "affairs": "",
+  "affairsImgSrc": "",
+  "wifeOrHusband": "Late Parveen Murada aka Manara Sikri(First wife), Ratna Pathak, Actress",
+  "wifeOrHusbandImgSrc": "assets/images/october2022/Naseeruddin-Shah-present-wife-Ratna-Pathak.jpg",
+  "fiance": "",
+  "fianceImgSrc": "",
+  "children": {
+    "son": "Imaad Shah, Vivaan Shah (Both Actors)",
+    "sonImgSrc": "",
+    "sonImgSrc1": "",
+    "sonImgSrc2": "",
+    "daughter": "Heeba Shah, Actress (Daughter from first wife)",
+    "daughterImgSrc": ""
+  },
+  "parents": {
+    "father": "Aley Mohammed Shah",
+    "fatherImgSrc": "",
+    "mother": "Farrukh Sultan",
+    "motherImgSrc": ""
+  },
+  "siblings": {
+    "brother": "Retd. Lt. General Zameerud-din Shah and 2 more",
+    "brotherImgSrc": "",
+    "sister": "N/A",
+    "sisterImgSrc": ""
+  },
+  "favourites": {
+    "food": "",
+    "fruit": "",
+    "beverages": "",
+    "actor": "Mohanlal, Nedumudi Venu, Shammi Kapoor, Dara Singh, Boman Irani",
+    "actress": "",
+    "singer": "",
+    "fashionBrand": "",
+    "colour": "Black",
+    "destination": "Dubai",
+    "sports": "Tennis",
+    "sportsman": "",
+    "dress": "",
+    "song": "",
+    "film": "<strong>Bollywood:</strong> Masaan (2015), Dil Chahta Hai (2001)",
+    "director": "Neeraj Pandey, Rajkumar Hirani, Neeraj Ghaywan"
+  },
+  "styleQoutient": {
+    "carsCollection": "",
+    "imgSrc": ""
+  },
+  "moneyFactor": {
+    "earning": "Not Known",
+    "netWorth": "Not Known",
+    "imgSrc": "assets/images/october2022/naseerudin-shah-net.jpg"
+  },
+  "tattoos": [],
+  "facts": {
+    "smoke": "Not Known",
+    "alcoholic": "Not Known"
+  },
+  "otherFacts": [
+    {
+      "fact": "Instagram",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": "",
+      "instaLink": "https://www.instagram.com/p/B_2G-UVp2HV/embed/"
+    },
+    {
+      "fact": "Interview",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": "https://www.youtube.com/embed/XvjLyUU6FG0?feature=oembed"
+    },
+    {
+      "fact": "Naseeruddin started acting (Theatre) at a young age of 14. Shakespeare&#8217;s <em>Merchant of Venice</em> was his first theatrical show.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "Not many people know that Naseeruddin is a descendant of a 19th-century warlord named <em>Jan-Fishan Khan</em>. The latter helped the British during the Indian Rebellion of 1857.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "Shah&#8217;s debut movie, Nishant (1975), was awarded the National Award in the Best Film category. The film was subsequently nominated for the Oscars.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "Rajendra Jaspal, a fellow actor and classmate of Shah, once stabbed him in the canteen of FTII. The former was envious of Shah signing certain films which he believed should have been his.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "His first wife, Late Parveen Murad, was 16 years older than him at the time of their marriage. 2 years later, the couple had a tiff and decided to part ways. However, Shah did not divorce his wife, as in his <i>nikaahnama</i> (Muslim marriage contract), Shah had not only promised a huge amount of money to his wife as alimony but had also disclaimed the right to bigamy.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "Even after becoming an established actor, Shah did not give up his love for theater. As a result, he along with a few friends founded a theater group named <em>Motley Productions</em> in the year 1977.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "Interestingly, Shah was the first choice to play the role of Mahatma Gandhi in the film- Gandhi (1982). However, Ben Kingsley overshadowed him at the auditions and grabbed the role.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "For his immense contribution to the field of acting/theater, Shah was awarded the <em>Padma Shri</em> in 1987 followed by the <em>Padma Bhushan</em> in 2003.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "Aside from Bollywood, Shah has also acted in a number Hollywood and Pakistani movies. His role of <em>Captain Nemo</em> in the 2003 Hollywood flick, <i>The League of Extraordinary Gentlemen, </i>was widely appreciated. Additionally, his second Pakistani film, <i>Zinda Bhaag </i>was selected as the country&#8217;s official entry into the 86th Academy Awards in the Best Foreign Language Film category.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "Notably, Shah has been honored with the lifetime membership of International Film And Television Club of Asian Academy of Film and Television.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "His brother, Retd. Lt. General Zameerud-din Shah, is the present (2016) vice-chancellor of Aligarh Muslim University (AMU), UP.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "Bad luck has constantly followed Shah as to date more than 20 feature films starring him have been shelved.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "Shah released his memoir titled <em>And Then One day</em> in 2014. In the memoir, the actor has admitted to having consumed marijuana (gaanja) in various phases of his life and credits it with giving him clarity of thought.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    },
+    {
+      "fact": "According to reports, the directors of Harry Potter wanted to audition Naseeruddin Shah for the role of <em>Albus Dumbledore</em>, after the actor who played it passed away prior to the shooting of the third installment of the movie series. Shah, however, refused to audition and the role was passed over to English actor Michael Gambon.",
+      "imgSrc": "",
+      "imgCaption": "",
+      "videoSrc": ""
+    }
+  ],
+  "description": "Naseeruddin Shah (born 20 July 1950) is an Indian actor. He is notable in Indian parallel cinema. He has also starred in international productions. He has won numerous awards in his career, including three National Film Awards, three Filmfare Awards and the Volpi Cup for Best Actor at the Venice Film Festival. The Government of India honoured him with the Padma Shri and the Padma Bhushan awards for his contributions to Indian cinema."
+},
     {
       "id": "ce376",
       "category": [
@@ -77303,5 +77308,812 @@
         }
       ],
       "description": "Aditi Gautam also credited as Seiya Guatam is an Indian model turned actress known for her works in Telugu and Hindi language films. Aditi made her Telugu cinema debut with the 2008 film Neninthe and Bollywood debut with the 2018 film Sanju."
-    }
+    },
+    {
+      "id": "ce377",
+      "category": [
+        "Bollywood",
+        "Instagram",
+        "Acting",
+        "Bollywood actress",
+        "actress",
+        "Director",
+        "Tollywood Actress",
+        "Tollywood",
+        "South",
+        "South Cinema",
+        "South Indian"
+      ],
+      "categoryId": [
+        "Bollywood Actor/Actress, Model",
+        "Tollywood Actor/Actress"
+      ],
+      "name": "Tamannaah Bhatia",
+      "otherName": "TamannaahBhatia, Tamannaah, Tamanna, Tammanna, Tamana, Tamanah Bhatia, Tamanna Bhatia",
+      "nickName": "Tammy, Milk Beauty",
+      "fullname": "",
+      "height": "in feet inches - 5’ 5”",
+      "weight": "55 Kg",
+      "gender": "Female",
+      "boyfriend": "",
+      "profession": "Actress, Model, Dancer",
+      "professionId": "",
+      "eyeColor": "Hazel",
+      "hairColor": "Black",
+      "imgSrc": "assets/images/february2023/tamannah.jpg",
+      "politicalParty": "",
+      "politicalPartyImgSrc": "",
+      "dob": {
+        "date": "21",
+        "month": "December",
+        "year": "1989"
+      },
+      "dod": {
+        "date": "",
+        "month": "",
+        "year": ""
+      },
+      "deathCause": "",
+      "placeOfDeath": "",
+      "birthPlace": "Mumbai, Maharashta, India",
+      "nationality": "Indian",
+      "hometown": "Mumbai, Maharashta, India",
+      "school": "Maneckji Cooper Education Trust School, Mumbai",
+      "collegeUniversity": "National College, Mumbai",
+      "qualification": "Bachelor of Arts (Distance Education)",
+      "religion": "Hinduism",
+      "zodiacSign": "Sagittarius",
+      "bloodGroup": "",
+      "foodHabit": "",
+      "address": "",
+      "hobbies": "Dancing, Reading, Writing Poetry &amp; Quotes",
+      "debut": {
+        "lyrical": "",
+        "lyricalImgSrc": "",
+        "punjabiFilm": "",
+        "punjabiFilmImgSrc": "",
+        "bollywoodFilm": "Chand Sa Roshan Chehra (2005)",
+        "bollywoodFilmImgSrc": "assets/images/february2023/Tamannaah-Bhatia-debut-film-Chand-Sa-Roshan-Chehra.jpg",
+        "hollywoodFilm": "",
+        "hollywoodFilmImgSrc": "",
+        "tollywoodFilm": "",
+        "tollywoodFilmImgSrc": "",
+        "tamilFilm": "",
+        "tamilFilmImgSrc": "",
+        "kannadaFilm": "",
+        "kannadaFilmImgSrc": "",
+        "punjabiAlbum": "",
+        "punjabiAlbumImgSrc": "",
+        "hindiAlbum": "",
+        "hindiAlbumImgSrc": "",
+        "singles": "",
+        "singlesImgSrc": "",
+        "musicDirection": "",
+        "musicDirectionImgSrc": "",
+        "filmDirection": "",
+        "filmDirectionImgSrc": "",
+        "tv": "",
+        "tvImgSrc": "",
+        "webSeries": "",
+        "webSeriesImgSrc": "",
+        "production": "",
+        "productionImgSrc": "",
+        "filmWriter": "",
+        "filmWriterImgSrc": "",
+        "lastSong": "",
+        "lastSongImgSrc": "",
+        "lastFilm": "",
+        "lastFilmImgSrc": ""
+      },
+      "awards": [
+        {
+          "year": "2010",
+          "award": "Kalaimamani Award for excellence in the field of art and literature"
+        },
+        {
+          "year": "2012",
+          "award": "B.Nagi Reddy Memorial Award for Contributions to Telugu cinema"
+        },
+        {
+          "year": "2017",
+          "award": "Dayawati Modi Global Award as Youth Icon of the Year for the Contributions in the field of Cinema"
+        },
+        {
+          "year": "2017",
+          "award": "Honorary Doctorate from CIAC, in association with KEISIE International University, South Korea for the contribution to Indian cinema"
+        },
+        {
+          "year": "2018",
+          "award": "Dada Saheb Phalke Excellence Award for her outstanding performance in Bahubali-the beginning"
+        }
+      ],
+      "controversies": [
+        {
+          "title": "",
+          "controversy": "The director, Suraj, reportedly made some sexist remarks while talking about Tamannaah's costumes in the film \"Kathi Sandai,\" which kicked up a controversy. Later, the actress made a Tweet seeking apology from the director not just to herself but to all women in the cinema industry."
+        },
+        {
+          "title": "",
+          "controversy": "Tamannaah Bhatia landed into a controversy after the film producer, Salim Akhtar, filed a complaint against Tamannaah at the Association of Motion Picture and Television Programme Producers (AMPTPP) for breaking a Bollywood Contract. As per the contract, she was supposed to pay 25% of her remuneration for the next five years to Salim. But the actress never honoured the contract. The issue was later sent to the Kolkata High Court. However, her father said that Tamannaah did not sign any contract and that she was minor at the time of her film debut."
+        },
+        {
+          "title": "",
+          "controversy": "In January 2018, an engineering student hurled a shoe at Tamannaah in Hyderabad while the actress was there to inaugurate a jewellery store. Though the shoe missed its aim, the actress was shaken by the incident. The miscreant stated that he was a huge fan of the actress and did the act as he was upset over her roles in films."
+        }
+      ],
+      "maritalStatus": "Unmarried",
+      "affairs": "",
+      "affairsImgSrc": "",
+      "wifeOrHusband": "",
+      "wifeOrHusbandImgSrc": "",
+      "fiance": "",
+      "fianceImgSrc": "",
+      "children": {
+        "son": "",
+        "sonImgSrc": "",
+        "sonImgSrc1": "",
+        "sonImgSrc2": "",
+        "daughter": "",
+        "daughterImgSrc": ""
+      },
+      "parents": {
+        "father": "Santhosh Bhatia (Diamond Merchant)",
+        "fatherImgSrc": "",
+        "mother": "Rajani Bhatia (Homemaker)",
+        "motherImgSrc": "assets/images/february2023/Tamannaah-Bhatia-with-her-parents.jpg"
+      },
+      "siblings": {
+        "brother": "Anand Bhatia (Elder)",
+        "brotherImgSrc": "assets/images/february2023/Tamannaah-Bhatia-with-her-brother.jpg",
+        "sister": "None",
+        "sisterImgSrc": ""
+      },
+      "favourites": {
+        "food": "Biryani",
+        "fruit": "",
+        "beverages": "",
+        "actor": "<a href=\"https://www.newsfarmers.com/mahesh-babu\" class=\"celebrity\" target=\"_blank\">Mahesh Babu</a>, <a href=\"https://www.newsfarmers.com/hrithik-roshan\" class=\"celebrity\" target=\"_blank\">Hrithik Roshan</a>",
+        "actress": "<a href=\"https://www.newsfarmers.com/madhuri-dixit\" class=\"celebrity\" target=\"_blank\">Madhuri Dixit</a>",
+        "singer": "",
+        "fashionBrand": "",
+        "colour": "Red, Blue",
+        "destination": "Paris, Dubai, Kashmir",
+        "sports": "",
+        "sportsman": "",
+        "dress": "",
+        "song": "",
+        "film": "<strong>Bollywood Films:</strong> Mughal-E-Azam, Dil To Pagal Hai, Dilwale Dulhania Le Jayenge<br />\n        <strong>Hollywood Films:</strong> Titanic, Life is Beautiful, Erin Brockovich <br />\n        <strong>Tollywood Film:</strong> Anand (Telugu)",
+        "director": ""
+      },
+      "styleQoutient": {
+        "carsCollection": "",
+        "imgSrc": ""
+      },
+      "moneyFactor": {
+        "earning": "1-1.75 Crore/film (INR)",
+        "netWorth": "Not Known",
+        "imgSrc": "assets/images/february2023/tamannah-net.jpg"
+      },
+      "tattoos": [],
+      "facts": {
+        "smoke": "Not Known",
+        "alcoholic": "Not Known"
+      },
+      "otherFacts": [
+        {
+          "fact": "Instagram",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/Cnoxg69rXFU/embed/"
+        },
+        {
+          "fact": "Interview",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "https://www.youtube.com/embed/6yZfcONiSvc?feature=oembed"
+        },
+        {
+          "fact": "At the age of 13, while Tamannaah was performing at her school&#8217;s annual function, she was noticed by a director who offered her a lead role in a film.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Many think that Tamannaah migrated from the South Indian Film Industry to Bollywood, but she started her career with the Hindi film &#8220;Chand Sa Roshan Chehra,&#8221; which went unnoticed at the box office, and then, ventured into the South Film Industry.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "She has been a part of Mumbai&#8217;s Prithvi Theatre for a year.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "She was seen in Abhijeet Sawant&#8216;s music video in 2005.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "https://www.youtube.com/embed/4wQwg_2yy4s?feature=oembed"
+        },
+        {
+          "fact": "Unlike many models who venture into the films after collecting suitable experience in modelling, Tamannaah, first featured into films and then endorsed various brands as a model.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "She started acting as soon as she completed her +2. She continued her further education through distance education mode.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Her acting was first recognized in her debut Telugu film &#8220;Sri,&#8221; opposite Manoj Kumar in 2006.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "She considers <a href=\"https://www.newsfarmers.com/madhuri-dixit\" class=\"celebrity\" target=\"_blank\">Madhuri Dixit</a> as her role model.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "After consulting a numerologist, she changed the spellings of her name from &#8216;Tamanna&#8217; to &#8216;Tamannaah.&#8217;",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "She is popular in Tamil and Telugu industries with the name &#8216;Milk Beauty,&#8217; because of her white complexion.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Tamannaah faced disappointment with her Telugu debut and moved to the Tamil Film Industry, where she became an instant hit. After doing a few projects in the Tamil Film Industry, she went back to feature in the Telugu Films and bagged many successful roles.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "In an interview, Tamannaah gave a statement that she would never wear a bikini on screen.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Even though &#8220;Himmatwala&#8221;, her first commercial movie in Bollywood, met a disastrous end at the box office, she was offered good roles in subsequent movies.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Some of her popular Tamil films are &#8220;Ayan,&#8221; &#8220;Paiyaa,&#8221; &#8220;Siruthai,&#8221; &#8220;Veeram,&#8221; &#8220;Dharma Durai,&#8221; &#8220;Devi,&#8221; and &#8220;Sketch.&#8221;",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "She has endorsed many popular brands like &#8220;Celkon Mobiles,&#8221; &#8220;Fanta&#8221; and &#8220;Chandrika Ayurvedic Soap.&#8221;",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "She has also walked the ramp for various fashion designers.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        }
+      ],
+      "description": "Tamanna Bhatia (born 21 December 1989), better known as Tamannaah, is an Indian actress who works in Telugu, Tamil and Hindi cinema. Having starred in over 80 films, she has won a SIIMA Award and received eight Filmfare nominations. She was conferred with Kalaimamani in 2010, and an honorary doctorate in 2022 for her contributions to Indian cinema."
+    },
+    {
+      "id": "ce378",
+      "category": [
+        "Bollywood",
+        "Instagram",
+        "Acting",
+        "Bollywood actress",
+        "actress",
+        "Director",
+        "Tollywood Actress",
+        "Tollywood",
+        "South",
+        "South Cinema",
+        "South Indian"
+      ],
+      "categoryId": [
+        "Bollywood Actor/Actress, Model",
+        "Tollywood Actor/Actress"
+      ],
+      "name": "Keerthy Suresh",
+      "otherName": "KeerthySuresh, Keerty Suresh, KeertySuresh, Kirthy Suresh, Kirty Suresh",
+      "nickName": "Keerthana",
+      "fullname": "",
+      "height": "in feet inches - 5’ 4”",
+      "weight": "55 Kg",
+      "gender": "Female",
+      "boyfriend": "",
+      "profession": "Actress, Model",
+      "professionId": "",
+      "eyeColor": "Dark Brown",
+      "hairColor": "Black",
+      "imgSrc": "assets/images/february2023/keerthy-suresh.jpg",
+      "politicalParty": "",
+      "politicalPartyImgSrc": "",
+      "dob": {
+        "date": "17",
+        "month": "October",
+        "year": "1992"
+      },
+      "dod": {
+        "date": "",
+        "month": "",
+        "year": ""
+      },
+      "deathCause": "",
+      "placeOfDeath": "",
+      "birthPlace": "Chennai, Tamil Nadu, India",
+      "nationality": "Indian",
+      "hometown": "Trivandrum, Kerala, India",
+      "school": "Kendriya Vidyalaya, Pattom, Thiruvananthapuram",
+      "collegeUniversity": "Pearl Academy, Chennai",
+      "qualification": "Graduation",
+      "religion": "Hinduism",
+      "zodiacSign": "Libra",
+      "bloodGroup": "",
+      "foodHabit": "Vegetarian",
+      "address": "A bungalow in Chennai",
+      "hobbies": "Doing Yoga, Travelling, Swimming",
+      "debut": {
+        "lyrical": "",
+        "lyricalImgSrc": "",
+        "punjabiFilm": "",
+        "punjabiFilmImgSrc": "",
+        "bollywoodFilm": "",
+        "bollywoodFilmImgSrc": "",
+        "hollywoodFilm": "",
+        "hollywoodFilmImgSrc": "",
+        "tollywoodFilm": "Nenu Sailaja (2016, Telugu)",
+        "tollywoodFilmImgSrc": "",
+        "tamilFilm": "Idhu Enna Maayam (2015, Tamil)",
+        "tamilFilmImgSrc": "",
+        "kannadaFilm": "",
+        "kannadaFilmImgSrc": "",
+        "punjabiAlbum": "",
+        "punjabiAlbumImgSrc": "",
+        "hindiAlbum": "",
+        "hindiAlbumImgSrc": "",
+        "singles": "",
+        "singlesImgSrc": "",
+        "musicDirection": "",
+        "musicDirectionImgSrc": "",
+        "filmDirection": "",
+        "filmDirectionImgSrc": "",
+        "tv": "",
+        "tvImgSrc": "",
+        "webSeries": "",
+        "webSeriesImgSrc": "",
+        "production": "",
+        "productionImgSrc": "",
+        "filmWriter": "",
+        "filmWriterImgSrc": "",
+        "lastSong": "",
+        "lastSongImgSrc": "",
+        "lastFilm": "",
+        "lastFilmImgSrc": ""
+      },
+      "awards": [
+        {
+          "year": "2013",
+          "award": "Asianet Film Award for Best New Face of the Year (Female) – 'Geethaanjali' (2013)"
+        },
+        {
+          "year": "2013",
+          "award": "South Indian International Movie Award for Best Female Debutant Malayalam – 'Geethaanjali' (2013)"
+        },
+        {
+          "year": "2013",
+          "award": "Nana Film Awards for Best Female Debutant – 'Geethaanjali'"
+        },
+        {
+          "year": "2015",
+          "award": "Edison Award for Best Female Rising Star"
+        },
+        {
+          "year": "2015",
+          "award": "5th South Indian International Movie Awards for Best debut female Tamil - 'Idhu Enna Maayam' (2015)"
+        }
+      ],
+      "controversies": [
+        {
+          "title": "",
+          "controversy": "In 2016, she faced the outburst of Vikram's fans after the news spread in tinsel town that she had declined to act alongside Vikram in his new film 'Garuda.' Soon after, the director of the film, Thiru, said that Keerthi was never approached for the role, instead, it is Kajal Aggarwal who will be paired alongside Vikram in the film."
+        }
+      ],
+      "maritalStatus": "Unmarried",
+      "affairs": "",
+      "affairsImgSrc": "Sathish (Comedian, Rumour)",
+      "wifeOrHusband": "",
+      "wifeOrHusbandImgSrc": "",
+      "fiance": "",
+      "fianceImgSrc": "",
+      "children": {
+        "son": "",
+        "sonImgSrc": "",
+        "sonImgSrc1": "",
+        "sonImgSrc2": "",
+        "daughter": "",
+        "daughterImgSrc": ""
+      },
+      "parents": {
+        "father": "Suresh Kumar (Malayali film producer)",
+        "fatherImgSrc": "",
+        "mother": "Menaka (Former Actress)",
+        "motherImgSrc": "assets/images/february2023/Keerthi-Suresh-with-Family.jpg"
+      },
+      "siblings": {
+        "brother": "None",
+        "brotherImgSrc": "",
+        "sister": "Revathy (Elder, works as a VFX specialist)",
+        "sisterImgSrc": ""
+      },
+      "favourites": {
+        "food": "Dosa",
+        "fruit": "",
+        "beverages": "",
+        "actor": "Suriya, Vijay",
+        "actress": "Simran",
+        "singer": "",
+        "fashionBrand": "",
+        "colour": "",
+        "destination": "Europe",
+        "sports": "",
+        "sportsman": "",
+        "dress": "",
+        "song": "",
+        "film": "Zindagi Na Milegi Dobara",
+        "director": ""
+      },
+      "styleQoutient": {
+        "carsCollection": "",
+        "imgSrc": ""
+      },
+      "moneyFactor": {
+        "earning": "₹1.5 crore/film",
+        "netWorth": "$2 million",
+        "imgSrc": "assets/images/february2023/keerthy-suresh-net.jpg"
+      },
+      "tattoos": [],
+      "facts": {
+        "smoke": "No",
+        "alcoholic": "Not Known"
+      },
+      "otherFacts": [
+        {
+          "fact": "Instagram",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "",
+          "instaLink": "https://www.instagram.com/p/CocXhPzBFZf/embed/"
+        },
+        {
+          "fact": "Interview",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": "https://www.youtube.com/embed/qNphEo6FUas?feature=oembed"
+        },
+        {
+          "fact": "Keerthy was born into a Malayali family with a filmy background as her father was a renowned filmmaker and her mother was a Tamil actress who had acted in more than 100 films.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Her father, actor Mohanlal and director Priyadarshan were classmates and started their career together.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Being raised in a filmy atmosphere, she was always fascinated by acting and started her acting career as a child artist in many of her parent&#8217;s productions namely Pilots (2000), Achanayikistam (2001), and Kuberan (2002). (2001), Kuberan(2002).",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Since her childhood, she has been a fine swimmer and had won many awards for it during her school days.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "While pursuing her graduation, she did a 4-month student exchange programme in Scotland, and a 2-month internship in London.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "As her father gave Priyadarshan his first film, Priyadarshan also wanted to give Keerthy her first film. When Keerthy was in 3rd year of her graduation, he called her and offered her the female lead role in his film &#8216;Geethaanjali&#8217; (2013).",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "In 2016, she rose to fame with films like &#8216;Rajini Murugan&#8217;, and &#8216;Remo.&#8217;",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "Her sister, Revathy had previously worked as a VFX specialist for Shah Rukh Khan&#8216;s production house, Red Chillies.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "In December 2015, after the terrifying South Indian floods, she posted on a social media about the difficulties faced during the floods.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "If she wasn&#8217;t an actress, she would have been a fashion designer.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "She is an avid animal and bird lover.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "According to her, the biggest weakness of her is that she is gullible.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        },
+        {
+          "fact": "In the early part of her acting career, she got the chance to play the role of legendary actress Savitri in the Telugu film &#8216;Mahanati&#8217; (2018), which she did with the utmost perfection.",
+          "imgSrc": "",
+          "imgCaption": "",
+          "videoSrc": ""
+        }
+      ],
+      "description": "Keerthy Suresh (born 17 October 1992) is an Indian actress, dancer, playback singer, philanthropist and promotional model who appears predominantly in Tamil and Telugu films, in addition to a few Malayalam films. She won the National Film Award for Best Actress for portraying actress Savitri in the Telugu film Mahanati (2018). She has also received three SIIMA Awards, four Filmfare Award South, and four Zee Cine Awards Telugu among others for her performance in various films. She was recognised as Forbes 3 under 30 in 2021."
+    },
+    {
+      id: 'ce379', 
+      category: ['Bollywood', 'Instagram', 'Acting', 'Bollywood actress', 'actress', 'Director', 'Tollywood Actress', 'Tollywood', 'South', 'South Cinema', 'South Indian'],
+      categoryId: ['Bollywood Actor/Actress, Model', 'Tollywood Actor/Actress'],
+      name: `Kajal Aggarwal`,
+      otherName: `Kajal A Kitchlu, Kajal Agarwal`,
+      nickName: `Kaju`,
+      fullname: ``,
+      height: `in feet inches - 5’ 5”`,
+      weight: '55 Kg',
+      gender: 'Female',
+      boyfriend: '',
+      profession: `Actress, Model`,
+      professionId: ``,
+      eyeColor: 'Black',
+      hairColor: 'Dark Brown',
+      imgSrc: "assets/images/february2023/kajal-aggarwal.jpg",
+      politicalParty: "",
+      politicalPartyImgSrc: "",
+      dob: {
+        date: '19',
+        month: 'June',
+        year: '1985'
+      },
+      dod: {
+        date: '',
+        month: '',
+        year: ''
+      },
+      deathCause: ``,
+      placeOfDeath: ``,
+      birthPlace: `Mumbai, Maharashtra, India`,
+      nationality: 'Indian',
+      hometown: 'Mumbai, Maharashtra, India',
+      school: `St. Anne's High School, Mumbai`,
+      collegeUniversity: `Jai Hind College, Mumbai<br />
+      K.C. College, Mumbai`,
+      qualification: `Degree in Mass Media specializing in Advertising and Marketing`,
+      religion: 'Hinduism',
+      zodiacSign: 'Gemini',
+      bloodGroup: '',
+      foodHabit: '',
+      address: ``,
+      hobbies: `Dancing, Doing Yoga, Reading`,
+      debut: {
+        lyrical: "",
+        lyricalImgSrc: "",
+        punjabiFilm: ``,
+        punjabiFilmImgSrc: "",
+        bollywoodFilm: `Kyun! Ho Gaya Na (2004)`,
+        bollywoodFilmImgSrc: "",
+        hollywoodFilm: ``,
+        hollywoodFilmImgSrc: "",
+        tollywoodFilm: `Lakshmi Kalyanam (2007)`,
+        tollywoodFilmImgSrc: "",
+        tamilFilm: 'Pazhani (2008)',
+        tamilFilmImgSrc: "",
+        kannadaFilm: '',
+        kannadaFilmImgSrc: "",
+        punjabiAlbum: '',
+        punjabiAlbumImgSrc: "",
+        hindiAlbum: '',
+        hindiAlbumImgSrc: "",
+        singles: ``,
+        singlesImgSrc: "",
+        musicDirection: "",
+        musicDirectionImgSrc: "",
+        filmDirection: "",
+        filmDirectionImgSrc: "",
+        tv: ``,
+        tvImgSrc: "",
+        webSeries: "",
+        webSeriesImgSrc: "",
+        production: "",
+        productionImgSrc: "",
+        filmWriter: "",
+        filmWriterImgSrc: "",
+        lastSong: ``,
+        lastSongImgSrc: ``,
+        lastFilm: ``,
+        lastFilmImgSrc: ``
+      },
+      awards: [],
+      controversies: [
+        {
+          title:``,
+          controversy:`Once FHM magazine issued a topless photo of her, but she later admitted that it was an altered picture of her.`
+        }
+      ],
+      maritalStatus: `Married`,
+      affairs: ``,
+      affairsImgSrc: ``,
+      wifeOrHusband: `Gautam Kitchlu (Mumbai-based entrepreneur)`,
+      wifeOrHusbandImgSrc: `assets/images/february2023/kajal-aggarwal-with-husband.jpg`,
+      fiance: '',
+      fianceImgSrc: '',
+      children: {
+        son: `Neil Kitchlu`,
+        sonImgSrc: `assets/images/february2023/kajal-aggarwal-with-son.jpg`,
+        sonImgSrc1: '',
+        sonImgSrc2: '',
+        daughter: ``,
+        daughterImgSrc: ''
+      },
+      parents: {
+        father: 'Vinay Aggarwal (Entrepreneur)',
+        fatherImgSrc: '',
+        mother: 'Suman Aggarwal (Confectioner)',
+        motherImgSrc: 'assets/images/february2023/Kajal-Aggarwal-with-her-parents.jpg'
+      },
+  
+      siblings: {
+        brother: `None`,
+        brotherImgSrc: '',
+        sister: `Nisha Agarwal (Actress)`,
+        sisterImgSrc: ''
+      },
+      favourites: {
+        food: `Hyderabadi Biryani`,
+        fruit: ``,
+        beverages: ``,
+        actor: `Junior NTR, Vijay`,
+        actress: `Aishwarya Rai Bachchan`,
+        singer: ``,
+        fashionBrand: ``,
+        colour: `White, Red, Blue`,
+        destination: `Goa, Kerela`,
+        sports: ``,
+        sportsman: ``,
+        dress: '',
+        song: ``,
+        film: `Dilwale Dulhania Le Jayenge`,
+        director: `The Shiva Trilogy by Amish Tripathi, The Bridges of Madison County<br />
+        by Robert James Walle`
+      },
+      styleQoutient: {
+        carsCollection: "",
+        imgSrc: '',
+      },
+      // INR 3 to 4 Crore+/movie (as in 2021)
+      moneyFactor: {
+        earning: `₹1-2 crore/film`,
+        netWorth: 'Rs. 66 crores',
+        imgSrc: 'assets/images/february2023/kajal-aggarwal-net.jpg'
+      },
+      tattoos: [],
+      facts: {
+        smoke: 'No',
+        alcoholic: 'No'
+      },
+      otherFacts: [
+        {
+          fact: 'Instagram',
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: '',
+          instaLink: 'https://www.instagram.com/p/Coq301rBkqD/embed/'
+        }, 
+        {
+          fact: "Interview",
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: 'https://www.youtube.com/embed/1F0UxXaGN3c?feature=oembed'
+        },
+        {
+          fact: `Kajal was born into a middle-class Punjabi family with roots in Amritsar`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `When she was doing her final year internship with L&#8217;Oreal, a photographer recommended her to try her luck in modelling. Later, she had a photo shoot; and as a result, she grabbed her first South Indian film alongside Nana Patekar.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `Kajal is also known as <em>Miss Congeniality</em> in the South Indian film industry due to her friendly nature and ability to get along with others well.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She is a good friend of actress Tamannaah Bhatia and actor Ram Charan.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She has fear of dogs.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She did few Hindi films like <em>Kyun! Ho Gaya Na, S</em><em>ingham </em>and <em>Special 26</em>.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `She supports PETA&#8217;s initiative to <em>Ban Animal Circuse</em>s to stop the torture faced by animals in circuses.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2010, she won the CineMAA Award for Best Actress (Telugu) for the film <em>Brindaavanam.</em>`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `In 2013, she was declared as the Youth Icon of South Indian Cinema.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        },
+        {
+          fact: `On 17 October 2021, the actress and her husband, Gautam Kitchlu, took to Instagram to introduce a puppy, Mia, as their first child.`,
+          imgSrc: '',
+          imgCaption: '',
+          videoSrc: ''
+        }
+      ],
+        description: `Kajal Aggarwal (born 19 June 1985) is an Indian actress and model who mainly appears in Telugu and Tamil language films, in addition to a few Hindi films. Aggarwal has worked in more than 50 films and also received two South Indian International Movie Awards.`
+      }
   ]

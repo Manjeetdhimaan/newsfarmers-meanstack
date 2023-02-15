@@ -80,7 +80,7 @@ router.post('/addCelebrity', async (req, res) => {
         tattoos: req.body.tattoos,
         facts: req.body.facts,
         otherFacts: req.body.otherFacts,
-        description: req.body.description,
+        description: req.body.description
     })
     await newCelebrity.save().then(celebrity => {
         return res.status(201).json(celebrity)

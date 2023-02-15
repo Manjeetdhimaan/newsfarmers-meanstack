@@ -5,6 +5,7 @@ import { Subscription } from 'rxjs';
 import { CelebritiesService } from 'src/app/services/celebrities.service';
 import { Meta } from '@angular/platform-browser';
 import { ToasTMessageService } from 'src/app/services/toastr.service';
+import { Celebrity } from 'src/app/models/celebrity.model';
 
 @Component({
   selector: 'app-celebrities',
@@ -14,7 +15,7 @@ import { ToasTMessageService } from 'src/app/services/toastr.service';
 
 export class CelebritiesComponent implements OnInit, OnDestroy {
   imgUrl: any = 'assets/images/no-preview.png';
-  celebrities: any[] = [];
+  celebrities: Celebrity[] = [];
   celebrity: any;
   currentYear: number = new Date().getFullYear();
   dobOfCelebrity: any;
@@ -434,7 +435,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
       }
     }
     else {
-      this.celebritiesService.getCelebrity(this.router.url.slice(1).toLowerCase()).then( celebrity => {
+      this.celebritiesService.getCelebrity(this.router.url.slice(1).toLowerCase()).then((celebrity: any) => {
         this.celebrity = celebrity;
         this.isLoading = false;
         this.isError = false;
@@ -450,10 +451,10 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
       this.celebritiesService.getRecentCelebrities().then(recentCelebrities => {
         this.recentPost = recentCelebrities;
         this.isLoadingRecentCelbs = false;
-        this.isError = false;
+        // this.isError = false;
       }).catch(err =>{
         this.isLoading = false;
-        this.isError = false;
+        this.isError = true;
         this.isLoadingRecentCelbs = false;
       })
      
@@ -488,7 +489,9 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
         })
         if (this.router.url.toLowerCase() !== "/" + this.celebrity?.name?.toLowerCase().split(' ').join('-')) {
           // this.router.navigate(['/404notfound']);
+          this.celebrityWhileError = this.router.url.slice(1).toUpperCase().split('-').join(' ');
           this.isLoading = false;
+          this.isError = true;
           this.isLoadingMoreCel = false;
         }
       }).catch((err) => {
@@ -496,7 +499,7 @@ export class CelebritiesComponent implements OnInit, OnDestroy {
         // this.toastService.error(err.message);
         this.isLoading = false;
         this.isLoadingMoreCel = false;
-        // this.isError = true;
+        this.isError = true;
       })
     }
 
